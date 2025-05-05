@@ -1,0 +1,94 @@
+/* .albumContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainImage {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.sideImages {
+    display: flex;
+    gap: 10px;
+}
+
+.sideImage {
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mainImage {
+        aspect-ratio: 16 / 9;
+    }
+
+    .sideImages {
+        flex-direction: row;
+    }
+
+    .sideImage {
+        aspect-ratio: 16 / 9;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainImage {
+        aspect-ratio: 16 / 9;
+    }
+
+    .sideImages {
+        flex-direction: row;
+    }
+
+    .sideImage {
+        aspect-ratio: 16 / 9;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainImage {
+        aspect-ratio: 16 / 9;
+    }
+
+    .sideImages {
+        flex-direction: row;
+    }
+
+    .sideImage {
+        aspect-ratio: 16 / 9;
+        margin-bottom: 0;
+    }
+} */
+
+.albumContainer {
+  /* padding: 1rem; */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.slide {
+  /* padding: 0 10px; */
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}

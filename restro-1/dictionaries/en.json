@@ -1,0 +1,1021 @@
+{
+  "langAll": ["English", "German", "Spanish"],
+  "bottom": ["Book Now", "Text Us"],
+  "offerPopup": {
+    "heading": "Welcome to Mundo",
+    "rest": "Alt Mariendorf - &quot;The Tapas Tango&quot;",
+    "title": "Today's Special Offer!",
+    "description": "Get 10% off on all orders above € 10. Use coupon code SEPFEST when you book your table!",
+    "button1": "Book Now",
+    "button2": "Text Us",
+    "button3": "Enter"
+  },
+  "cruselData": [
+    {
+      "name": "Slide 1",
+      "title": "Mundo – Alt Mariendorf!",
+      "button1": "Reserve Now",
+      "button2": "Brunch Buffet Page",
+      "desc": "Sundays & Holidays Brunch Buffet - All You Can Eat!",
+      "desc2": ""
+    },
+    {
+      "name": "Slide 2",
+      "title": "Tapas Time in Mundo!",
+      "button1": "Reserve Now",
+      "button2": "",
+      "desc": "Enjoy any 3 Tapas @ 15,90",
+      "desc2": ""
+    },
+    {
+      "name": "Slide 3",
+      "title": "Business Meets Pleasure!",
+      "button1": "Reserve Now",
+      "button2": "Text Us",
+      "desc": "Corporate Events & Private Parties from 29,90 per person",
+      "desc2": "Text Us"
+    },
+    {
+      "name": "Slide 4",
+      "title": "Celebrate Festivals in Mundo!",
+      "button1": "Reserve Now",
+      "button2": "Text Us",
+      "desc": "Christmas, New Year or Easter!",
+      "desc2": "Text Us"
+    },
+    {
+      "name": "Slide 5",
+      "title": "Sip, Savor, and Socialize!",
+      "button1": "Reserve Now",
+      "button2": "",
+      "desc": "The Best of Cocktails – Wines – Beers!",
+      "desc2": ""
+    }
+  ],
+  "allMenuItems": {
+    "title": "All Menu Items",
+    "desc": "Explore all available menu options."
+  },
+  "allMenu": {
+    "title": "All Menu",
+    "desc": "Explore all the menu options available."
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "desc": "Stay tuned! Something awesome is on its way."
+  },
+  "header": [
+    "HOME",
+    "ALL MENU",
+    "GROUP OFFER",
+    "RESERVATION",
+    "FACILITIES",
+    "GALLERY",
+    "BLOG",
+    "CONTACT"
+  ],
+  "crousel": [
+    {
+      "title": "Welcome",
+      "desc": "Explore The Restaurant",
+      "LinkTag": "Explore"
+    },
+    {
+      "title": "Dishes",
+      "desc": "Taste the magic",
+      "LinkTag": "Visit Now"
+    },
+    {
+      "title": "Offer",
+      "desc": "10% Additional Discount",
+      "LinkTag": "Visit Now"
+    }
+  ],
+  "special": [
+    {
+      "title": "Hygienic",
+      "description": "Hygienic",
+      "linkTag": "Check"
+    },
+    {
+      "title": "SPECIAL REQUESTS",
+      "description": "Private Events",
+      "linkTag": "Check"
+    },
+    {
+      "title": "Group offers",
+      "description": "All You Can Eat/Drink",
+      "linkTag": "Group offers"
+    }
+  ],
+  "facilities": [
+    "Dining Area & Outdoor Patio",
+    "Full Service Bar",
+    "Events",
+    "Private Parties & Group Events",
+    "Why Choose Mundo Tapas Bar?",
+    "All-You-Can-Eat Brunch Buffet",
+    "Breakfast at Mundo Tapas Bar – Monday to Saturday",
+    "Facilities"
+  ],
+  "reserve": {
+    "heading": "Select your preferred restaurant location below!",
+    "heading2": "Reserve Table!",
+    "book": "Book Now",
+    "textUs": "Text Us",
+    "selectRestaurant": "Select Restaurant",
+    "pleaseSelectRestaurant": "Please Select Restaurant"
+  },
+  "dish": {
+    "first": "500+ Dishes",
+    "second": "200+ Drinks",
+    "third": "20+ Country Dishes"
+  },
+  "allDishes": [
+    {
+      "name": "House Specialties"
+    },
+    {
+      "name": "Tapas"
+    },
+    {
+      "name": "Paellas"
+    },
+    {
+      "name": "Fajitas"
+    },
+    {
+      "name": "Burgers"
+    },
+    {
+      "name": "Spanish Wines"
+    },
+    {
+      "name": "Cocktails"
+    },
+    {
+      "name": "Beers"
+    }
+  ],
+  "footer": {
+    "heading": "Let's Eat",
+    "heading1": "They All Love Our Food",
+    "desc": "We offer an authentic Spanish and Latin American ambiance with a warm, inviting atmosphere and exceptional traditional dishes. Relax with us, enjoy the experience, and savor the flavors at Mundo Tapas-Bar-Restaurant.",
+    "linkTag": "Follow Us",
+    "copyWrite": "Copyright © 2025 Mundo Tapas | Credits",
+    "powerdby": "Powered by Mundo Tapas",
+    "imprint":"Imprint",
+    "Privacy":"Privacy Policy"
+  },
+  "InfoContact": {
+    "about": "Know More",
+    "title": "About Us",
+    "desc": "Discover the heart and soul of Spanish and Latin American cuisine at Mundo Tapas, where tradition meets innovation."
+  },
+  "aboutSection": {
+    "infoBtn": "View Menu",
+    "infoLink": "/#",
+    "title": "Explore Our Story",
+    "bannerTitle": "Free WiFi For Everyone",
+    "bannerDes": "Ask for password to any staff",
+    "arcticalDes": "Serving the Finest Tapas, Spanish and Latin American food Since 2003",
+    "artical": "<strong style=\"color: #db9423; font-size: 1.4rem;\">N</strong>estled in the heart of Berlin, Mundo is more than just a tapas bar and Latin American restaurant – it's a culinary homage to the rich traditions of Spanish and Latin American cuisine. At Mundo, we believe in the transformative power of food, where every dish tells a story of heritage, love, and tradition.",
+    "artical2": "<strong style=\" font-size: 1.2rem;\">O</strong>ur journey begins with the recipes passed down from mothers and grandmothers – the unsung heroes who spent hours in the kitchen perfecting each dish with a touch of love. Here at Mundo, we honor their legacy by using only the freshest ingredients to craft authentic Spanish tapas that are true to their original recipes.",
+    "artical3": "<strong style=\"color: #db9423; font-size: 1.4rem;\">B</strong>ut our menu extends beyond tapas. We proudly offer a curated selection of classics from both Spanish and Latin American culinary traditions, alongside our own unique creations that blend traditional flavors with modern inspiration.",
+    "artical4": "<strong style=\"font-size: 1.2rem;\">T</strong>o complement your dining experience, we offer an array of excellent Spanish wines, many of which are personally imported to ensure authenticity and quality. Whether you're enjoying a casual evening with friends or celebrating a special occasion, our wines are carefully chosen to enhance the flavors of our dishes and elevate your dining experience.",
+    "artical5": "<strong style=\"color: #db9423; font-size: 1.4rem;\">W</strong>eekends and public holidays at Mundo are a celebration in themselves. We recommend reserving a table for the evening hours to ensure you don't miss out on the vibrant atmosphere and the opportunity to savor our culinary delights.",
+    "artical6": "<strong style=\" font-size: 1.2rem;\">A</strong>t Mundo, we are more than just a restaurant – we are a family passionate about sharing our love for Spanish and Latin American cuisine with you. From our kitchen to your table, we invite you to join us on a journey of flavors, tradition, and unforgettable moments.",
+    "artical7": "<strong style=\"color: #db9423; font-size: 1.4rem;\">B</strong>ienvenidos a Mundo – where every meal is a celebration of heritage and taste.",
+    "articalEnd": "Your Mundo Team"
+  },
+  "policy": {
+    "leftTitle": "Our Food Policy",
+    "leftArticle": "At Mundo Tapas, we are dedicated to delivering an exceptional dining experience rooted in quality, tradition, and innovation. We use fresh, locally-sourced ingredients to ensure the highest quality and taste, while supporting our community. Our dishes are inspired by Spanish and Latin American culinary traditions and prepared with authentic spices and techniques. Prioritizing your health, we adhere to strict hygiene standards and the latest food safety protocols.",
+    "leftArticle1": "Our commitment to sustainability includes minimizing food waste and using eco-friendly packaging. While honoring traditional flavors, our chefs embrace new techniques and ingredients to create unique, delicious dishes. Your satisfaction is our top priority, and we strive to make every visit memorable with our attentive service. Our food policy is our promise of quality, authenticity, and a vibrant culinary experience. ¡Bienvenidos a Mundo Tapas!",
+    "rightArticle": "At Mundo Tapas, our core policy is centered on delivering an exceptional dining experience by upholding the highest standards of quality, authenticity, and innovation. We are committed to using fresh, locally-sourced ingredients to ensure every dish bursts with flavor while supporting sustainable practices.",
+    "rightArticle1": "We prioritize the health and safety of our guests through stringent hygiene practices and food safety protocols. Additionally, we continually seek to innovate, blending traditional flavors with modern culinary techniques to create unique, memorable dishes. Customer satisfaction is at the heart of everything we do, and we strive to exceed your expectations with every visit. ¡Bienvenidos a Mundo Tapas!",
+    "rightTitle": "Our Core Policy"
+  },
+  "serviceList": {
+    "facilitiesH": ["F", "A", "C", "I", "L", "I", "T", "I", "E", "S"],
+    "heading": "Why Mundo?",
+    "title": "Welcome to Mundo – Alt Mariendorf, Berlin",
+    "introduction": "Discover the ultimate dining experience at Mundo Tapas Bar in Berlin, where world-class flavours meet modern comfort. Whether you're looking for an intimate dinner or a lively event space, we've got you covered.",
+    "services": [
+      {
+        "path": "diningArea",
+        "title": "Dining Area & Outdoor Patio",
+        "description": "Our cozy indoor dining area and spacious outdoor patio offer the perfect setting for every occasion. Enjoy delicious tapas in a relaxed ambiance, whether you're dining with friends or celebrating a special moment under the open sky.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Enjoy a best dining area & outdoor patio at Mundo Tapas Bar in Berlin. Savor authentic Spanish tapas in an inviting indoor setting or a charming outdoor space!",
+        "id": "essbereich"
+      },
+      {
+        "path": "fullServiceBar",
+        "title": "Full-Service Bar",
+        "description": "At Mundo Tapas Bar, our full-service bar boasts a selection of premium spirits, crafted cocktails, and a fine wine list. Whether you’re in the mood for a refreshing cocktail or a glass of wine, our expert bartenders are here to elevate your experience.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Enjoy a premium full-service bar at Mundo Tapas Bar in Berlin. Savor handcrafted cocktails, fine wines, and a wide selection of drinks in a vibrant setting!",
+        "id": "bar-mit-vollem-service"
+      },
+      {
+        "path": "eventSpace",
+        "title": "Events",
+        "description": "Looking for a venue for your next event? Host your birthday, anniversary, bachelor/bachelorette party, or wedding reception with us. From baby showers to prom night parties and corporate dinners, our flexible event spaces can accommodate groups of all sizes, ensuring every guest has an incredible time.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Plan your event at Mundo Tapas Bar in Berlin! From private parties to corporate gatherings, enjoy authentic Spanish tapas, great ambiance, and custom menus.",
+        "id": "veranstaltungsraume"
+      },
+      {
+        "path": "privateGroup",
+        "title": "Private Parties & Group Events",
+        "description": "Planning a private party or group event in Berlin? Our venue offers free Wi-Fi, clean washrooms, and customizable event packages. Let us handle the details so you can enjoy your special day. Whether it’s a corporate dinner, private party, or group event, we provide top-notch service in Berlin.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Host your private event or group celebration at Mundo Tapas Bar in Berlin. Savor authentic Spanish dishes with personalized menus in a vibrant and engaging setting!",
+        "id": "private-gruppe"
+      },
+      {
+        "path": "chooseUs",
+        "title": "Why Choose Mundo Tapas Bar?",
+        "description": "Spacious dining area and outdoor patio ** Full-service bar with premium drinks ** Private event space availability ** Free Wi-Fi and clean washrooms ** Ideal for birthdays, weddings, anniversaries, and more ** Group events, corporate lunch & dinner options.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Know why Mundo Tapas Bar is the perfect choice for Spanish cuisine lovers. Enjoy authentic flavors, tailored menus, and an unforgettable dining experience that sets us apart!",
+        "id": "wahle-uns"
+      },
+      {
+        "path": "allYouCanEatBrunch",
+        "title": "All-You-Can-Eat Brunch Buffet",
+        "description": "Join us at Mundo Tapas Bar in Berlin for our famous all-you-can-eat brunch buffet every Sunday and on public holidays. Enjoy a diverse spread of tapas, appetizers, breakfast classics, and fresh seasonal dishes, perfect for families, friends, and food lovers. Book your table and indulge in the best brunch in Berlin!",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Discover the ultimate brunch experience with our all-you-can-eat buffet. Enjoy a wide selection of delicious dishes, fresh ingredients, and endless options to satisfy your cravings. Perfect for any occasion!",
+        "id": "all-you-can-eat-brunch"
+      },
+      {
+        "path": "breakfast",
+        "title": "Breakfast at Mundo Tapas Bar – Monday to Saturday",
+        "description": "Start your day with a hearty breakfast at Mundo Tapas Bar, available Monday through Saturday. From 10:00 AM on weekdays and from 9:00 AM on Saturdays, we serve a selection of breakfast dishes inspired by local and international flavors. Whether you're meeting friends for breakfast or starting your workday with a satisfying meal, Mundo Tapas Bar offers the perfect breakfast to fuel your day.",
+        "metaTitle": "Dining Area & Outdoor Patio - Relaxed Tapas Experience in Berlin",
+        "metaDescription": "Start your day with a delightful breakfast at Mundo Tapas Bar, served Monday to Saturday. Enjoy fresh ingredients, flavorful dishes, and a cozy dining experience to fuel your mornings.",
+        "id": "fruhstuck"
+      }
+    ],
+    "contact": {
+      "message1": "Make Mundo Tapas Bar your go-to venue in Berlin for an unforgettable dining experience or an event to remember.",
+      "message": "Contact Us Today to book your table or inquire about hosting your next event!"
+    }
+  },
+  "meetUs": {
+    "about": "Meet Us",
+    "title": "Reserve A Table",
+    "desc": "We'd love to hear from you! Reach out to us for reservations, inquiries, or feedback – your satisfaction is our priority at Mundo Tapas."
+  },
+  "address": {
+    "title": "Visit us in person at any of our charming locations:",
+    "introduction": "",
+    "AddressList": [
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Alt-Mariendorf 32, 12107 Berlin"
+      },
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Zimmerstraße 19, 10969 Berlin"
+      },
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Potsdamer Platz, 10785 Berlin"
+      }
+    ],
+    "contact": {
+      "message": "We warmly invite you to join us and indulge in the delightful experience at our restaurant."
+    }
+  },
+  "privacyNew": {
+    "heading": "Privacy Policy",
+    "policy": [
+      {
+        "section": "1. Data protection at a glance",
+        "content": [
+          {
+            "title": "General information",
+            "details": "The following information provides an overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to personally identify you. Detailed information on data protection is provided in the privacy policy below."
+          },
+          {
+            "title": "Data collection on this website",
+            "details": "Data processing on this website is carried out by the website operator. Contact details are available in the website imprint."
+          },
+          {
+            "title": "Use of Third-Party Services for Reservations",
+            "details": "Mundo uses Quandoo.de for table reservations. Personal data is collected by Quandoo.de, and <a href=\"https://tapas-mundo.com\">Mundo</a> does not control or access this data. Please refer to Quandoo.de's privacy policy."
+          },
+          {
+            "title": "How do we collect your data?",
+            "details": "Your data is collected either when you provide it (e.g., via contact forms) or automatically by the website's IT systems (e.g., browser type, operating system, access time)."
+          },
+          {
+            "title": "What do we use your data for?",
+            "details": "Some data ensures the website's functionality, while other data may be used to analyze user behavior."
+          },
+          {
+            "title": "What rights do you have regarding your data?",
+            "details": "You have the right to access, correct, or delete your personal data. You may also request a restriction on its processing and lodge complaints with supervisory authorities."
+          }
+        ]
+      },
+      {
+        "section": "2. Hosting and Content Delivery Networks (CDN)",
+        "content": [
+          {
+            "title": "External Hosting",
+            "details": "This website is hosted by an external service provider. The personal data collected on this website is stored on the host's servers. This can include, among others, IP addresses, contact requests, meta and communication data, contract data, contact details, names, website access, and other data generated via a website."
+          },
+          {
+            "title": "Use of the Host",
+            "details": "The host is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 Para. 1 lit. b GDPR) and in the interest of a secure, fast, and efficient provision of our online offering by a professional provider (Art. 6 Para. 1 lit. f GDPR)."
+          },
+          {
+            "title": "Data Processing by the Provider",
+            "details": "Our host will only process your data to the extent necessary to fulfill its service obligations and follow our instructions regarding this data."
+          },
+          {
+            "title": "Provider Used",
+            "details": "We use the following provider: MilesWeb Internet Services Pvt Ltd (www.milesweb.com)."
+          },
+          {
+            "title": "Conclusion of a Contract for Order Processing",
+            "details": "In order to ensure data protection-compliant processing, we have concluded a contract for order processing with our host."
+          }
+        ]
+      },
+
+      {
+        "section": "3. General Information and Mandatory Information",
+        "content": [
+          {
+            "title": "Privacy policy",
+            "details": "The operators of these sites take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration. When you use this website, various personal data is collected. Personal data is data that can be used to personally identify you. This data protection declaration explains what data we collect and what we use it for. It also explains how and for what purpose this happens. We would like to point out that data transmission over the Internet (e.g. when communicating via email) can have security gaps. Complete protection of data from access by third parties is not possible."
+          },
+          {
+            "title": "Note on the responsible body",
+            "details": "The responsible body for data processing on this website is: Mundo AKS II GmbH, Zimmerstrasse 19, 10969 Berlin. The responsible body is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g. names, email addresses, etc.)."
+          },
+          {
+            "title": "Revocation of your consent to data processing",
+            "details": "Many data processing operations are only possible with your express consent. You can revoke any consent you have already given at any time. All you need to do is send us an informal email. The lawfulness of the data processing carried out until the revocation remains unaffected by the revocation."
+          },
+          {
+            "title": "Right to object to data collection in special cases and to direct advertising (Art. 21 GDPR)",
+            "details": "If the data processing is based on Art. 6 Abs. 1 Liter. E or F GDPR, you have the right to object to the processing of your personal data at any time for reasons arising from your particular situation; this also applies to profiling based on these terms. The applicable legal basis on which processing is based can be found in this data protection policy. If you object, we will no longer process your affected personal data unless we can prove compelling reasons for the processing that outweigh your interests, rights, and freedoms or the processing is for the assertion, exercise or representation of legal claims (objection pursuant to Article 21(1) GDPR). If your personal data is processed for direct advertising, you have the right to object at any time to the processing of personal data concerning you for the purpose of such advertising; this also applies to profiling to the extent it is connected with such direct advertising. If you object, your personal data will no longer be used for the purpose of direct advertising (objection pursuant to Article 21(2) GDPR)."
+          },
+          {
+            "title": "Right to lodge a complaint with the responsible supervisory authority",
+            "details": "In the event of violations of the GDPR, those affected have the right to lodge a complaint with a supervisory authority, in particular in the member state of their habitual residence, their place of work, or the place of the alleged violation. The right to lodge a complaint exists without prejudice to any other administrative or judicial remedies."
+          },
+          {
+            "title": "Right to data portability",
+            "details": "You have the right to have data that we process automatically based on your consent or in fulfillment of a contract handed over to you or to a third party in a common, machine-readable format. If you request the data to be transferred directly to another person responsible, this will only be done if it is technically feasible."
+          },
+          {
+            "title": "SSL or TLS encryption",
+            "details": "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the site operator. You can recognize an encrypted connection by the browser address line changing from “http://” to “https://” and by the lock symbol in your browser line. If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties."
+          },
+          {
+            "title": "Information, deletion, and correction",
+            "details": "Within the framework of the applicable legal provisions, you have the right to free information at any time about your stored personal data, its origin and recipient, and the purpose of data processing and, if necessary, a right to correction or deletion of this data. You can contact us at any time at the address given in the legal notice for this purpose or for further questions on the subject of personal data."
+          },
+          {
+            "title": "Right to restriction of processing",
+            "details": "You have the right to request that the processing of your personal data be restricted. You can contact us at any time at the address given in the legal notice. The right to restriction of processing exists in the following cases: • If you dispute the accuracy of the personal data we hold about you, we will generally need time to verify this. For the duration of the review, you have the right to request that the processing of your personal data be restricted. • If the processing of your personal data was/is occurring unlawfully, you can request that data processing be restricted instead of deletion. • If we no longer need your personal data, but you need it to exercise, defend or assert legal claims, you have the right to request that the processing of your personal data be restricted instead of deletion. • If you have lodged an objection in accordance with Article 21 Para. 1 GDPR, a balance must be made between your interests and ours. As long as it is not yet clear whose interests prevail, you have the right to request that the processing of your personal data be restricted. If you have restricted the processing of your personal data, this data - apart from its storage - may only be used with your consent or to assert, exercise or defend legal claims or to protect the rights of another natural or legal person or for reasons of important public interest of the European Union or a member state."
+          },
+          {
+            "title": "Objection to advertising emails",
+            "details": "The use of contact details published as part of the imprint obligation to send unsolicited advertising and information materials is hereby objected to. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited advertising information being sent, such as spam emails."
+          }
+        ]
+      },
+      {
+        "section": "4. Data Collection on This Website",
+        "content": [
+          {
+            "title": "Cookies",
+            "details": "Our websites use what are known as 'cookies'. Cookies are small text files that do not harm your device. They are either stored temporarily for the duration of a session (session cookies) or permanently (persistent cookies) on your device. Session cookies are automatically deleted after your visit. Persistent cookies remain on your device until you delete them yourself or your web browser resolves them automatically. In some cases, cookies from third-party companies may also be stored on your device when you enter our site (third-party cookies). These allow us or you to use certain third-party services (e.g., cookies for processing payment services). Cookies serve various functions. Many cookies are technically necessary because certain website functions would not work without them (e.g., the shopping cart function or displaying videos). Other cookies are used to evaluate user behavior or display advertising. Technically necessary cookies (e.g., shopping cart cookies) are stored on the basis of Art. 6 para. 1 lit. f GDPR. The website operator has a legitimate interest in storing cookies for the technically error-free and optimized provision of its services. Other cookies are stored only with your consent on the basis of Art. 6 para. 1 lit. a GDPR. Consent can be revoked at any time in the future. You can set your browser to inform you about the setting of cookies and allow cookies only in individual cases, exclude the acceptance of cookies for certain cases or in general, and activate the automatic deletion of cookies when closing the browser. If cookies are deactivated, the functionality of this website may be restricted. If cookies from third-party companies or for analysis purposes are used, we will inform you of this separately within this data protection declaration and, if necessary, request your consent."
+          },
+          {
+            "title": "Server Log Files",
+            "details": "The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are: Browser type and version, Operating system used, Referrer URL, Hostname of the accessing computer, Time of the server request, IP address. These data are not combined with other data sources. The collection of these data is based on Art. 6 para. 1 lit. f GDPR. The website operator has a legitimate interest in the technically error-free presentation and optimization of its website – for this purpose, the server log files must be recorded."
+          },
+          {
+            "title": "Contact Form",
+            "details": "If you send us inquiries via the contact form, the information you provide in the inquiry form, including the contact details you provide there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent. The processing of these data is based on Art. 6 para. 1 lit. b GDPR, if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR), if this has been requested. The data entered by you in the contact form will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your inquiry has been processed). Mandatory legal provisions – in particular retention periods – remain unaffected."
+          },
+          {
+            "title": "Inquiries via E-Mail, Phone or Fax",
+            "details": "If you contact us via e-mail, phone or fax, your inquiry, including all personal data resulting from it (name, inquiry), will be stored and processed by us for the purpose of handling your request. We do not pass on this data without your consent. The processing of these data is based on Art. 6 para. 1 lit. b GDPR, if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on your consent (Art. 6 para. 1 lit. a GDPR) and/or on our legitimate interests (Art. 6 para. 1 lit. f GDPR), as we have a legitimate interest in the effective processing of the inquiries addressed to us. The data sent by you via contact requests will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your inquiry has been processed). Mandatory legal provisions – in particular statutory retention periods – remain unaffected."
+          },
+          {
+            "title": "Order Processing",
+            "details": "We have concluded an order processing agreement (DPA) with the above-mentioned provider. This is a contract required by data protection law that ensures that we process the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR."
+          }
+        ]
+      },
+      {
+        "section": "5. Herramientas de análisis y publicidad",
+        "content": [
+          {
+            "title": "Google Tag Manager",
+            "details": "Usamos Google Tag Manager. El proveedor es Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda. Google Tag Manager es una herramienta que nos permite integrar herramientas de seguimiento o estadísticas y otras tecnologías en nuestro sitio web. Google Tag Manager no crea perfiles de usuario, no almacena cookies y no realiza análisis independientes. Solo se utiliza para administrar y mostrar información sobre las herramientas integradas. Sin embargo, Google Tag Manager recopila su dirección IP, que también puede ser transferida a la empresa matriz de Google en los Estados Unidos. El uso de Google Tag Manager se basa en el Art. 6, párrafo 1, letra f del RGPD. El operador del sitio web tiene un interés legítimo en integrar y administrar rápidamente varias herramientas en su sitio web. Si se ha obtenido el consentimiento correspondiente, el procesamiento se lleva a cabo exclusivamente con base en el Art. 6, párrafo 1, letra a del RGPD; el consentimiento puede ser revocado en cualquier momento."
+          },
+          {
+            "title": "Google Analytics",
+            "details": "Este sitio web utiliza funciones del servicio de análisis web Google Analytics. El proveedor es Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublín 4, Irlanda. Google Analytics utiliza 'cookies'. Estos son archivos de texto que se almacenan en su computadora y permiten analizar su uso del sitio web. La información generada por la cookie sobre su uso de este sitio web se transmite generalmente a un servidor de Google en los EE. UU. y se almacena allí. El almacenamiento de cookies de Google Analytics y el uso de esta herramienta de análisis se basan en el Art. 6, párrafo 1, letra f del RGPD. El operador del sitio web tiene un interés legítimo en analizar el comportamiento del usuario para optimizar tanto su sitio web como su publicidad. Si se ha obtenido el consentimiento correspondiente, el procesamiento se lleva a cabo exclusivamente con base en el Art. 6, párrafo 1, letra a del RGPD; el consentimiento puede ser revocado en cualquier momento."
+          },
+          {
+            "title": "Anonimización de IP",
+            "details": "Hemos activado la función de anonimización de IP en este sitio web. Esto significa que su dirección IP será acortada por Google dentro de los Estados miembros de la Unión Europea o en otros estados contratantes del Acuerdo sobre el Espacio Económico Europeo antes de ser transferida a los EE. UU. Solo en casos excepcionales, se transmitirá la dirección IP completa a un servidor de Google en los EE. UU. y se acortará allí. En nombre del operador de este sitio web, Google utilizará esta información para evaluar su uso del sitio web, compilar informes sobre la actividad del sitio web y proporcionar otros servicios relacionados con la actividad del sitio web y el uso de Internet al operador del sitio web. La dirección IP que su navegador transmite en el marco de Google Analytics no se combinará con otros datos de Google."
+          },
+          {
+            "title": "Plugin del navegador",
+            "details": "Puede evitar el almacenamiento de cookies configurando el software de su navegador en consecuencia; sin embargo, le informamos que en este caso puede que no pueda utilizar plenamente todas las funciones de este sitio web. También puede evitar que Google recopile los datos generados por la cookie y relacionados con su uso del sitio web (incluida su dirección IP) y que estos datos sean procesados por Google, descargando e instalando el complemento del navegador disponible en el siguiente enlace: https://tools.google.com/dlpage/gaoptout?hl=es."
+          },
+          {
+            "title": "Oposición a la recopilación de datos",
+            "details": "Puede evitar que Google Analytics recopile sus datos haciendo clic en el siguiente enlace. Se establecerá una cookie de exclusión que impedirá que sus datos sean recopilados en futuras visitas a este sitio web: Desactivar Google Analytics. Para obtener más información sobre cómo Google Analytics maneja los datos de usuario, consulte la política de privacidad de Google: https://support.google.com/analytics/answer/6004245?hl=es."
+          },
+          {
+            "title": "Procesamiento por encargo",
+            "details": "Hemos firmado un contrato de procesamiento por encargo con Google y cumplimos completamente con los estrictos requisitos de las autoridades de protección de datos alemanas al utilizar Google Analytics."
+          },
+          {
+            "title": "Características demográficas en Google Analytics",
+            "details": "Este sitio web utiliza la función \"características demográficas\" de Google Analytics. Esto permite generar informes que contienen información sobre la edad, el género y los intereses de los visitantes del sitio web. Estos datos provienen de la publicidad basada en intereses de Google y de datos de visitantes de terceros. Estos datos no pueden ser asignados a una persona específica. Puede desactivar esta función en cualquier momento a través de la configuración de anuncios en su cuenta de Google, o puede oponerse a la recopilación de sus datos por Google Analytics, como se describe en la sección \"Oposición a la recopilación de datos\"."
+          },
+          {
+            "title": "Duración del almacenamiento",
+            "details": "Los datos de usuario y eventos almacenados por Google, que están vinculados a cookies, IDs de usuario (por ejemplo, ID de usuario) o IDs de publicidad (por ejemplo, cookies de DoubleClick, ID de publicidad de Android), se anonimizarán o eliminarán después de 14 meses. Puede encontrar más detalles en el siguiente enlace: https://support.google.com/analytics/answer/7667196?hl=es."
+          },
+          {
+            "title": "Remarketing de Google Analytics",
+            "details": "Este sitio web utiliza las funciones de remarketing de Google Analytics en combinación con las funciones de publicidad entre dispositivos de Google Ads y Google DoubleClick. El proveedor es Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublín 4, Irlanda. Esta función permite vincular las audiencias creadas con Google Analytics Remarketing con las funciones de publicidad entre dispositivos de Google Ads y Google DoubleClick. De esta manera, se le pueden mostrar mensajes publicitarios personalizados basados en su comportamiento de uso anterior, incluso en otro de sus dispositivos (por ejemplo, tabletas o computadoras)."
+          },
+          {
+            "title": "Google Ads y seguimiento de conversiones de Google",
+            "details": "Este sitio web utiliza Google Ads. Google Ads es un programa publicitario en línea de Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublín 4, Irlanda. En el marco de Google Ads, utilizamos el llamado seguimiento de conversiones. Cuando hace clic en un anuncio de Google, se establece una cookie para el seguimiento de conversiones. Las cookies son pequeños archivos de texto que se almacenan en el navegador de Internet en la computadora del usuario. Estas cookies caducan después de 30 días y no se utilizan para la identificación personal de usuarios. Si el usuario visita ciertas páginas de este sitio web y la cookie aún no ha caducado, Google y nosotros podemos reconocer que el usuario hizo clic en el anuncio y fue redirigido a esta página."
+          }
+        ]
+      },
+
+      {
+        "section": "6.Newsletter",
+        "content": [
+          {
+            "title": "Newsletter data",
+            "details": "Si desea recibir el boletín ofrecido en el sitio web, necesitamos una dirección de correo electrónico de su parte, así como información que nos permita verificar que usted es el propietario de la dirección de correo electrónico proporcionada y que acepta recibir el boletín. No se recopilan más datos o solo se recopilan de forma voluntaria. Utilizamos estos datos exclusivamente para enviar la información solicitada y no los transmitimos a terceros. Los datos introducidos en el formulario de inscripción al boletín se procesan exclusivamente sobre la base de su consentimiento (Art. 6, Párrafo 1, letra a del RGPD). Puede revocar su consentimiento para el almacenamiento de datos, la dirección de correo electrónico y su uso para enviar el boletín en cualquier momento, por ejemplo, a través del enlace “cancelar suscripción” en el boletín. La legalidad de las operaciones de procesamiento de datos que ya han tenido lugar permanece inalterada por la revocación. Los datos que nos proporciona con el fin de suscribirse al boletín serán almacenados por nosotros o el proveedor del servicio de boletines hasta que cancele su suscripción al boletín y se eliminarán de la lista de distribución del boletín después de que se cancele la suscripción. Los datos almacenados por nosotros para otros fines permanecen inalterados. Después de que se haya dado de baja de la lista de distribución del boletín, su dirección de correo electrónico puede ser almacenada en una lista negra por nosotros o el proveedor del servicio de boletines para prevenir envíos futuros. Los datos de la lista negra solo se utilizarán con este propósito y no se fusionarán con otros datos. Esto sirve tanto a su interés como a nuestro interés en cumplir con los requisitos legales al enviar boletines (interés legítimo en el sentido del Art. 6, Párrafo 1, letra f del RGPD). El almacenamiento en la lista negra no tiene un límite de tiempo. Puede oponerse al almacenamiento si sus intereses superan nuestros intereses legítimos."
+          }
+        ]
+      },
+      {
+        "section": "7. Plugins und Tools",
+        "content": [
+          {
+            "title": "Google Web Fonts",
+            "details": "Este sitio utiliza las llamadas fuentes web, que son proporcionadas por Google, para la visualización uniforme de las fuentes. Cuando accede a una página, su navegador carga las fuentes web necesarias en la caché de su navegador para mostrar textos y fuentes correctamente. Para ello, el navegador que utiliza debe conectarse a los servidores de Google. Esto permite a Google saber que este sitio web fue accedido a través de su dirección IP. El uso de Google WebFonts se basa en el Art. 6, Párrafo 1, letra f del RGPD. El operador del sitio web tiene un interés legítimo en la presentación uniforme de la tipografía en su sitio web. Si se ha solicitado el consentimiento adecuado (por ejemplo, el consentimiento para el almacenamiento de cookies), el procesamiento se lleva a cabo exclusivamente sobre la base del Art. 6, Párrafo 1, letra a del RGPD; el consentimiento puede ser revocado en cualquier momento. Si su navegador no admite fuentes web, su computadora utilizará una fuente estándar. Más información sobre Google Web Fonts se puede encontrar en https://developers.google.com/fonts/faq y en la política de privacidad de Google: https://policies.google.com/privacy?hl=de."
+          },
+          {
+            "title": "Google Maps",
+            "details": "Este sitio utiliza el servicio de mapas Google Maps a través de una API. El proveedor es Google Ireland Limited (“Google”), Gordon House, Barrow Street, Dublín 4, Irlanda. Para utilizar las funciones de Google Maps, es necesario guardar su dirección IP. Esta información generalmente se transfiere a un servidor de Google en los EE. UU. y se almacena allí. El proveedor de este sitio no tiene influencia sobre esta transferencia de datos. El uso de Google Maps está en el interés de una presentación atractiva de nuestras ofertas en línea y de facilitar la localización de los lugares que indicamos en el sitio web. Esto representa un interés legítimo en el sentido del Artículo 6, Párrafo 1, Letra f del RGPD. Puede encontrar más información sobre cómo manejar los datos de usuario en la política de privacidad de Google: https://policies.google.com/privacy?hl=de."
+          }
+        ]
+      },
+      {
+        "section": "8. eCommerce and Payment Providers",
+        "content": [
+          {
+            "title": "Processing Data (Customer and Contract Data)",
+            "details": "We collect, process, and use personal data only to the extent necessary for establishing, content, or changing the legal relationship (inventory data). This is done based on Article 6 Paragraph 1 Letter b of the GDPR, which allows for data processing to fulfill a contract or pre-contractual measures. We only collect, process, and use personal data about the use of this website (usage data) to the extent necessary to enable the user to use the service or to bill for it. The customer data collected will be deleted after the order has been completed or the business relationship has ended. Statutory retention periods remain unaffected."
+          }
+        ]
+      },
+      {
+        "section": "9. Own Services",
+        "content": [
+          {
+            "title": "Handling Applicant Data",
+            "details": "We offer you the opportunity to apply to us (e.g., by email, post, or via the online application form). Below we will inform you about the scope, purpose, and use of your personal data collected as part of the application process. We assure you that the collection, processing, and use of your data is carried out in accordance with applicable data protection law and all other legal provisions, and that your data will be treated with strict confidentiality."
+          },
+          {
+            "title": "Scope and Purpose of Data Collection",
+            "details": "If you send us an application, we process your associated personal data (e.g., contact and communication data, application documents, notes from job interviews, etc.) to the extent necessary to decide on the establishment of an employment relationship. The legal basis for this is Section 26 of the new BDSG under German law (initiation of an employment relationship), Article 6 Paragraph 1 Letter b of the GDPR (general contract initiation), and – if you have given your consent – Art. 6 Para. 1 lit. a of the GDPR. Consent can be revoked at any time. Your personal data will only be passed on within our company to people involved in processing your application."
+          },
+          {
+            "title": "Data Retention Period",
+            "details": "If we cannot make you a job offer, you reject a job offer, or withdraw your application, we reserve the right to keep the data you have transmitted for up to 6 months based on our legitimate interests (Art. 6 Para. 1 lit. f of the GDPR) from the end of the application process (rejection or withdrawal of the application). The data will then be deleted, and the physical application documents destroyed. The storage serves particularly for evidentiary purposes in the event of a legal dispute. If it becomes apparent that the data will be required after the 6-month period has expired (e.g., due to an impending or pending legal dispute), deletion will only occur when the purpose for further storage no longer applies. Longer storage can also take place if you have given your consent (Art. 6 Para. 1 lit. a of the GDPR) or if legal retention obligations conflict with deletion."
+          },
+          {
+            "title": "Inclusion in the Applicant Pool",
+            "details": "If we do not make you a job offer, it may be possible to include you in our applicant pool. If you are accepted, all documents and information from the application will be transferred to the applicant pool in order to contact you in the event of suitable vacancies. Inclusion in the applicant pool occurs exclusively on the basis of your express consent (Art. 6 Para. 1 lit. a of the GDPR). Providing consent is voluntary and has no connection to the ongoing application process. The person concerned can revoke their consent at any time. In this case, the data will be irrevocably deleted from the applicant pool unless there are legal reasons for retention. The data from the applicant pool will be irrevocably deleted no later than two years after consent has been given."
+          }
+        ]
+      }
+    ]
+  },
+  "mainH":{
+    "title": "Mundo Tapas Bar & Restaurant in Berlin | Spanish Dining in Alt-Mariendorf",
+    "paragraphs": [
+      "Welcome to Mundo Tapas – your Spanish restaurant in Alt-Mariendorf, Berlin! We serve over 50 authentic tapas, traditional paella, and refreshing Spanish cocktails – all prepared with passion and the finest ingredients. We bring the taste and spirit of Spain straight to your neighborhood.",
+      "Whether it's a romantic dinner, a fun night out with friends, or a cozy meal after work – Mundo Tapas offers a warm, vibrant atmosphere and true Spanish flavors. Enjoy Spanish wine, delicious patatas bravas, or join us for our popular live music nights. With our friendly service and open kitchen, every visit becomes a special moment.",
+      "We're proud to welcome guests not only from Alt-Mariendorf but also from Tempelhof, Neukölln, Steglitz, and all over Berlin. For over 10 years, we’ve been celebrating Spanish culinary culture – with passion, quality, and a smile."
+    ],
+    "highlight": "Your new favorite spot for Spanish evenings in Berlin awaits – ¡Bienvenidos a Mundo Tapas!",
+    "closing": "Come by and explore the world of tapas – we can't wait to welcome you!"
+  },
+
+  "imprintData": {
+    "imprint": {
+      "title": "Imprint",
+      "tmg": "§ 5 TMG:",
+      "company": "Mundo AKS II GmbH",
+      "address": "Zimmerstrasse 19, 10969 Berlin",
+      "email": "Info@mundo.berlin",
+      "branchTiltl": "Alternative Mundo Tapas Branches:",
+      "website":"https://tapas-mundo.com",
+      "alternativeBranches": [
+        {
+          "title": "Mundo AKS II GmbH",
+          "details": "Zimmerstrasse 19, 10969 Berlin"
+        },
+        {
+          "title": "Mundo AKS GmbH",
+          "details": "Alt Mariendorf 32, 12107 Berlin"
+        },
+        {
+          "title": "Delhi 6 GmbH",
+          "details": "Voxstrasse 3, 10785 Berlin"
+        }
+      ],
+      "liabilityInsurance": {
+        "title": "Liability Insurance:",
+        "details": "BGN Professional Association for Food and Hospitality (District Administration Berlin)"
+      },
+      "supervisoryAuthority": {
+        "title": "Supervisory Authority:",
+        "details": "City of Berlin – District Office Mitte / Tempelhof – Regulatory Office"
+      },
+      "disputeResolution": {
+        "title": "Dispute Resolution:",
+        "details": [
+          {
+            "platform": "The European Commission provides a platform for online dispute resolution (OS):",
+            "link": "https://ec.europa.eu/consumers/odr"
+          },
+          {
+            "note": "We are not willing or obligated to participate in dispute resolution proceedings before a consumer arbitration board."
+          }
+        ]
+      },
+      "liabilityForContent": {
+        "title": "Liability for Content:",
+        "details": [
+          "As a service provider, we are responsible for our own content on these pages in accordance with Section 7 (1) of the German Telemedia Act. According to §§ 8 to 10 TMG, we as a service provider are not obliged to monitor transmitted or stored third-party information or to research circumstances that indicate illegal activity.",
+          "Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time we become aware of a specific legal violation. As soon as we become aware of such violations, we will remove this content immediately."
+        ]
+      },
+      "liabilityForLinks": {
+        "title": "Liability for Links:",
+        "details": [
+          "Our offer contains links to external websites of third parties, the content of which we have no influence on. For this reason, we cannot accept any liability for this external content. The respective provider or operator is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time the link was created. No illegal content was discernible at the time the link was created.",
+          "A permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. As soon as we become aware of legal violations, we will remove such links immediately."
+        ]
+      },
+      "copyright": {
+        "title": "Copyright:",
+        "details": [
+          "The content and works on these pages created by the site operator are subject to German copyright law. The duplication, processing, distribution and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use.",
+          "As far as the content on this page was not created by the operator, the copyrights of third parties are respected. In particular, contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, please let us know. As soon as we become aware of legal violations, we will remove such content immediately."
+        ]
+      }
+    }
+  },
+  "inservice":[
+    {
+      "title": "Dining Area & Outdoor Patio at Spanish Tapas Mundo",
+      "description": "Welcome to Spanish Tapas Mundo, where exceptional dining meets a vibrant Spanish ambiance. Whether you prefer our cozy indoor dining or our charming outdoor patio, we have the perfect setting for any occasion. Located in Alt-Mariendorf, our venues bring the flavors and spirit of Spain to Berlin.",
+      "indoorDining": {
+        "title": "Indoor Dining – Warm and Inviting",
+        "description": "Experience the heart of Spanish hospitality in our beautifully designed indoor dining spaces. Each location is a blend of rustic elegance and modern comfort. It reflects Spain, combining tradition with a modern touch.",
+        "whyYouWillLoveOurIndoorSpaces": {
+          "title": "Why You will Love Our Indoor Spaces",
+          "points": [
+            "Authentic Decor: Immerse yourself in a setting inspired by Spanish architecture and culture.",
+            "Comfortable Seating: Ideal for intimate dinners, family gatherings, or group celebrations.",
+            "Seasonal Menus: Enjoy our chef’s specials crafted from the freshest ingredients."
+          ]
+        },
+        "perfectFor": {
+          "title": "Perfect for",
+          "points": [
+            "Romantic evenings",
+            "Business lunches",
+            "Celebratory dinners"
+          ]
+        }
+      },
+      "outdoorPatio": {
+        "title": "Outdoor Patio – Al Fresco Dining at Its Best",
+        "description": "Soak in the lively atmosphere of Berlin while enjoying the fresh air on our outdoor patios. Our patios are designed for comfort and style, offering a tranquil escape for diners.",
+        "features": {
+          "title": "Features of Our Outdoor Patios",
+          "points": [
+            "All-Weather Comfort: Equipped with umbrellas for sunny days and heaters for cooler evenings.",
+            "Lush Ambiance: Surrounded by greenery to enhance your dining experience.",
+            "Pet-Friendly Spaces: Bring your furry friends along for a delightful outing."
+          ]
+        },
+        "greatFor": {
+          "title": "Great for",
+          "points": [
+            "Brunch with friends",
+            "Casual lunches",
+            "Evening cocktails under the stars"
+          ]
+        }
+      },
+      "perfectSetting": {
+        "title": "The Perfect Setting for Any Occasion",
+        "description": "For a cozy meal, a festive gathering, or a relaxing afternoon with friends, Tapas Mundo has the perfect space to make your visit memorable. For an unforgettable meal, enjoy our cocktails or a fine Spanish wine."
+      },
+      "whyChooseSpanishTapasMundo": {
+        "title": "Why Choose Spanish Tapas Mundo?",
+        "points": [
+          "Prime Locations: Easily accessible venues in Berlin’s most popular neighborhoods.",
+          "Authentic Cuisine: Savor traditional Spanish dishes made with passion and precision.",
+          "Unmatched Hospitality: Our friendly staff ensures a flawless dining experience."
+        ]
+      },
+      "reserveYourTable": {
+        "title": "Reserve Your Table Today",
+        "description": "Don’t miss out on the best indoor and outdoor dining in Berlin. Book your table now and experience the magic of Spain at Spanish Tapas Mundo."
+      },
+      "experience": {
+        "title": "Experience the best of Spanish dining in Berlin at Tapas Mundo",
+        "description": "Where every meal is a celebration."
+      },
+      "contact": {
+        "phone": "+49-30 25294284",
+        "website": "https://tapas-mundo.com"
+      }
+    },
+
+    {
+      "title": "Full-Service Bar at Spanish Tapas Mundo",
+      "description": "Experience the perfect blend of exquisite drinks and Spanish vibrancy at our full-service bar. Whether unwinding after a long day or celebrating a special occasion, our bar offers a welcoming atmosphere and an outstanding selection of beverages.",
+      "whyChooseUs": {
+        "title": "Why Choose Our Full-Service Bar?",
+        "points": [
+          "Lively Atmosphere: A vibrant space to relax, celebrate, and enjoy.",
+          "Expert Bartenders: Our skilled team crafts innovative drinks with precision.",
+          "Perfect Pairings: Enjoy beverages that complement our tapas and other dishes."
+        ]
+      },
+      "cocktails": {
+        "title": "Crafted Cocktails – A Taste of Innovation",
+        "points": [
+          "Sangria Perfection: Classic red and white sangrias with fresh fruits and bold flavors.",
+          "Signature Mixes: Exclusive cocktails inspired by Spanish ingredients and traditions.",
+          "Seasonal Specials: A rotating selection of seasonal drinks to discover new favorites."
+        ]
+      },
+      "winesAndSpirits": {
+        "title": "Fine Wines & Premium Spirits",
+        "points": [
+          "Spanish Wines: Featuring Rioja, Tempranillo, and other regional favorites.",
+          "International Selection: A diverse wine list to suit every taste.",
+          "Premium Spirits: From aged whiskeys to artisanal gins – only the best quality."
+        ]
+      },
+      "beers": {
+        "title": "Prepared & Imported Beers",
+        "points": [
+          "Local Flavors: Celebrate Berlin’s vibrant craft beer scene.",
+          "Spanish Classics: Savor authentic cervezas from Spain’s finest breweries."
+        ]
+      },
+      "nonAlcoholic": {
+        "title": "Refreshing Non-Alcoholic Options",
+        "points": [
+          "Homemade Lemonades",
+          "Iced Teas",
+          "Mocktails"
+        ]
+      },
+      "eventsAndHappyHours": {
+        "title": "Events & Happy Hours",
+        "points": [
+          "Happy Hour: Enjoy discounted drinks and exclusive offerings.",
+          "Themed Nights: Experience live music, flamenco performances, and more.",
+          "Private Bar Bookings: Reserve our bar for your next celebration or corporate event."
+        ]
+      },
+      "visitUs": {
+        "title": "Visit Us Today",
+        "description": "Find the perfect mix of flavor, ambiance, and service at the Full-Service Bar at Spanish Tapas Mundo. Whether you're near Alt-Mariendorf, Checkpoint Charlie, or Potsdamer Platz – we look forward to welcoming you!",
+        "contact": {
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        }
+      }
+    },
+
+    {
+      "title": "Events at Spanish Tapas Mundo",
+      "description": "Make every occasion unforgettable at Spanish Tapas Mundo. Our restaurant is the perfect place for your next event. We have vibrant venues, authentic Spanish food, and impeccable service. Our spaces cater to all your needs, whether for a birthday, a corporate event, or a private party.",
+      "whyChooseUs": {
+        "title": "Why Choose Spanish Tapas Mundo for Your Event?",
+        "points": [
+          "Prime Locations: Convenient venues at Alt-Mariendorf, Checkpoint Charlie, and Potsdamer Platz.",
+          "Expert Planning: Our experienced team assists with every detail, from setup to execution.",
+          "Authentic Experience: Immerse your guests in Spain's rich flavors and culture.",
+          "Flexible Packages: Tailored options to fit your budget and vision."
+        ]
+      },
+      "eventSpaces": {
+        "title": "Our Event Spaces",
+        "points": [
+          "Elegant Indoor Dining Areas: Rustic Spanish charm combined with modern comfort.",
+          "Outdoor Patios: Ideal for outdoor parties, with seating for all group sizes.",
+          "Private Spaces: Exclusive areas for intimate gatherings or confidential business meetings."
+        ]
+      },
+      "customizedMenus": {
+        "title": "Customized Menus",
+        "points": [
+          "Classic and signature tapas.",
+          "Fresh seafood and premium meats.",
+          "Vegetarian and vegan options.",
+          "Decadent desserts."
+        ]
+      },
+      "beverages": {
+        "title": "Pair your Menu with Drinks",
+        "points": [
+          "Cocktails, fine wines, and non-alcoholic drinks to complete your dining experience."
+        ]
+      },
+      "events": {
+        "title": "Events We Specialize In",
+        "points": [
+          "Birthday Parties: Celebrate your special day with delicious tapas and handcrafted cocktails.",
+          "Corporate Events: Impress colleagues and clients with our professional service and fine menu.",
+          "Family Gatherings: Spend quality time with loved ones in a warm, inviting place.",
+          "Private Parties: Reserve our space for exclusive celebrations tailored to your preferences.",
+          "Seasonal Festivities: From holiday parties to themed events, we'll make it extraordinary."
+        ]
+      },
+      "bookEvent": {
+        "title": "Book Your Event Today",
+        "description": "Let us bring your vision to life. Contact us to discuss your event needs and secure your date. We’re here to make your celebration seamless and spectacular.",
+        "contact": {
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        }
+      }
+    },
+
+
+    {
+      "title": "Private Parties and Group Events at Spanish Tapas Mundo",
+      "description": "Turn your special occasions into unforgettable experiences at Spanish Tapas Mundo. For a private party or a large event, choose us. Our venues, Spanish cuisine, and service are perfect for your celebration.",
+      "celebrateInStyle": {
+        "title": "Celebrate in Style",
+        "points": [
+          "Private Parties: Enjoy our exclusive, themed spaces tailored to you.",
+          "Group Dinners: Ideal for family reunions, club gatherings, or social meet-ups.",
+          "Anniversaries & Milestones: Celebrate life’s big moments with impeccable food and ambiance.",
+          "Holiday Parties: Create festive memories with customized menus and décor.",
+          "Team Celebrations: Reward your team with a night of fun, flavor, and camaraderie."
+        ]
+      },
+      "exclusiveSpaces": {
+        "title": "Our Exclusive Spaces",
+        "points": [
+          "Indoor Elegance: Enjoy our stunning dining rooms with authentic Spanish décor and cozy seating.",
+          "Outdoor Patios: Host outdoor events with greenery, heaters, and umbrellas for year-round comfort.",
+          "Private Areas: Reserved spaces for a more personal and secluded celebration."
+        ]
+      },
+      "customizedMenus": {
+        "title": "Customized Menus for Every Occasion",
+        "points": [
+          "Traditional Spanish tapas and signature dishes.",
+          "Specialty seafood, premium meats, and vegetarian selections.",
+          "Customized dessert options to end your meal on a sweet note."
+        ]
+      },
+      "menuPairings": {
+        "title": "Pair your Menu with:",
+        "points": [
+          "Handcrafted Cocktails: Exclusive drinks inspired by Spanish flavors.",
+          "Fine Wines: A curated selection of regional and international wines.",
+          "Non-Alcoholic Beverages: Refreshing options like lemonades, iced teas, and mocktails."
+        ]
+      },
+      "whyChooseSpanishTapasMundo": {
+        "title": "Why Choose Spanish Tapas Mundo?",
+        "points": [
+          "Prime Locations: Located in Alt-Mariendorf, Checkpoint Charlie, and Potsdamer Platz for easy access.",
+          "Exceptional Hospitality: Our team will ensure your event is perfect.",
+          "Flexible Packages: Tailored options to fit your group size, preferences, and budget.",
+          "Authentic Atmosphere: A warm and inviting Spanish ambiance for a memorable experience."
+        ]
+      },
+      "planYourParty": {
+        "title": "Plan Your Party Today",
+        "description": "Let us help you create an event that your guests will talk about for years to come. Contact us to discuss your needs, and we’ll take care of the rest—from planning to execution.",
+        "callToAction": "Make your next private party or group event memorable at Spanish Tapas Mundo. Celebrate the flavors of Spain in a setting designed to delight.",
+        "contact": {
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        }
+      }
+    },
+
+
+    {
+      "title": "Why Choose Mundo Tapas Bar?",
+      "description": "At Spanish Tapas Mundo, we bring Spain to Berlin. We provide an authentic dining experience with rich flavors, vibrant ambiance, and exceptional service. Perfect for food lovers and social events, we are located at Alt-Mariendorf, Checkpoint Charlie, and Potsdamer Platz.",
+      "unparalleledSpanishCuisine": {
+        "title": "Unparalleled Spanish Cuisine",
+        "points": [
+          "Authentic Tapas: A variety of traditional small plates that are perfect for sharing.",
+          "Locally sourced, in-season produce to create the best dishes.",
+          "Signature Dishes: Unique creations that showcase the creativity and skill of our chefs."
+        ]
+      },
+      "vibrantAtmosphere": {
+        "title": "Vibrant Atmosphere",
+        "points": [
+          "Warm Interiors: Designed with careful consideration to reflect the spirit of Spain.",
+          "Outdoor Patios: Perfect for al fresco dining with lush surroundings and cozy seating.",
+          "Live Entertainment: Enjoy flamenco nights and live music for a complete cultural experience."
+        ]
+      },
+      "exceptionalBeverageSelection": {
+        "title": "Exceptional Beverage Selection",
+        "points": [
+          "Crafted Cocktails: Signature drinks inspired by Spanish flavors.",
+          "Fine Wines: A curated list featuring regional Spanish varieties.",
+          "Local and Imported Beers: Options to suit every preference.",
+          "Homemade Lemonades and Mocktails: Refreshing non-alcoholic choices."
+        ]
+      },
+      "flexibleEventHosting": {
+        "title": "Flexible Event Hosting",
+        "points": [
+          "Customizable Spaces: Indoor and outdoor areas tailored to your celebration.",
+          "Personalized Menus: Dishes designed to match your preferences and theme.",
+          "Professional Planning: Our team ensures that every detail is flawless."
+        ]
+      },
+      "primeLocations": {
+        "title": "Prime Locations",
+        "points": [
+          "Alt-Mariendorf: Known for its brunch buffet and breakfast options.",
+          "Checkpoint Charlie: A lively hub near iconic Berlin landmarks.",
+          "Potsdamer Platz: Perfect for dining in the heart of the city."
+        ]
+      },
+      "commitmentToExcellence": {
+        "title": "Commitment to Excellence",
+        "points": [
+          "Unmatched Hospitality: Our friendly staff goes above and beyond to make you feel at home.",
+          "Authentic Experiences: Every visit is a journey to Spain.",
+          "Customer Satisfaction: We prioritize your happiness, ensuring a memorable dining experience."
+        ]
+      },
+      "visitUs": {
+        "title": "Visit Mundo Tapas Bar Today",
+        "description": "Discover why Spanish Tapas Mundo is Berlin's best for Spanish food. With a lively vibe and great service, whether you’re dining solo, with friends, or hosting an event, we’re here to make it extraordinary. Experience the best of Spain in Berlin at Mundo Tapas Bar. Your next favorite meal awaits!",
+        "contact": {
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        }
+      }
+    },
+
+    {
+      "title": "All-You-Can-Eat Brunch Buffet at Mundo Tapas Bar",
+      "description": "Start your day with a trip to Spain. Enjoy the All-You-Can-Eat Brunch Buffet at Spanish Tapas Mundo. In Alt-Mariendorf, our brunch buffet is perfect for Sundays and holidays. It offers a delightful mix of flavors, freshness, and variety.",
+      "brunchBuffet": {
+        "title": "What to Expect at Our Brunch Buffet",
+        "points": [
+          "Classic Breakfast Favorites: A selection of freshly baked pastries, fluffy scrambled eggs, and crispy bacon, among other items.",
+          "Authentic Spanish tapas: small plates bursting with traditional flavors.",
+          "Seasonal Fruits: Vibrant and fresh selections for a healthy start.",
+          "International Dishes: A global twist to satisfy diverse palates.",
+          "Sweet Treats: Indulge in decadent desserts and pastries."
+        ]
+      },
+      "brunchBuffetDetails": {
+        "when": "Available every Sunday and on public holidays.",
+        "where": "Exclusively at our Alt-Mariendorf location.",
+        "perfectFor": [
+          "Family gatherings",
+          "Brunch with friends",
+          "A relaxing solo treat"
+        ]
+      },
+      "breakfast": {
+        "title": "Breakfast at Mundo Tapas Bar",
+        "description": "Can’t make it to the brunch? No worries! Our breakfast service is available Monday to Saturday, offering:",
+        "points": [
+          "Classic Breakfast Options: From hearty omelets to buttery croissants.",
+          "International Breakfast: A fusion of global flavors to kickstart your day.",
+          "Fresh Coffee and Beverages: Enjoy your meal with our aromatic coffee, tea, or fresh juice."
+        ]
+      },
+      "whyChooseMundoForBrunchAndBreakfast": {
+        "title": "Why Choose Mundo for Brunch and Breakfast?",
+        "points": [
+          "Variety: A diverse spread catering to all dietary preferences.",
+          "Freshness: Only the finest ingredients, prepared daily.",
+          "Atmosphere: Enjoy your meal in our elegant dining area or charming outdoor patio.",
+          "Convenience: Located at our Alt-Mariendorf location for easy access."
+        ]
+      },
+      "planYourVisit": {
+        "title": "Plan Your Visit",
+        "description": "Don’t miss out on this delightful dining experience. Gather your loved ones and savor the best brunch in Berlin.",
+        "experience": {
+          "title": "Experience the ultimate brunch experience at Tapas Mundo",
+          "description": "Your perfect morning starts here!"
+        }
+      },
+      "contact": {
+        "phone": "+49-30 25294284",
+        "website": "https://tapas-mundo.com"
+      }
+    },
+
+    {
+      "title": "Breakfast at Mundo Tapas Bar",
+      "description": "Start your day right with a hearty and delicious breakfast at Spanish Tapas Mundo. Available Monday to Saturday, our breakfast menu offers a perfect mix of traditional favorites and international flavors. Whether you're looking for a quick bite or a leisurely morning meal, Mundo Tapas Bar is the place to be.",
+      "whatsOnTheMenu": {
+        "title": "What’s on the menu?",
+        "points": [
+          "Classic Breakfast Options: Enjoy fluffy scrambled eggs, crispy bacon, golden toast, and more.",
+          "International Breakfast: Indulge in globally inspired dishes to start your day with a culinary twist.",
+          "Freshly Baked Goods: Savor buttery croissants, muffins, and other pastries fresh from the oven.",
+          "Seasonal Fruits: A healthy and refreshing addition to your meal.",
+          "Beverages: Enjoy coffee, herbal teas, or fresh juices with your breakfast."
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Breakfast at Mundo?",
+        "points": [
+          "Variety of Choices: Something for everyone, from light bites to hearty meals.",
+          "Fresh Ingredients: Prepared daily to ensure the highest quality and taste.",
+          "Relaxing Atmosphere: Enjoy your meal in our stylish dining areas or on the cozy outdoor patio.",
+          "Convenient Timing: A perfect start to your day, whether you're on the go or relaxing."
+        ]
+      },
+      "planYourMorningVisit": {
+        "title": "Plan Your Morning Visit",
+        "description": "Make your mornings memorable with a visit to Mundo Tapas Bar. Gather your friends, family, or colleagues for a delightful breakfast experience."
+      },
+      "breakfastDetails": {
+        "title": "Breakfast Details",
+        "points": [
+          "When: Monday to Saturday",
+          "Where: Available at our Alt-Mariendorf location",
+          "Perfect For: Casual mornings, business meet-ups, or a solo treat"
+        ]
+      },
+      "experience": {
+        "title": "Experience breakfast like never before at Tapas Mundo",
+        "description": "Start your day with the flavors of Spain!"
+      },
+      "contact": {
+        "phone": "+49-30 25294284",
+        "website": "https://tapas-mundo.com"
+      }
+    }
+   
+    
+   
+   
+    
+    
+    
+    
+    
+    
+    
+
+  ],
+  "cookie": {
+    "message": "We use cookies to improve your experience and analyze traffic on our website. By clicking ",
+    "message2": "you agree to the use of cookies.",
+    "acceptButton": "Accept",
+    "privacyPolicy": "For more information about our cookie policy and how we protect your privacy, please read our ",
+    "pbtn": "Privacy Policy"
+  }
+}

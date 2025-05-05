@@ -1,0 +1,153 @@
+.background {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-image: url('/image/reserveTable1.jpg');
+    background-clip: padding-box;
+}
+
+.main_container {
+    /* height: 40vh; */
+    /* background-color: rgba(0, 0, 0, .8); */
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1460px;
+    padding: 3rem 0;
+    margin: auto;
+flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: "Poppins";
+    
+    justify-content: space-evenly;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 30%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 30%;
+}
+
+.left .leftHeader {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Fredericka the Great', sans-serif;
+}
+
+.left .leftDes {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.rightHeader {
+    font-size: 2rem;
+    color: white;
+}
+
+.rightDes {
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.slots {
+    /* border: 1px solid red; */
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+.slots2 {
+    /* border: 1px solid red; */
+    font-size: 1.6rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    text-align: center;
+    color: white;
+    
+}
+.danger{
+    text-align: center;
+    font-family: cursive;
+    padding: 10px;
+
+}
+
+.booking .button {
+    align-items: center;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+    flex-direction: column;
+    padding: 1rem  0px;
+}
+.right{
+    width: 100%;
+}
+.left{
+    width: 100%;
+}
+.booking{
+    /* padding: 0px 1rem; */
+    width: 100%;
+}
+.button{
+    padding-top: 0px !important;
+}
+.dropdown1{
+    padding:20px;
+}
+.slots{
+    font-size: 1.6rem;
+}
+.left .leftHeader{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+}

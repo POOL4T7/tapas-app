@@ -1,0 +1,309 @@
+import React, { useState, useEffect, useRef } from 'react';
+import MenuSection from './dishCardList';
+import './dishCard.css'; // Import the CSS file here
+import { LoadingSkeleton } from '@/layouts/Loader';
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+
+import Drawer from '@mui/material/Drawer';
+import { IoClose } from 'react-icons/io5';
+import { MdOutlineKeyboardDoubleArrowLeft } from 'react-icons/md';
+import { getDrawerStructure, getItemsByMenuId } from '@/service/apiService';
+
+interface Props {
+  dish: any;
+  details: { name: string; desc: string; id: string };
+}
+
+const MenuCardAll: React.FC<Props> = (props) => {
+  const category: any = props.dish;
+  const details: any = props.details;
+
+  const initialSection = category?.items?.[0]?.title || '';
+  const [selectedSection, setSelectedSection] = useState<string | null>(null);
+  const [expandedSections, setExpandedSections] = useState<{
+    [key: string]: boolean;
+  }>({});
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [drawerStructure, setDrawerStructure] = useState<any>([]);
+  const [items, setItems] = useState<any>([]);
+
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    getDrawerStructure(details.id)
+      .then((res) => {
+        const stru = res.data?.categories?.map((cat: any) => {
+          const sub = cat.subCategories.map((subcat: any) => {
+            return {
+              id: subcat.id,
+              name: subcat.name,
+            };
+          });
+          return {
+            id: cat.id,
+            name: cat.name,
+            subCategories: sub,
+          };
+        });
+        setDrawerStructure(stru);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    getItemsByMenuId(details.id)
+      .then((res) => {
+        const temp = [];
+        const stru = res.data?.map((cat: any) => {
+          const sub = cat.subCategories.map((subcat: any) => {
+            return {
+              id: subcat.id,
+              name: subcat.name,
+              items: subcat.items,
+            };
+          });
+          temp.push({
+            id: cat.id,
+            name: cat.name,
+            subCategories: sub,
+          });
+          return sub;
+        });
+        console.log('stru', stru.flat(2));
+        setItems(stru.flat(2));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [details.id]);
+  console.log('items', items);
+  useEffect(() => {
+    setSelectedSection(initialSection);
+  }, [initialSection]);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  // Handle click on a section
+  const handleSectionClick = (sectionTitle: string, index: number) => {
+    setSelectedSection(sectionTitle);
+    setIsDrawerOpen(false); // Close drawer after selecting an item
+
+    // Scroll to the corresponding section
+    if (sectionRefs.current[index]) {
+      sectionRefs.current[index]?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const toggleSectionExpansion = (sectionTitle: string) => {
+    setExpandedSections((prev) => {
+      // Create a new object where only the clicked section is expanded
+      const newState: { [key: string]: boolean } = {};
+
+      // If the section was not previously expanded, expand it
+      // If it was already expanded, collapse it
+      newState[sectionTitle] = !prev[sectionTitle];
+
+      return newState;
+    });
+  };
+
+  // if (!category || !category.items || category.items.length === 0) {
+  //   return <LoadingSkeleton />;
+  // }
+
+  return (
+    <div className='content'>
+      {/* <div style={{backgroundColor:'#000720' , marginLeft: '20px', marginTop: isMobile? '0px':'40px', color: 'white', display: 'flex', alignItems: 'center' }}>
+          <BackIcon /><span style={{ fontSize: '1.6rem' }}>&nbsp;Menu</span>
+        </div> */}
+      <div className='container'>
+        <div className='w-full flex items-center justify-center  md:text-6xl text-center my-12'>
+          <div className='page-section max-w-4xl'>
+            <h1>{details.name || 'Menu'}</h1>
+            <p className='mt-6 md:text-xl'>{details.desc || ''}</p>
+          </div>
+        </div>
+        <div
+          onClick={() => setIsDrawerOpen(true)}
+          style={{
+            position: 'fixed',
+            paddingRight: '15px',
+            borderRadius: '10px',
+            borderEndEndRadius: '0px',
+            borderStartEndRadius: '0px',
+            cursor: 'pointer',
+            right: '0px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+
+            backgroundColor: 'gold',
+            color: 'black',
+          }}
+          className='flex space-y-4'
+        >
+          <div className='flex text-center justify-center items-center p-2'>
+            <MdOutlineKeyboardDoubleArrowLeft color='black' />
+          </div>
+          <div className='flex flex-col items-center !m-0 !py-1'>
+            <div className='text-center'>K</div>
+            <div className='text-center'>A</div>
+            <div className='text-center'>T</div>
+            <div className='text-center'>E</div>
+            <div className='text-center'>G</div>
+            <div className='text-center'>O</div>
+            <div className='text-center'>R</div>
+            <div className='text-center'>I</div>
+            <div className='text-center'>E</div>
+          </div>
+        </div>
+
+        <Drawer
+          anchor='right'
+          open={isDrawerOpen}
+          onClose={() => setIsDrawerOpen(false)}
+          PaperProps={{
+            sx: {
+              width: isMobile ? '90%' : '35%',
+              color: 'white',
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              backdropFilter: 'blur(40px) brightness(115%)',
+            },
+          }}
+        >
+          <div style={{ padding: '20px' }}>
+            <div style={{ position: 'absolute', right: '5px' }}>
+              <IoClose color='white' size={30} />
+            </div>
+
+            <h3
+              style={{ textTransform: 'capitalize' }}
+              className='text-xl font-normal text-[gold] py-2'
+            >
+              {details.name}
+            </h3>
+            {drawerStructure.map((category: any, index: number) => {
+              const isExpanded = expandedSections[category.name] || false;
+              return (
+                <div key={category.id} className='mb-2'>
+                  <div
+                    className={`flex items-center text-lg ${
+                      selectedSection === category.name
+                        ? 'text-[gold]'
+                        : 'text-white'
+                    } hover:text-[gold] transition-colors duration-200`}
+                    style={{
+                      cursor: 'pointer',
+                      margin: '10px 0',
+                      borderBottom: '1px solid rgba(255, 255, 255, 0.5)',
+                      fontWeight: '300',
+                      paddingBottom: '0.5rem',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <div
+                      onClick={() => {
+                        toggleSectionExpansion(category.name);
+                      }}
+                      className='flex-grow'
+                    >
+                      {category.name}
+                    </div>
+                    {category.subCategories &&
+                      category.subCategories.length > 0 &&
+                      (isExpanded ? (
+                        <FaChevronDown
+                          className='w-5 h-5'
+                          onClick={() => toggleSectionExpansion(category.name)}
+                        />
+                      ) : (
+                        <FaChevronRight
+                          className='w-5 h-5'
+                          onClick={() => toggleSectionExpansion(category.name)}
+                        />
+                      ))}
+                  </div>
+                  {isExpanded &&
+                    category.subCategories &&
+                    category.subCategories.length > 0 && (
+                      <div className='pl-4 mt-2'>
+                        {category.subCategories.map(
+                          (subCategory: any, idx: number) => (
+                            <div
+                              key={subCategory.id}
+                              className={`flex items-center text-lg ${
+                                selectedSection === subCategory.name
+                                  ? 'text-[gold]'
+                                  : 'text-white'
+                              } hover:text-[gold] transition-colors duration-200`}
+                              style={{
+                                cursor: 'pointer',
+                                margin: '10px 0',
+                                borderBottom:
+                                  '1px solid rgba(255, 255, 255, 0.3)',
+                                fontWeight: '300',
+                                paddingBottom: '0.5rem',
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                paddingLeft: '1rem',
+                              }}
+                              onClick={() =>
+                                handleSectionClick(subCategory.name, idx)
+                              }
+                            >
+                              <div className='flex-grow'>
+                                {subCategory.name}
+                              </div>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                </div>
+              );
+            })}
+          </div>
+        </Drawer>
+        <div className='w-full px-4 mb-8'>
+          {items.map((section: any, index: number) => {
+            if (index === 0) return null; // Skip the first item
+            return (
+              <div
+                key={index}
+                className='menu-section'
+                ref={(el: any) => (sectionRefs.current[index - 2] = el)} // Adjust index for skipping the first item
+              >
+                <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
+                  {section.name}
+                </h2>
+                {section.items.length === 0 ? (
+                  <p className='text-center text-gray-500'>
+                    Exciting new dishes are on their way! Check back soon to see
+                    what’s coming.
+                  </p>
+                ) : (
+                  <MenuSection dishes={section.items} />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MenuCardAll;
