@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     // Correct: use cookies() from next/headers
     cookieStore.set('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NODE_ENV === 'development',
       sameSite: 'strict',
       maxAge: 60 * 60 * 24 * 30, // 30 days
       path: '/',
