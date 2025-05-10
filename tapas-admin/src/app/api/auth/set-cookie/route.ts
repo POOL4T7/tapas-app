@@ -11,8 +11,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Create a response and set the cookie
-    const response = NextResponse.json({ 
-      message: 'Cookie set successfully' 
+    const response = NextResponse.json({
+      message: 'Cookie set successfully',
     });
 
     // Set the cookie with appropriate options
@@ -22,13 +22,30 @@ export async function POST(request: NextRequest) {
       sameSite: 'strict',
       maxAge: 60 * 60 * 24 * 30, // 30 days
       path: '/',
+      domain:
+        process.env.NODE_ENV === 'production'
+          ? '103.174.103.132:3000'
+          : 'localhost:3000',
     });
-
+    console.log({
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      maxAge: 60 * 60 * 24 * 30, // 30 days
+      path: '/',
+      domain:
+        process.env.NODE_ENV === 'production'
+          ? '103.174.103.132:3000'
+          : 'localhost:3000',
+    });
     return response;
   } catch (error) {
     console.error('Cookie setting error:', error);
-    return NextResponse.json({ 
-      error: 'Failed to set cookie' 
-    }, { status: 500 });
+    return NextResponse.json(
+      {
+        error: 'Failed to set cookie',
+      },
+      { status: 500 }
+    );
   }
 }
