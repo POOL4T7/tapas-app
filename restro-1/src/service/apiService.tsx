@@ -69,7 +69,7 @@ export const getAllMenuPath = async () => {
     //   },
     // });
     // console.log(response.data);
-    const response = await apiInstance.get(`/menu/all`);
+    const response = await apiInstance.get(`/menu/active/all`);
     console.log(response);
     return response.data;
     // return response;
@@ -124,7 +124,7 @@ export const getDrawerStructure = async (menuId: any) => {
 export const getItemsByMenuId = async (menuId: any) => {
   try {
     const response = await apiInstance.get(
-      `/menuentry/itemswithstructure/${menuId}`
+      `/menuentry/activeitemswithstructure/${menuId}`
     );
     return response.data;
   } catch (error) {
