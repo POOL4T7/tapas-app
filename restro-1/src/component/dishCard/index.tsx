@@ -75,7 +75,7 @@ const MenuCardAll: React.FC<Props> = (props) => {
         console.log(err);
       });
   }, [details.id]);
-  console.log('items', items);
+
   useEffect(() => {
     setSelectedSection(initialSection);
   }, [initialSection]);

@@ -18,9 +18,9 @@ const DishCardGroup: React.FC<DishCardProps> = ({ dish }) => {
       <div style={{ height: '145px' }} className='overflow-hidden rounded-t-lg'>
         <Image
           loading='lazy'
-          height={100} // Fixed height example
+          height={100}
           width={100}
-          src={dish.image}
+          src={process.env.NEXT_PUBLIC_SERVER_URL + dish.image}
           alt={dish.name || 'img'}
           layout='fixed'
           className='w-full'

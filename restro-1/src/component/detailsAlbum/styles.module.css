@@ -75,9 +75,10 @@
 } */
 
 .albumContainer {
-  /* padding: 1rem; */
-  max-width: 400px;
+  width: 100%;
+  max-width: 400px; /* You can adjust the size */
   margin: 0 auto;
+  position: relative;
 }
 
 .slide {

@@ -68,33 +68,45 @@ const GroupOffer: React.FC = () => {
       };
     };
   }>({});
+
   const [offers, setOffers] = useState<MenuOffer[]>([]);
   useEffect(() => {
     const fetchGroupOffer = async () => {
       try {
         const result = await getGroupOffer();
-        const transformedOffers = result.map((offer: any) => ({
-          name: offer.category_name,
-          price: extractAndAddPrices(offer.price1, offer.price2),
+        console.log(result);
+        const transformedOffers = result.data.map((offer: any) => ({
+          name: offer.name || 'category name',
+          price: extractAndAddPrices(offer.price1 || '0', offer.price2 || '0') || '0',
           Food: {
-            Description: offer.desc1.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
-            PricePerPerson: offer.price1,
-            Items: offer.food_items.map((item: any) => ({
-              id: item.id,
-              name: item.name,
-              description: item.description || '',
-              image: item.image,
-            })),
+            Description: offer.foodItemsInfo.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
+            PricePerPerson: offer.foodItemsPrice || 0,
+            // Items: offer.food_items.map((item: any) => ({
+            //   id: item.id,
+            //   name: item.name,
+            //   description: item.description || '',
+            //   image: item.image,
+            // })),
+            Items:[
+              {
+                id: offer.id,
+                name: offer.foodItemsInfo,
+                description: offer.foodItemsInfo,
+                image: offer.foodItemsImagePaths?.[0],
+              }
+            ]
           },
           Drinks: {
-            Description: offer.desc2.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
-            PricePerPerson: offer.price2,
-            Items: offer.drink_items.map((item: any) => ({
-              id: item.id,
-              name: item.name,
-              description: item.description || '',
-              image: item.image,
-            })),
+            Description: offer.drinkItemsInfo.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
+            PricePerPerson: offer.drinkItemsPrice || 0,
+            Items:[
+              {
+                id: offer.id,
+                name: offer.drinkItemsInfo,
+                description: offer.drinkItemsInfo,
+                image: offer.drinkItemsImagePaths?.[0],
+              }
+            ]
           },
         }));
         setOffers(transformedOffers);

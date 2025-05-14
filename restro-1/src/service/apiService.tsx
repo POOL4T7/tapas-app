@@ -20,7 +20,7 @@ export const apiInstance = axios.create({
 // }
 export const getGroupOffer: any = async () => {
   try {
-    const response = await apiInstance.get('/menuentry/with-categories/27', {
+    const response = await apiInstance.get('/offers/temp/all', {
       // params: {
       //   restaurant_id: restaurant_id,
       //   publish: 'True',
