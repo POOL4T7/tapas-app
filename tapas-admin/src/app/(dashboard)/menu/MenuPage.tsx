@@ -141,7 +141,7 @@ export default function MenusPage() {
               Add Menu
             </Button>
           </DialogTrigger>
-          <DialogContent className='w-[90%] md:w-[60%] lg:w-[40%] max-w-4xl max-h-[90vh] overflow-y-auto'>
+          <DialogContent className='w-[90%] md:w-[80%] lg:w-[60%] max-w-4xl max-h-[90vh] overflow-y-auto'>
             <DialogHeader>
               <DialogTitle>
                 {editingMenu ? 'Edit Menu' : 'Create Menu'}

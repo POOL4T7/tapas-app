@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Trash2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import {
   DndContext,
   closestCenter,
@@ -80,11 +82,11 @@ function SortableItem({
     marginBottom: 8,
   };
   return (
-    <div ref={setNodeRef} style={style} className='flex items-center group'>
+    <div ref={setNodeRef} style={style} className='flex items-center group w-full overflow-hidden'>
       <span {...attributes} {...listeners} className='flex items-center'>
         {dragHandle}
       </span>
-      <div className='flex-1'>{children}</div>
+      <div className='flex-1 min-w-0 overflow-hidden'>{children}</div>
     </div>
   );
 }
@@ -193,13 +195,34 @@ export const SelectedCategoryTree: React.FC<SelectedCategoryTreeProps> = ({
                 .map((cat, idx, arr) => (
                   <React.Fragment key={cat.id}>
                     <SortableItem id={cat.id} dragHandle={<DragHandle />}>
-                      <div className='flex items-center gap-2'>
-                        <span className='rounded bg-blue-50 text-blue-700 px-2 py-0.5 text-xs font-semibold'>
-                          {cat.displayOrder}
-                        </span>
-                        <span className='font-medium text-gray-900'>
-                          {cat.name}
-                        </span>
+                      <div className='flex items-center justify-between w-full'>
+                        <div className='flex items-center gap-2'>
+                          <span className='rounded bg-blue-50 text-blue-700 px-2 py-0.5 text-xs font-semibold'>
+                            {idx + 1}
+                          </span>
+                          <span className='font-medium text-gray-900'>
+                            {cat.name}
+                          </span>
+                        </div>
+                        <Button
+                          variant='ghost'
+                          size='sm'
+                          className='h-8 w-8 p-0 text-red-500 hover:text-red-700 hover:bg-red-50'
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            // const confirmed = window.confirm(
+                            //   `Are you sure you want to delete the category '${cat.name}'?`
+                            // );
+                            // if (confirmed) {
+                            // }
+                            setCategorySelections((prev) =>
+                              prev.filter((c) => c.id !== cat.id)
+                            );
+                          }}
+                        >
+                          <Trash2 className='h-4 w-4' />
+                          <span className='sr-only'>Delete category</span>
+                        </Button>
                       </div>
                       <DndContext
                         sensors={sensors}
@@ -212,21 +235,50 @@ export const SelectedCategoryTree: React.FC<SelectedCategoryTreeProps> = ({
                             .map((sub) => sub.id)}
                           strategy={verticalListSortingStrategy}
                         >
-                          <div className='flex flex-wrap gap-2 mt-2'>
+                          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-3'>
                             {cat.subCategoryIds
                               .slice()
                               .sort((a, b) => a.displayOrder - b.displayOrder)
-                              .map((sub) => (
+                              .map((sub, subIdx) => (
                                 <SortableItem
                                   key={sub.id}
                                   id={sub.id}
                                   dragHandle={<DragHandle />}
                                 >
-                                  <span className='flex items-center gap-1 bg-gray-100 px-2 py-1 rounded text-sm hover:bg-gray-200 transition'>
-                                    <span className='rounded bg-gray-200 text-gray-700 px-1.5 py-0.5 text-xs font-semibold'>
-                                      {sub.displayOrder}
-                                    </span>
-                                    <span>{sub.name}</span>
+                                  <span className='flex items-center justify-between gap-1 bg-gray-100 px-2 py-1 rounded text-sm hover:bg-gray-200 transition w-full max-w-full overflow-hidden'>
+                                    <div className='flex items-center gap-1 min-w-0 flex-1 overflow-hidden'>
+                                      <span className='rounded bg-gray-200 text-gray-700 px-1.5 py-0.5 text-xs font-semibold'>
+                                        {subIdx + 1}
+                                      </span>
+                                      <span className="truncate">{sub.name}</span>
+                                    </div>
+                                    {/* <Button
+                                      variant='ghost'
+                                      size='sm'
+                                      className='h-6 w-6 p-0 ml-2 text-red-500 hover:text-red-700 hover:bg-red-50'
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        const confirmed = window.confirm(`Are you sure you want to delete the subcategory '${sub.name}'?`);
+                                        if (confirmed) {
+                                          setCategorySelections((prev) => 
+                                            prev.map((c) => {
+                                              if (c.id === cat.id) {
+                                                const newSubCategoryIds = c.subCategoryIds.filter((s) => s.id !== sub.id);
+                                                // If no subcategories left, remove the category
+                                                if (newSubCategoryIds.length === 0) {
+                                                  return null;
+                                                }
+                                                return { ...c, subCategoryIds: newSubCategoryIds };
+                                              }
+                                              return c;
+                                            }).filter((c): c is Category => c !== null)
+                                          );
+                                        }
+                                      }}
+                                    >
+                                      <Trash2 className='h-3 w-3' />
+                                      <span className='sr-only'>Delete subcategory</span>
+                                    </Button> */}
                                   </span>
                                 </SortableItem>
                               ))}
