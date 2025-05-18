@@ -26,33 +26,35 @@ const MenuCardAll: React.FC<Props> = (props) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [drawerStructure, setDrawerStructure] = useState<any>([]);
   const [items, setItems] = useState<any>([]);
-
+  const [sectionNameToIndexMap, setSectionNameToIndexMap] = useState<{
+    [key: string]: number;
+  }>({});
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    getDrawerStructure(details.id)
-      .then((res) => {
-        const stru = res.data?.categories?.map((cat: any) => {
-          const sub = cat.subCategories.map((subcat: any) => {
-            return {
-              id: subcat.id,
-              name: subcat.name,
-            };
-          });
-          return {
-            id: cat.id,
-            name: cat.name,
-            subCategories: sub,
-          };
-        });
-        setDrawerStructure(stru);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // getDrawerStructure(details.id)
+    //   .then((res) => {
+    //     const stru = res.data?.categories?.map((cat: any) => {
+    //       const sub = cat.subCategories.map((subcat: any) => {
+    //         return {
+    //           id: subcat.id,
+    //           name: subcat.name,
+    //         };
+    //       });
+    //       return {
+    //         id: cat.id,
+    //         name: cat.name,
+    //         subCategories: sub,
+    //       };
+    //     });
+    //     setDrawerStructure(stru);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
     getItemsByMenuId(details.id)
       .then((res) => {
-        const temp = [];
+        const temp: any = [];
         const stru = res.data?.map((cat: any) => {
           const sub = cat.subCategories.map((subcat: any) => {
             return {
@@ -70,6 +72,13 @@ const MenuCardAll: React.FC<Props> = (props) => {
         });
         console.log('stru', stru.flat(2));
         setItems(stru.flat(2));
+        setDrawerStructure(temp);
+        // Create a mapping from section name to index
+        const mapping: { [key: string]: number } = {};
+        stru.flat(2).forEach((item: any, index: number) => {
+          mapping[item.name] = index;
+        });
+        setSectionNameToIndexMap(mapping);
       })
       .catch((err) => {
         console.log(err);
@@ -95,13 +104,20 @@ const MenuCardAll: React.FC<Props> = (props) => {
     };
   }, []);
   // Handle click on a section
-  const handleSectionClick = (sectionTitle: string, index: number) => {
+  const handleSectionClick = (sectionTitle: string) => {
     setSelectedSection(sectionTitle);
-    setIsDrawerOpen(false); // Close drawer after selecting an item
+    setIsDrawerOpen(false);
 
-    // Scroll to the corresponding section
-    if (sectionRefs.current[index]) {
-      sectionRefs.current[index]?.scrollIntoView({ behavior: 'smooth' });
+    // Find the index using our mapping
+    const index = sectionNameToIndexMap[sectionTitle];
+
+    if (index !== undefined && sectionRefs.current[index]) {
+      setTimeout(() => {
+        sectionRefs.current[index]?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }, 100); // Small delay to allow drawer to close
     }
   };
 
@@ -117,6 +133,8 @@ const MenuCardAll: React.FC<Props> = (props) => {
       return newState;
     });
   };
+
+  console.log('drawerStructure', drawerStructure);
 
   // if (!category || !category.items || category.items.length === 0) {
   //   return <LoadingSkeleton />;
@@ -183,7 +201,12 @@ const MenuCardAll: React.FC<Props> = (props) => {
         >
           <div style={{ padding: '20px' }}>
             <div style={{ position: 'absolute', right: '5px' }}>
-              <IoClose color='white' size={30} />
+              <IoClose
+                color='white'
+                size={30}
+                onClick={() => setIsDrawerOpen(false)}
+                className='cursor-pointer'
+              />
             </div>
 
             <h3
@@ -261,7 +284,7 @@ const MenuCardAll: React.FC<Props> = (props) => {
                                 paddingLeft: '1rem',
                               }}
                               onClick={() =>
-                                handleSectionClick(subCategory.name, idx)
+                                handleSectionClick(subCategory.name)
                               }
                             >
                               <div className='flex-grow'>
@@ -279,12 +302,13 @@ const MenuCardAll: React.FC<Props> = (props) => {
         </Drawer>
         <div className='w-full px-4 mb-8'>
           {items.map((section: any, index: number) => {
-            if (index === 0) return null; // Skip the first item
+            // if (index === 0) return null; // Skip the first item
             return (
               <div
                 key={index}
                 className='menu-section'
-                ref={(el: any) => (sectionRefs.current[index - 2] = el)} // Adjust index for skipping the first item
+                id={section.name}
+                ref={(el: any) => (sectionRefs.current[index] = el)} // Adjust index for skipping the first item
               >
                 <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
                   {section.name}

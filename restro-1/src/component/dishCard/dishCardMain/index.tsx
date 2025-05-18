@@ -12,6 +12,7 @@ import styles from './style.module.css';
 import DishLayouts from '@/layouts/dishLayout';
 import Link from 'next/link';
 import Image from 'next/image';
+import { formatPrice } from '@/lib/utils';
 
 export interface DishDetail {
   created_at: string;
@@ -71,7 +72,8 @@ const DishCard: React.FC<DishDetail> = ({
           <div className='ml-4 flex-1'>
             <div className='flex justify-between items-center'>
               <h5 className={styles.cardTitle}>{name}</h5>
-              <p className={styles.cardPrice}>&#8364;{price}</p>
+              {/* <p className={styles.cardPrice}>&#8364;{price}</p> */}
+              <p className={styles.cardPrice}>{formatPrice(price)}</p>
             </div>
             <span className={styles.cardMeta}>{ingredients}</span>
           </div>

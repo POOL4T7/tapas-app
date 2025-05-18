@@ -9,6 +9,7 @@ import {
   ModalFooter,
   Button,
 } from '@nextui-org/react';
+import { formatPrice } from '@/lib/utils';
 
 type DishDetailProps = {
   dishId: string;
@@ -98,7 +99,7 @@ const DishLayouts: React.FC<DishDetailProps> = ({
             </sup>
           )}
         </p>
-        <p className={styles.modalPrice}>Price:- &nbsp; €{price}</p>
+        <p className={styles.modalPrice}>Price:- &nbsp; {formatPrice(price)}</p>
         <p className={styles.modalDesc}>{description}</p>
         <p className={styles.modalMeta}>{ingredients}</p>
         <p className={styles.modalIF}>{metadata}</p>
