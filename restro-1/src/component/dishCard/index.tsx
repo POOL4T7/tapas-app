@@ -8,6 +8,8 @@ import Drawer from '@mui/material/Drawer';
 import { IoClose } from 'react-icons/io5';
 import { MdOutlineKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { getDrawerStructure, getItemsByMenuId } from '@/service/apiService';
+import Image from 'next/image';
+import { generateSlug } from '@/lib/utils';
 
 interface Props {
   dish: any;
@@ -29,29 +31,9 @@ const MenuCardAll: React.FC<Props> = (props) => {
   const [sectionNameToIndexMap, setSectionNameToIndexMap] = useState<{
     [key: string]: number;
   }>({});
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   useEffect(() => {
-    // getDrawerStructure(details.id)
-    //   .then((res) => {
-    //     const stru = res.data?.categories?.map((cat: any) => {
-    //       const sub = cat.subCategories.map((subcat: any) => {
-    //         return {
-    //           id: subcat.id,
-    //           name: subcat.name,
-    //         };
-    //       });
-    //       return {
-    //         id: cat.id,
-    //         name: cat.name,
-    //         subCategories: sub,
-    //       };
-    //     });
-    //     setDrawerStructure(stru);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
     getItemsByMenuId(details.id)
       .then((res) => {
         const temp: any = [];
@@ -66,17 +48,19 @@ const MenuCardAll: React.FC<Props> = (props) => {
           temp.push({
             id: cat.id,
             name: cat.name,
+            image: cat.imagePath,
+            description: cat.description,
             subCategories: sub,
           });
           return sub;
         });
-        console.log('stru', stru.flat(2));
-        setItems(stru.flat(2));
+        // console.log('stru', stru.flat(2));
+        setItems(temp);
         setDrawerStructure(temp);
         // Create a mapping from section name to index
         const mapping: { [key: string]: number } = {};
         stru.flat(2).forEach((item: any, index: number) => {
-          mapping[item.name] = index;
+          mapping[generateSlug(item.name)] = index;
         });
         setSectionNameToIndexMap(mapping);
       })
@@ -88,7 +72,7 @@ const MenuCardAll: React.FC<Props> = (props) => {
   useEffect(() => {
     setSelectedSection(initialSection);
   }, [initialSection]);
-
+  console.log('sectionNameToIndexMap', sectionNameToIndexMap);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -104,21 +88,20 @@ const MenuCardAll: React.FC<Props> = (props) => {
     };
   }, []);
   // Handle click on a section
-  const handleSectionClick = (sectionTitle: string) => {
-    setSelectedSection(sectionTitle);
+  const handleSectionClick = (categoryId: string, subCategoryId: string) => {
+    const sectionKey = `${categoryId}-${subCategoryId}`;
+    setSelectedSection(sectionKey);
     setIsDrawerOpen(false);
 
-    // Find the index using our mapping
-    const index = sectionNameToIndexMap[sectionTitle];
-
-    if (index !== undefined && sectionRefs.current[index]) {
-      setTimeout(() => {
-        sectionRefs.current[index]?.scrollIntoView({
+    setTimeout(() => {
+      const sectionRef = sectionRefs.current[sectionKey];
+      if (sectionRef) {
+        sectionRef.scrollIntoView({
           behavior: 'smooth',
           block: 'start',
         });
-      }, 100); // Small delay to allow drawer to close
-    }
+      }
+    }, 100);
   };
 
   const toggleSectionExpansion = (sectionTitle: string) => {
@@ -267,7 +250,8 @@ const MenuCardAll: React.FC<Props> = (props) => {
                             <div
                               key={subCategory.id}
                               className={`flex items-center text-lg ${
-                                selectedSection === subCategory.name
+                                selectedSection ===
+                                `${category.id}-${subCategory.id}`
                                   ? 'text-[gold]'
                                   : 'text-white'
                               } hover:text-[gold] transition-colors duration-200`}
@@ -284,7 +268,7 @@ const MenuCardAll: React.FC<Props> = (props) => {
                                 paddingLeft: '1rem',
                               }}
                               onClick={() =>
-                                handleSectionClick(subCategory.name)
+                                handleSectionClick(category.id, subCategory.id)
                               }
                             >
                               <div className='flex-grow'>
@@ -301,26 +285,66 @@ const MenuCardAll: React.FC<Props> = (props) => {
           </div>
         </Drawer>
         <div className='w-full px-4 mb-8'>
-          {items.map((section: any, index: number) => {
-            // if (index === 0) return null; // Skip the first item
+          {items.map((category: any, idx: number) => {
             return (
-              <div
-                key={index}
-                className='menu-section'
-                id={section.name}
-                ref={(el: any) => (sectionRefs.current[index] = el)} // Adjust index for skipping the first item
-              >
-                <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
-                  {section.name}
-                </h2>
-                {section.items.length === 0 ? (
-                  <p className='text-center text-gray-500'>
-                    Exciting new dishes are on their way! Check back soon to see
-                    what’s coming.
-                  </p>
-                ) : (
-                  <MenuSection dishes={section.items} />
-                )}
+              <div key={category.id} className='mb-12'>
+                {/* Category Header - Centered with image and text inline */}
+                <div className='flex flex-col items-center mb-8'>
+                  <div className='flex flex-row items-center gap-4'>
+                    {/* Circular Image */}
+                    <div className='w-16 h-16 rounded-full overflow-hidden border-2 border-gold'>
+                      <Image
+                        src={category.image || '/image/logo.png'}
+                        alt={category.name}
+                        width={100}
+                        height={100}
+                        className='w-full h-full object-cover'
+                      />
+                    </div>
+
+                    {/* Text Content */}
+                    <div className='flex flex-col'>
+                      <h2 className='text-2xl text-[gold] font-medium'>
+                        {' '}
+                        {/* Reduced to font-medium */}
+                        {category.name}
+                      </h2>
+                      {category.description && (
+                        <p className='text-white text-sm  max-w-md mt-1'>
+                          {' '}
+                          {/* Added smaller text and top margin */}
+                          {category.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                {category.subCategories.map((section: any, index: number) => {
+                  // if (index === 0) return null; // Skip the first item
+                  return (
+                    <div
+                      key={index}
+                      className='menu-section'
+                      id={generateSlug(section.name)}
+                      ref={(el) => {
+                        sectionRefs.current[`${category.id}-${section.id}`] =
+                          el;
+                      }}
+                    >
+                      <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
+                        {section.name}
+                      </h2>
+                      {section.items.length === 0 ? (
+                        <p className='text-center text-gray-500'>
+                          Exciting new dishes are on their way! Check back soon
+                          to see what’s coming.
+                        </p>
+                      ) : (
+                        <MenuSection dishes={section.items} />
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             );
           })}
