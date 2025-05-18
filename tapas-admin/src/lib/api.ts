@@ -30,3 +30,21 @@ api.interceptors.request.use(
     return Promise.reject(error);
   }
 );
+
+// Add a response interceptor
+api.interceptors.response.use(
+  (response) => {
+    return response;
+  },
+  (error) => {
+    if (error.response && error.response.status === 403) {
+      // Logout the user if the response returns with 403
+      axios.post('/api/auth/logout').then(() => {
+        localStorage.removeItem('userDetails');
+        window.location.href = '/login';
+      });
+    }
+
+    return Promise.reject(error);
+  }
+);

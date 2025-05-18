@@ -56,10 +56,15 @@ export default function ProductsPage() {
     async function fetchCategories() {
       setLoading(true);
       try {
-        const data = await getAllCategories();
-        // const menus = await getAllMenus();
-        const subCategories = await getAllSubCategories();
-        const productList = await getAllProducts();
+        // const data = await getAllCategories();
+        // // const menus = await getAllMenus();
+        // const subCategories = await getAllSubCategories();
+        // const productList = await getAllProducts();
+        const [data, subCategories, productList] = await Promise.all([
+          getAllCategories(),
+          getAllSubCategories(),
+          getAllProducts(),
+        ]);
         setProducts(productList?.data || []);
         setCategories(
           (data?.data || []).map((cat: Category) => ({
@@ -113,8 +118,9 @@ export default function ProductsPage() {
   const handleCreateProduct = async (newProduct: Omit<Product, 'id'>) => {
     setLoading(true);
     try {
-      const created = await createProduct(newProduct);
-      setProducts((prev) => [...prev, created?.data]);
+      await createProduct(newProduct);
+      const productList = await getAllProducts();
+      setProducts(productList?.data || []);
       setIsDialogOpen(false);
       toast.success('Item created successfully');
     } catch {
@@ -259,11 +265,17 @@ export default function ProductsPage() {
             </SelectTrigger>
             <SelectContent align='end'>
               <SelectItem value='all'>All Sub Categories</SelectItem>
-              {subCategories.map((subCategory) => (
-                <SelectItem key={subCategory.id} value={`${subCategory.id}`}>
-                  {subCategory.name}
-                </SelectItem>
-              ))}
+              {subCategories
+                .filter((item) =>
+                  selectedCategoryId
+                    ? item.categoryId === parseInt(selectedCategoryId)
+                    : true
+                )
+                .map((subCategory) => (
+                  <SelectItem key={subCategory.id} value={`${subCategory.id}`}>
+                    {subCategory.name}
+                  </SelectItem>
+                ))}
             </SelectContent>
           </Select>
 
