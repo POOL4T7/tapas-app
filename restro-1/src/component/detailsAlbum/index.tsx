@@ -29,8 +29,8 @@ export default function DetailsAlbum({ images }: { images: string[] }) {
           <Image
             src={images[0]}
             alt='Dish'
-            width={400}
-            height={400}
+            width={520}
+            height={520}
             className='w-full h-full object-cover'
           />
         </div>
@@ -44,8 +44,8 @@ export default function DetailsAlbum({ images }: { images: string[] }) {
               <Image
                 src={image}
                 alt={`Dish ${index + 1}`}
-                width={400}
-                height={400}
+                width={520}
+                height={520}
                 // style={{ objectFit: 'cover' }}
               />
             </div>
