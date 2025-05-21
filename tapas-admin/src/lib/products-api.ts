@@ -97,7 +97,7 @@ export async function uploadProductImage(images: File[], itemId: string) {
 
 export async function deleteProduct(productId: string) {
   try {
-    const response = await api.delete(`/api/menu/deleteItem/${productId}`);
+    const response = await api.delete(`/api/item/delete/${productId}`);
     return response.data;
   } catch (error) {
     // Handle error as needed (could expand this based on your error handling strategy)
