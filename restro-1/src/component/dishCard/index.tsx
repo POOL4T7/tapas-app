@@ -294,7 +294,10 @@ const MenuCardAll: React.FC<Props> = (props) => {
                     {/* Circular Image */}
                     <div className='w-16 h-16 rounded-full overflow-hidden border-2 border-gold'>
                       <Image
-                        src={category.image || '/image/logo.png'}
+                        src={
+                          process.env.NEXT_PUBLIC_SERVER_URL + category.image ||
+                          '/image/logo.png'
+                        }
                         alt={category.name}
                         width={100}
                         height={100}
