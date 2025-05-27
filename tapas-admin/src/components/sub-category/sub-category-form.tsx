@@ -55,7 +55,7 @@ export function SubCategoryForm({
   onCancel,
 }: SubCategoryFormProps) {
   const [imagePreview, setImagePreview] = useState<string | null>(
-    initialData?.image || null
+    initialData?.imagePath || null
   );
 
   const form = useForm<z.infer<typeof subCategorySchema>>({
@@ -67,7 +67,7 @@ export function SubCategoryForm({
       tagLine: initialData?.tagLine || '',
       metadata: initialData?.metadata || '',
       status: initialData?.status || false,
-      image: initialData?.image || '',
+      image: initialData?.imagePath || '',
     },
   });
 
@@ -243,20 +243,24 @@ export function SubCategoryForm({
               Image
             </FormLabel>
             <div className='flex items-center space-x-4'>
-              <Input
-                type='file'
-                id='sub-category-image'
-                accept='image/*'
-                onChange={handleImageChange}
-                className='hidden'
-              />
-              <label
-                htmlFor='sub-category-image'
-                className='cursor-pointer flex items-center space-x-2 p-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm sm:text-base'
-              >
-                <ImagePlus className='h-4 w-4 sm:h-5 sm:w-5 text-primary' />
-                <span className='text-gray-700'>Upload Image</span>
-              </label>
+              {!imagePreview && (
+                <>
+                  <Input
+                    type='file'
+                    id='sub-category-image'
+                    accept='image/*'
+                    onChange={handleImageChange}
+                    className='hidden'
+                  />
+                  <label
+                    htmlFor='sub-category-image'
+                    className='cursor-pointer flex items-center space-x-2 p-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm sm:text-base'
+                  >
+                    <ImagePlus className='h-4 w-4 sm:h-5 sm:w-5 text-primary' />
+                    <span className='text-gray-700'>Upload Image</span>
+                  </label>
+                </>
+              )}
 
               {imagePreview && (
                 <div className='relative h-16 w-16 sm:h-20 sm:w-20 group'>

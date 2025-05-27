@@ -247,7 +247,12 @@ export default function SubCategoriesPage() {
 
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
-              <Button className='w-full sm:w-auto'>Add Sub Category</Button>
+              <Button
+                className='w-full sm:w-auto'
+                onClick={() => setEditingSubCategory(null)}
+              >
+                Add Sub Category
+              </Button>
             </DialogTrigger>
             <DialogContent className='w-[90%] max-w-md max-h-[90vh] overflow-y-auto'>
               <DialogHeader>
