@@ -4,13 +4,11 @@ import styles from './style.module.css';
 import { Button } from '@nextui-org/button';
 import DishCardGroup from '@/component/dishGroupOffer/page';
 import { getGroupOffer } from '@/service/apiService';
-import Image from 'next/image';
 interface MenuItem {
   id: number;
   name: string;
   description: string;
   image: string;
-  updatedPath?: string[];
 }
 interface MenuOffer {
   name: string;
@@ -25,9 +23,7 @@ interface MenuOffer {
     PricePerPerson: string;
     Items: MenuItem[];
   };
-  offerImagePath?: string;
 }
-
 function extractAndAddPrices(price1: any, price2: any) {
   function parsePrice(priceString: any) {
     // Remove any non-numeric characters except for commas and periods
@@ -81,10 +77,7 @@ const GroupOffer: React.FC = () => {
         console.log(result);
         const transformedOffers = result.data.map((offer: any) => ({
           name: offer.name || 'category name',
-          offerImagePath: offer.offerImagePath || '',
-          price:
-            extractAndAddPrices(offer.price1 || '0', offer.price2 || '0') ||
-            '0',
+          price: extractAndAddPrices(offer.price1 || '0', offer.price2 || '0') || '0',
           Food: {
             Description: offer.foodItemsInfo.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
             PricePerPerson: offer.foodItemsPrice || 0,
@@ -94,28 +87,26 @@ const GroupOffer: React.FC = () => {
             //   description: item.description || '',
             //   image: item.image,
             // })),
-            Items: [
+            Items:[
               {
                 id: offer.id,
                 name: offer.foodItemsInfo,
                 description: offer.foodItemsInfo,
                 image: offer.foodItemsImagePaths?.[0],
-                updatedPath: offer.foodItemsImagePaths,
-              },
-            ],
+              }
+            ]
           },
           Drinks: {
             Description: offer.drinkItemsInfo.replace(/\r\n/g, '<br/>'), // Replace newlines with <br/> tags
             PricePerPerson: offer.drinkItemsPrice || 0,
-            Items: [
+            Items:[
               {
                 id: offer.id,
                 name: offer.drinkItemsInfo,
                 description: offer.drinkItemsInfo,
                 image: offer.drinkItemsImagePaths?.[0],
-                updatedPath: offer.drinkItemsImagePaths,
-              },
-            ],
+              }
+            ]
           },
         }));
         setOffers(transformedOffers);
@@ -207,7 +198,7 @@ const GroupOffer: React.FC = () => {
               className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8'
             >
               <div className='bg-white rounded-lg shadow-lg overflow-hidden max-w-screen-lg mx-auto'>
-                <div
+                <p
                   style={{
                     background: 'goldenrod',
                     color: 'white',
@@ -216,22 +207,8 @@ const GroupOffer: React.FC = () => {
                   className=' text-lg justify-start flex mb-3'
                 >
                   {/*                   <span>&#8364;{offer.price} per person</span> */}
-                  <span className='rounded-full w-14 h-14'>
-                    {offer.offerImagePath && (
-                      <Image
-                        src={
-                          process.env.NEXT_PUBLIC_SERVER_URL +
-                            offer.offerImagePath || ''
-                        }
-                        alt={offer.name}
-                        height={80}
-                        width={80}
-                        className='rounded-full w-14 h-14'
-                      />
-                    )}{' '}
-                  </span>
-                  <h2 className='text-xl font-semibold ml-2 mt-2'>{offer.name}</h2>
-                </div>
+                  <h2 className='text-xl font-semibold '>{offer.name}</h2>
+                </p>
                 <div className='px-6 py-4'>
                   <div className='flex justify-between items-center'></div>
                   <div className='mt-4'>
