@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Axios instance with base URL
 export const api = axios.create({
-  baseURL: '/altmariendorf',
+  baseURL: 'http://localhost:7250/altmariendorf',
 });
 
 // Add a request interceptor
