@@ -2,7 +2,10 @@ import axios from 'axios';
 
 // Axios instance with base URL
 export const api = axios.create({
-  baseURL: '/altmariendorf',
+  baseURL:
+    process.env.NODE_ENV === 'production'
+      ? process.env.NEXT_PUBLIC_SERVER_URL
+      : '/altmariendorf',
 });
 
 // Add a request interceptor
