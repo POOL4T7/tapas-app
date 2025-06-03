@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/altmariendorf/api/:path*', // requests to /api/* will be proxied
-        destination: 'http://localhost:7250/altmariendorf/api/:path*', // Proxy to Backend
+        destination: 'http://103.174.103.132:7250/altmariendorf/api/:path*', // Proxy to Backend
       },
     ];
   },
@@ -15,12 +15,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'http',
         hostname: '103.174.103.132',
-        port: '7250',
-        pathname: '/**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
         port: '7250',
         pathname: '/**',
       },
