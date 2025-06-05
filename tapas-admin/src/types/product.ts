@@ -11,7 +11,7 @@ export type Product = {
   categoryName?: string;
 
   // New fields
-  tags?: string[];
+  // tags?: string[];
   ingredients?: string[];
   itemsImagePaths?: string[];
   allergies?: string;

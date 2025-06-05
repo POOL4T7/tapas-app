@@ -15,7 +15,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ dishes }) => {
           key={index}
           {...dish}
           image_urls={dish.itemsImagePaths}
-          product_tag={dish.itemTags?.join(', ') || ''}
+          product_tag={dish.tagLine}
           ingredients={dish.ingredients?.join(', ') || ''}
         />
       ))}

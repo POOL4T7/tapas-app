@@ -6,19 +6,13 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/altmariendorf/api/:path*', // requests to /api/* will be proxied
-        destination: 'https://alt-mariendorf-backend.tapas-mundo.eu/altmariendorf/api/:path*', // Proxy to Backend
+        destination:
+          'https://alt-mariendorf-backend.tapas-mundo.eu/altmariendorf/api/:path*', // Proxy to Backend
       },
     ];
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'http',
-        hostname: '103.174.103.132',
-        port: '7250',
-        pathname: '/**',
-      },
-    ],
+    domains: ['alt-mariendorf-backend.tapas-mundo.eu'],
   },
 };
 

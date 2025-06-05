@@ -45,7 +45,7 @@ export type ProductFormValues = {
   metadata?: string;
   allergies?: string;
   status: boolean;
-  tags?: string[];
+  // tags?: string[];
   ingredients?: string[];
   itemsImagePaths?: string[];
   image?: string;
@@ -63,7 +63,7 @@ const productSchema = z.object({
   metadata: z.string().optional(),
   allergies: z.string().optional(),
   status: z.boolean(),
-  tags: z.array(z.string()).optional(),
+  // tags: z.array(z.string()).optional(),
   ingredients: z.array(z.string()).optional(),
   itemsImagePaths: z.array(z.string()).optional(),
 });
@@ -100,20 +100,20 @@ export function ProductForm({
       metadata: initialData?.metadata || '',
       allergies: initialData?.allergies || '',
       status: initialData?.status || false,
-      tags: initialData?.tags || [],
+      // tags: initialData?.tags || [],
       ingredients: initialData?.ingredients || [],
       itemsImagePaths: initialData?.itemsImagePaths || [],
     },
   });
 
-  const {
-    fields: tagFields,
-    append: appendTag,
-    remove: removeTag,
-  } = useFieldArray({
-    control: form.control,
-    name: 'tags' as never,
-  });
+  // const {
+  //   fields: tagFields,
+  //   append: appendTag,
+  //   remove: removeTag,
+  // } = useFieldArray({
+  //   control: form.control,
+  //   name: 'tags' as never,
+  // });
 
   const {
     fields: ingredientFields,
@@ -132,7 +132,7 @@ export function ProductForm({
         form.setValue('description', product.description);
         form.setValue('price', product.price);
         form.setValue('status', product.status);
-        form.setValue('tags', product.tags || []);
+        // form.setValue('tags', product.tags || []);
         form.setValue('ingredients', product.ingredients || []);
         form.setValue('itemsImagePaths', product.itemsImagePaths || []);
         form.setValue('tagLine', product.tagLine || '');
@@ -210,7 +210,7 @@ export function ProductForm({
       metadata: values.metadata?.trim() || '',
       allergies: values.allergies?.trim() || '',
       status: values.status,
-      tags: values.tags?.filter((tag) => tag.trim() !== '') || [],
+      // tags: values.tags?.filter((tag) => tag.trim() !== '') || [],
       ingredients:
         values.ingredients?.filter((ingredient) => ingredient.trim() !== '') ||
         [],
@@ -373,58 +373,27 @@ export function ProductForm({
         </div>
 
         {/* Status */}
-        <div className='mb-4'>
-          <FormField
-            control={form.control}
-            name='status'
-            render={({ field }) => (
-              <FormItem className='flex flex-row items-center gap-4'>
-                <FormLabel>Status</FormLabel>
-                <FormControl>
-                  <Switch
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                  />
-                </FormControl>
-                <span>{field.value ? 'Active' : 'Inactive'}</span>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
 
         {/* Tags & Ingredients */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-          <div>
-            <FormLabel>Product Tags</FormLabel>
-            <div className='space-y-2'>
-              {tagFields.map((field, index) => (
-                <div key={field.id} className='flex items-center space-x-2'>
+          <div className='mt-4'>
+            <FormField
+              control={form.control}
+              name='status'
+              render={({ field }) => (
+                <FormItem className='flex flex-row items-center gap-4'>
+                  <FormLabel>Status</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder='Enter tag'
-                      {...form.register(`tags.${index}` as const)}
+                    <Switch
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
                     />
                   </FormControl>
-                  <Button
-                    type='button'
-                    variant='destructive'
-                    size='icon'
-                    onClick={() => removeTag(index)}
-                  >
-                    <X className='h-4 w-4' />
-                  </Button>
-                </div>
-              ))}
-              <Button
-                type='button'
-                variant='outline'
-                onClick={() => appendTag('')}
-                className='w-full'
-              >
-                <Plus className='mr-2 h-4 w-4' /> Add Tag
-              </Button>
-            </div>
+                  <span>{field.value ? 'Active' : 'Inactive'}</span>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
           </div>
           <div>
             <FormLabel>Ingredients</FormLabel>

@@ -87,21 +87,28 @@ const DishLayouts: React.FC<DishDetailProps> = ({
       </div>
       <div className={styles.bodyRight}>
         <p
-          className={`${styles.modalTitle} flex items-center justify-center lg:justify-start`}
+          className={`text-2xl font-semibold flex items-center justify-center lg:justify-start`}
         >
           {title}
-          {product_tag && (
+          {/* {product_tag && (
             <sup
               onClick={handleOpenModal}
               className={`text-sm rounded px-2 cursor-pointer text-black hover:bg-black hover:text-white ${styles.productTag}`}
             >
               {product_tag}
             </sup>
+          )} */}
+        </p>
+        <p className='text-sm mt-0 font-medium'>{product_tag}</p>
+        <p className={styles.modalPrice}>Price:- &nbsp; {formatPrice(price)}</p>
+        <p className={styles.modalDesc}>{description && <>{description}</>}</p>
+        <p className={styles.modalMeta}>
+          {ingredients && (
+            <>
+              <span className='font-semibold'>Ingredients:</span> {ingredients}
+            </>
           )}
         </p>
-        <p className={styles.modalPrice}>Price:- &nbsp; {formatPrice(price)}</p>
-        <p className={styles.modalDesc}>{description}</p>
-        <p className={styles.modalMeta}>{ingredients}</p>
         <p className={styles.modalIF}>{metadata}</p>
       </div>
 
@@ -111,7 +118,7 @@ const DishLayouts: React.FC<DishDetailProps> = ({
           <ModalHeader>
             <h2 className='text-xl font-semibold'>{title}</h2>
           </ModalHeader>
-          <ModalBody>{renderAllergensAndAdditives(product_tag)}</ModalBody>
+          {/* <ModalBody>{renderAllergensAndAdditives(product_tag)}</ModalBody> */}
           <ModalFooter>
             {/* <Button onClick={handleCloseModal}>Close</Button> */}
           </ModalFooter>

@@ -20,7 +20,7 @@ export const apiInstance = axios.create({
 // }
 export const getGroupOffer: any = async () => {
   try {
-    const response = await apiInstance.get('/offers/temp/all', {
+    const response = await apiInstance.get('/api/offers/temp/all', {
       // params: {
       //   restaurant_id: restaurant_id,
       //   publish: 'True',
@@ -34,12 +34,15 @@ export const getGroupOffer: any = async () => {
 };
 export const getCategoryPath = async (id: any) => {
   try {
-    const response = await apiInstance.get('/menuentry/with-categories/27', {
-      // params: {
-      //   restaurant_id: restaurant_id,
-      //   publish: 'True',
-      // },
-    });
+    const response = await apiInstance.get(
+      '/api/menuentry/with-categories/27',
+      {
+        // params: {
+        //   restaurant_id: restaurant_id,
+        //   publish: 'True',
+        // },
+      }
+    );
     return response.data;
   } catch (error) {
     throw error;
@@ -69,7 +72,7 @@ export const getAllMenuPath = async () => {
     //   },
     // });
     // console.log(response.data);
-    const response = await apiInstance.get(`/menu/active/all`);
+    const response = await apiInstance.get(`/api/menu/active/all`);
     console.log(response);
     return response.data;
     // return response;
@@ -81,7 +84,7 @@ export const getAllMenuPath = async () => {
 export const getAllMenuList = async () => {
   try {
     // /api/product/menus/?restaurant_id=1
-    const response = await apiInstance.get(`/product/menus/`, {
+    const response = await apiInstance.get(`/api/product/menus/`, {
       params: {
         restaurant_id: restaurant_id,
         // menu_id: menu_id
@@ -97,7 +100,7 @@ export const getAllMenuList = async () => {
 export const getCategory = async () => {
   try {
     // /api/product/menus/?restaurant_id=1
-    const response = await apiInstance.get(`product/categories/`, {
+    const response = await apiInstance.get(`/api/product/categories/`, {
       params: {
         // restaurant_id: restaurant_id,
         // menu_id: menu_id
@@ -113,7 +116,7 @@ export const getCategory = async () => {
 export const getDrawerStructure = async (menuId: any) => {
   try {
     const response = await apiInstance.get(
-      `/menuentry/with-categories/${menuId}`
+      `/api/menuentry/with-categories/${menuId}`
     );
     return response.data;
   } catch (error) {
@@ -124,7 +127,7 @@ export const getDrawerStructure = async (menuId: any) => {
 export const getItemsByMenuId = async (menuId: any) => {
   try {
     const response = await apiInstance.get(
-      `/menuentry/activeitemswithstructure/${menuId}`
+      `/api/menuentry/activeitemswithstructure/${menuId}`
     );
     return response.data;
   } catch (error) {

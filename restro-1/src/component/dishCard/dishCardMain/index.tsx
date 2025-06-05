@@ -75,7 +75,7 @@ const DishCard: React.FC<DishDetail> = ({
               {/* <p className={styles.cardPrice}>&#8364;{price}</p> */}
               <p className={styles.cardPrice}>{formatPrice(price)}</p>
             </div>
-            <span className={styles.cardMeta}>{ingredients}</span>
+            <span className={styles.cardMeta}>{product_tag}</span>
           </div>
         </div>
       </div>
