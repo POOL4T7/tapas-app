@@ -4,7 +4,7 @@ export type Product = {
   subCategoryId: number;
   subCategoryName?: string;
   description: string;
-  status: boolean;
+  // status: boolean;
 
   price: number;
   categoryId: number;

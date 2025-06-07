@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { Edit, Trash, Layers, Loader2 } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
+// import { Switch } from '@/components/ui/switch';
 import {
   Tooltip,
   TooltipContent,
@@ -25,7 +25,7 @@ interface SubCategoryTableProps {
   // menus: Menu[];
   onEdit: (subCategory: SubCategory) => void;
   onDelete: (subCategory: SubCategory) => void;
-  onStatusToggle: (subCategory: SubCategory) => void;
+  // onStatusToggle: (subCategory: SubCategory) => void;
   isLoading?: boolean;
 }
 
@@ -33,10 +33,10 @@ export function SubCategoryTable({
   subCategories,
   onEdit,
   onDelete,
-  onStatusToggle,
+  // onStatusToggle,
   isLoading,
 }: SubCategoryTableProps) {
-  const headers = ['S.No', 'Name', 'Status', 'Actions'];
+  const headers = ['S.No', 'Name', 'Actions'];
 
   return (
     <TooltipProvider>
@@ -96,7 +96,7 @@ export function SubCategoryTable({
                       {subCategory.name}
                     </TableCell>
 
-                    <TableCell>
+                    {/* <TableCell>
                       <Tooltip>
                         <TooltipTrigger>
                           <Switch
@@ -108,7 +108,7 @@ export function SubCategoryTable({
                           {subCategory.status ? 'Deactivate' : 'Activate'}
                         </TooltipContent>
                       </Tooltip>
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell>
                       <div className='flex items-center gap-1'>
                         <Tooltip>

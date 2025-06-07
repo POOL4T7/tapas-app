@@ -22,7 +22,7 @@ import { Textarea } from '@/components/ui/textarea';
 
 import { Category } from '@/types/category';
 // import { Menu } from '@/types/menu';
-import { Switch } from '../ui/switch';
+// import { Switch } from '../ui/switch';
 import { uploadImage } from '@/lib/categories-api';
 
 const categorySchema = z.object({
@@ -30,7 +30,7 @@ const categorySchema = z.object({
   description: z.string().optional(),
   tagLine: z.string().optional(),
   metadata: z.string().optional(),
-  status: z.boolean(),
+  // status: z.boolean(),
   imagePath: z.string().optional(),
 });
 
@@ -60,7 +60,7 @@ export function CategoryForm({
       description: initialData?.description || '',
       tagLine: initialData?.tagLine || '',
       metadata: initialData?.metadata || '',
-      status: initialData?.status ?? true,
+      // status: initialData?.status ?? true,
       imagePath: initialData?.imagePath || '',
     },
   });
@@ -223,7 +223,7 @@ export function CategoryForm({
             </div>
           </div>
 
-          <FormField
+          {/* { <FormField
             control={form.control}
             name='status'
             render={({ field }) => (
@@ -246,7 +246,7 @@ export function CategoryForm({
                 <FormMessage className='text-red-500 text-xs sm:text-sm mt-1' />
               </FormItem>
             )}
-          />
+          />} */}
         </div>
 
         <div className='grid grid-cols-1 gap-4'></div>

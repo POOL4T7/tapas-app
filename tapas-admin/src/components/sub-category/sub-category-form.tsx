@@ -26,7 +26,7 @@ import { SubCategory } from '@/types/sub-category';
 import { Category } from '@/types/category';
 import { ImagePlus, Trash2 } from 'lucide-react';
 import Image from 'next/image';
-import { Switch } from '../ui/switch';
+// import { Switch } from '../ui/switch';
 import { uploadSubCategoryImage } from '@/lib/sub-categories-api';
 
 const subCategorySchema = z.object({
@@ -37,7 +37,7 @@ const subCategorySchema = z.object({
   description: z.string().optional(),
   tagLine: z.string().optional(),
   metadata: z.string().optional(),
-  status: z.boolean(),
+  // status: z.boolean(),
   image: z.string().optional(),
 });
 
@@ -66,7 +66,7 @@ export function SubCategoryForm({
       description: initialData?.description || '',
       tagLine: initialData?.tagLine || '',
       metadata: initialData?.metadata || '',
-      status: initialData?.status || false,
+      // status: initialData?.status || false,
       image: initialData?.imagePath || '',
     },
   });
@@ -213,7 +213,7 @@ export function SubCategoryForm({
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-center'>
-          <FormField
+          {/* <FormField
             control={form.control}
             name='status'
             render={({ field }) => (
@@ -236,7 +236,7 @@ export function SubCategoryForm({
                 <FormMessage className='text-red-500 text-xs sm:text-sm mt-1' />
               </FormItem>
             )}
-          />
+          /> */}
 
           <div className='space-y-2'>
             <FormLabel className='font-semibold text-sm sm:text-base'>

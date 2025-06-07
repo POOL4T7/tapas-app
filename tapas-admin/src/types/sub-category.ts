@@ -4,7 +4,7 @@ export type SubCategory = {
   categoryId: number;
 
   description?: string;
-  status: boolean;
+  // status: boolean;
   imagePath?: string;
   tagLine?: string;
   metadata?: string;

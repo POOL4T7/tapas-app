@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Switch } from '@/components/ui/switch';
+// import { Switch } from '@/components/ui/switch';
 import { X, Plus } from 'lucide-react';
 
 import { Product } from '@/types/product';
@@ -44,7 +44,7 @@ export type ProductFormValues = {
   tagLine?: string;
   metadata?: string;
   allergies?: string;
-  status: boolean;
+  // status: boolean;
   // tags?: string[];
   ingredients?: string[];
   itemsImagePaths?: string[];
@@ -62,7 +62,7 @@ const productSchema = z.object({
   tagLine: z.string().optional(),
   metadata: z.string().optional(),
   allergies: z.string().optional(),
-  status: z.boolean(),
+  // status: z.boolean(),
   // tags: z.array(z.string()).optional(),
   ingredients: z.array(z.string()).optional(),
   itemsImagePaths: z.array(z.string()).optional(),
@@ -99,7 +99,7 @@ export function ProductForm({
       tagLine: initialData?.tagLine || '',
       metadata: initialData?.metadata || '',
       allergies: initialData?.allergies || '',
-      status: initialData?.status || false,
+      // status: initialData?.status || false,
       // tags: initialData?.tags || [],
       ingredients: initialData?.ingredients || [],
       itemsImagePaths: initialData?.itemsImagePaths || [],
@@ -131,7 +131,7 @@ export function ProductForm({
         form.setValue('name', product.name);
         form.setValue('description', product.description);
         form.setValue('price', product.price);
-        form.setValue('status', product.status);
+        // form.setValue('status', product.status);
         // form.setValue('tags', product.tags || []);
         form.setValue('ingredients', product.ingredients || []);
         form.setValue('itemsImagePaths', product.itemsImagePaths || []);
@@ -209,7 +209,7 @@ export function ProductForm({
       tagLine: values.tagLine?.trim() || '',
       metadata: values.metadata?.trim() || '',
       allergies: values.allergies?.trim() || '',
-      status: values.status,
+      // status: values.status,
       // tags: values.tags?.filter((tag) => tag.trim() !== '') || [],
       ingredients:
         values.ingredients?.filter((ingredient) => ingredient.trim() !== '') ||
@@ -376,7 +376,7 @@ export function ProductForm({
 
         {/* Tags & Ingredients */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-          <div className='mt-4'>
+          {/* <div className='mt-4'>
             <FormField
               control={form.control}
               name='status'
@@ -394,7 +394,7 @@ export function ProductForm({
                 </FormItem>
               )}
             />
-          </div>
+          </div> */}
           <div>
             <FormLabel>Ingredients</FormLabel>
             <div className='space-y-2'>

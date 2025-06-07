@@ -23,12 +23,12 @@ export function middleware(request: NextRequest) {
   const hasValidToken = isValidToken(token);
 
   // Enhanced logging
-  console.log('Middleware Details:', {
-    path,
-    isPublicPath,
-    hasToken: !!token,
-    hasValidToken,
-  });
+  // console.log('Middleware Details:', {
+  //   path,
+  //   isPublicPath,
+  //   hasToken: !!token,
+  //   hasValidToken,
+  // });
 
   // If the path is public and the user is already logged in, redirect to dashboard
   if (isPublicPath && hasValidToken) {

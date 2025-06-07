@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { Edit, Trash, Package, Loader2 } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
+// import { Switch } from '@/components/ui/switch';
 import {
   Tooltip,
   TooltipContent,
@@ -28,7 +28,7 @@ interface ProductTableProps {
   isLoading?: boolean;
   onEdit: (product: Product) => void;
   onDelete: (product: Product) => void;
-  onStatusToggle: (product: Product, status: boolean) => void;
+  // onStatusToggle: (product: Product, status: boolean) => void;
 }
 
 export function ProductTable({
@@ -36,7 +36,7 @@ export function ProductTable({
 
   onEdit,
   onDelete,
-  onStatusToggle,
+  // onStatusToggle,
   isLoading,
 }: ProductTableProps) {
   const headers = [
@@ -45,7 +45,7 @@ export function ProductTable({
     'Sub Category',
     'Category',
     'Price',
-    'Status',
+    // 'Status',
     'Actions',
   ];
 
@@ -106,7 +106,7 @@ export function ProductTable({
                     <TableCell>{product.categoryName}</TableCell>
                     <TableCell>{product.subCategoryName}</TableCell>
                     <TableCell>{formatPrice(product.price)}</TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <Tooltip>
                         <TooltipTrigger>
                           <Switch
@@ -120,7 +120,7 @@ export function ProductTable({
                           {product.status ? 'Deactivate' : 'Activate'}
                         </TooltipContent>
                       </Tooltip>
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell>
                       <div className='flex items-center gap-1'>
                         <Tooltip>

@@ -2,7 +2,7 @@ export type Category = {
   id: string;
   name: string;
   description?: string;
-  status: boolean;
+  // status: boolean;
   imagePath?: string;
   tagLine?: string;
   metadata?: string;

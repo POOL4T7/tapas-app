@@ -58,10 +58,10 @@ export default function SubCategoriesPage() {
         setCategories(
           (data?.data || []).map((cat: Category) => ({
             ...cat,
-            status:
-              typeof cat.status === 'boolean'
-                ? cat.status
-                : cat.status === 'active',
+            // status:
+            //   typeof cat.status === 'boolean'
+            //     ? cat.status
+            //     : cat.status === 'active',
           }))
         );
         // setMenus(
@@ -76,10 +76,10 @@ export default function SubCategoriesPage() {
         setSubCategories(
           (subCategories?.data || []).map((sc: SubCategory) => ({
             ...sc,
-            status:
-              typeof sc.status === 'boolean'
-                ? sc.status
-                : sc.status === 'active',
+            // status:
+            //   typeof sc.status === 'boolean'
+            //     ? sc.status
+            //     : sc.status === 'active',
           }))
         );
       } catch {
@@ -190,25 +190,25 @@ export default function SubCategoriesPage() {
     setSubCategoryToDelete(null);
   };
 
-  const toggleStatus = async (category: SubCategory) => {
-    setLoading(true);
-    try {
-      await updateSubCategory(String(category.id), {
-        ...category,
-        status: !category.status,
-      });
-      setSubCategories(
-        subCategories.map((sc) =>
-          sc.id === category.id ? { ...sc, status: !sc.status } : sc
-        )
-      );
-      toast.success('Sub-category status updated');
-    } catch {
-      toast.error('Failed to update sub-category status');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const toggleStatus = async (category: SubCategory) => {
+  //   setLoading(true);
+  //   try {
+  //     await updateSubCategory(String(category.id), {
+  //       ...category,
+  //       status: !category.status,
+  //     });
+  //     setSubCategories(
+  //       subCategories.map((sc) =>
+  //         sc.id === category.id ? { ...sc, status: !sc.status } : sc
+  //       )
+  //     );
+  //     toast.success('Sub-category status updated');
+  //   } catch {
+  //     toast.error('Failed to update sub-category status');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   if (loading) {
     console.log(loading);
@@ -294,7 +294,7 @@ export default function SubCategoriesPage() {
         }}
         onDelete={handleDeleteSubCategory}
         // onReorder={handleReorder}
-        onStatusToggle={toggleStatus}
+        // onStatusToggle={toggleStatus}
         isLoading={loading}
       />
       <Dialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>

@@ -43,10 +43,10 @@ export default function CategoriesPage() {
         setCategories(
           (data?.data || []).map((cat: Category) => ({
             ...cat,
-            status:
-              typeof cat.status === 'boolean'
-                ? cat.status
-                : cat.status === 'active',
+            // status:
+            //   typeof cat.status === 'boolean'
+            //     ? cat.status
+            //     : cat.status === 'active',
           }))
         );
         // setMenus(
@@ -122,25 +122,25 @@ export default function CategoriesPage() {
     setCategoryToDelete(null);
   };
 
-  const toggleStatus = async (category: Category) => {
-    setLoading(true);
-    try {
-      await updateCategory(category.id, {
-        ...category,
-        status: !category.status,
-      });
-      setCategories(
-        categories.map((c) =>
-          c.id === category.id ? { ...c, status: !c.status } : c
-        )
-      );
-      toast.success('Category status updated');
-    } catch {
-      toast.error('Failed to update category status');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const toggleStatus = async (category: Category) => {
+  //   setLoading(true);
+  //   try {
+  //     await updateCategory(category.id, {
+  //       ...category,
+  //       status: !category.status,
+  //     });
+  //     setCategories(
+  //       categories.map((c) =>
+  //         c.id === category.id ? { ...c, status: !c.status } : c
+  //       )
+  //     );
+  //     toast.success('Category status updated');
+  //   } catch {
+  //     toast.error('Failed to update category status');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <div className='p-4 sm:p-6 md:p-8 w-full max-w-7xl mx-auto'>
@@ -196,7 +196,7 @@ export default function CategoriesPage() {
           setIsDialogOpen(true);
         }}
         onDelete={handleDeleteCategory}
-        onStatusToggle={toggleStatus}
+        // onStatusToggle={toggleStatus}
         isLoading={loading}
       />
       <Dialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>

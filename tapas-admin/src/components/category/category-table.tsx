@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { Edit, Trash, Menu as MenuIcon, Info, Loader2 } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
+// import { Switch } from '@/components/ui/switch';
 import {
   Tooltip,
   TooltipContent,
@@ -23,7 +23,7 @@ interface CategoryTableProps {
   // menus: Menu[];
   onEdit: (category: Category) => void;
   onDelete: (category: Category) => void;
-  onStatusToggle: (category: Category) => void;
+  // onStatusToggle: (category: Category) => void;
   isLoading?: boolean;
 }
 
@@ -31,10 +31,10 @@ export function CategoryTable({
   categories,
   onEdit,
   onDelete,
-  onStatusToggle,
+  // onStatusToggle,
   isLoading,
 }: CategoryTableProps) {
-  const headers = ['S.No', 'Name', 'Description', 'Status', 'Actions'];
+  const headers = ['S.No', 'Name', 'Description', 'Actions'];
 
   return (
     <TooltipProvider>
@@ -121,7 +121,7 @@ export function CategoryTable({
                         </span>
                       )}
                     </TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <Tooltip>
                         <TooltipTrigger>
                           <Switch
@@ -133,7 +133,7 @@ export function CategoryTable({
                           {category.status ? 'Deactivate' : 'Activate'}
                         </TooltipContent>
                       </Tooltip>
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell>
                       <div className='flex items-center gap-1'>
                         <Tooltip>
