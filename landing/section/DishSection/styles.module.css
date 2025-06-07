@@ -1,0 +1,39 @@
+
+.bg{
+   
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    /* background-image: url('/image/finalPic/extraBG/reserveTable1.jpg'); */
+    background-clip: padding-box;
+}
+.main_container{
+    /* width: 100vw; */
+    /* background-color: white; */
+    /* background-color: rgba(0, 0, 0, .8); */
+    background-color: rgba(0, 0, 0, .7);
+  
+    display: flex;
+    /* background-color: #9aa6ac; */
+    
+}
+.line{
+    background-color:#f5a524;
+    width: 80%;
+    height: 2px;
+    margin-bottom: 4rem;
+}
+.main{
+    
+    margin: auto;
+    max-width: 1450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}

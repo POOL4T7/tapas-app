@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.container{
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1450px;
+
+}
+.main{
+background-color: white;
+display: flex;
+}
+.mainContainer{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Abril Fatface', display;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #db9423;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    padding-bottom: 6rem;
+
+}
+.left .heading{
+    font-size: 2rem;
+    font-family: "Poppins";
+    text-align: left;
+    color: black;
+}
+.left .description{
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    text-align: left;
+    color: black;
+
+}
+.left .line{
+    width: 25vw;
+    border: 2px solid #db9423;
+    height: 0px;
+    justify-content: left;
+}
+.left .artical{
+
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+}
+.left .button{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    margin: auto;
+
+}
+.right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    margin: auto;
+padding: 2rem;
+padding-bottom: 6rem;
+}
+.articalEnd{
+    color: #db9423;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+.mainContainer{
+    flex-direction: column;
+}
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%;
+}
+
+}

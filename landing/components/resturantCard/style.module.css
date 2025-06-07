@@ -1,0 +1,41 @@
+
+.main{
+    width: 103%;
+    display:flex ;
+    aspect-ratio: 1;
+    max-width: min(17.5rem, 100vmin);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+        /* box-shadow: 2px 7px 20px 5px hsl(0,0%,70.3%); */
+        margin: auto;
+        
+    /* outline: 4px solid #f5a524; */
+    /* outline-offset: 4px; */
+}
+.imageDiv{
+    margin: auto; 
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: min(17rem, 100vmin);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    /* box-shadow: 2px 7px 20px 5px hsl(0,0%,70.3%); */
+}
+.imageDiv a{
+    margin: 0;
+}
+.imageDiv img{
+    /* height: 320px; */
+    margin: 0;
+}
+.name{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+.imageDiv {
+    transition: outline-color 0.3s ease-in-out;
+}

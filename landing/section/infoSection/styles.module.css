@@ -1,0 +1,35 @@
+.main {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.first {
+    text-align: center;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Abril Fatface', display;
+    line-height: 1.3em;
+    padding: 3rem 2rem;
+    
+
+
+}
+
+.second {
+  display: flex;
+  margin: auto;
+}
+
+.third {
+    text-align: center;
+    color: #000000;
+    font-size: 1rem;
+    padding: 3rem 2rem;
+
+
+}
