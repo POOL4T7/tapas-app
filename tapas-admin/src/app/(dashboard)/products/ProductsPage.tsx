@@ -69,10 +69,10 @@ export default function ProductsPage() {
         setCategories(
           (data?.data || []).map((cat: Category) => ({
             ...cat,
-            status:
-              typeof cat.status === 'boolean'
-                ? cat.status
-                : cat.status === 'active',
+            // status:
+            //   typeof cat.status === 'boolean'
+            //     ? cat.status
+            //     : cat.status === 'active',
           }))
         );
         // setMenus(
@@ -87,10 +87,10 @@ export default function ProductsPage() {
         setSubCategories(
           (subCategories?.data || []).map((sc: SubCategory) => ({
             ...sc,
-            status:
-              typeof sc.status === 'boolean'
-                ? sc.status
-                : sc.status === 'active',
+            // status:
+            //   typeof sc.status === 'boolean'
+            //     ? sc.status
+            //     : sc.status === 'active',
           }))
         );
       } catch {
@@ -173,25 +173,25 @@ export default function ProductsPage() {
     setProductToDelete(null);
   };
 
-  const toggleStatus = async (product: Product) => {
-    setLoading(true);
-    try {
-      await updateProduct(product.id, {
-        ...product,
-        status: !product.status,
-      });
-      setProducts(
-        products.map((p) =>
-          p.id === product.id ? { ...p, status: !p.status } : p
-        )
-      );
-      toast.success('Item status updated');
-    } catch {
-      toast.error('Failed to update item status');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const toggleStatus = async (product: Product) => {
+  //   setLoading(true);
+  //   try {
+  //     await updateProduct(product.id, {
+  //       ...product,
+  //       status: !product.status,
+  //     });
+  //     setProducts(
+  //       products.map((p) =>
+  //         p.id === product.id ? { ...p, status: !p.status } : p
+  //       )
+  //     );
+  //     toast.success('Item status updated');
+  //   } catch {
+  //     toast.error('Failed to update item status');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   // const handleReorder = (oldIndex: number, newIndex: number) => {
   //   // Get the ids of the filtered products (the visible ones)
@@ -324,7 +324,7 @@ export default function ProductsPage() {
         }}
         onDelete={handleDeleteProduct}
         // onReorder={handleReorder}
-        onStatusToggle={toggleStatus}
+        // onStatusToggle={toggleStatus}
         isLoading={loading}
       />
 

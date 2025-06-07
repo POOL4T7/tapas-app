@@ -50,10 +50,10 @@ export function useFetchCategories() {
         setCategories(
           (data?.data || []).map((cat: Category) => ({
             ...cat,
-            status:
-              typeof cat.status === 'boolean'
-                ? cat.status
-                : cat.status === 'active',
+            // status:
+            //   typeof cat.status === 'boolean'
+            //     ? cat.status
+            //     : cat.status === 'active',
           }))
         );
       } catch (err: Error | unknown) {

@@ -39,10 +39,10 @@ export default function MenusPage() {
         setCategories(
           (data?.data || []).map((cat: Category) => ({
             ...cat,
-            status:
-              typeof cat.status === 'boolean'
-                ? cat.status
-                : cat.status === 'active',
+            // status:
+            //   typeof cat.status === 'boolean'
+            //     ? cat.status
+            //     : cat.status === 'active',
           }))
         );
         setMenus(
@@ -114,7 +114,6 @@ export default function MenusPage() {
   const handleDeleteMenu = (menu: Menu) => {
     setMenus(menus.filter((m) => m.id !== menu.id));
   };
-
 
   const toggleStatus = async (menu: Menu) => {
     try {
