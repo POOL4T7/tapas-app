@@ -18,10 +18,10 @@ export default function ContactForm() {
   const handleSubmit = async (e:any) => {
     e.preventDefault();
 
-    const ACCOUNT_SID = 'ACa20ed1426273694455ac0f4f15fee34c'; // Replace with your Twilio Account SID
-    const AUTH_TOKEN = 'de43b9fce3942539c7dd8986cec8236b'; // Replace with your Twilio Auth Token
-    const TWILIO_WHATSAPP_NUMBER = 'whatsapp:+14155238886'; // Your Twilio WhatsApp number
-    const YOUR_WHATSAPP_NUMBER = 'whatsapp:+493025294284'; // Replace with your actual WhatsApp number
+    const ACCOUNT_SID = process.env.ACCOUNT_SID!; // Replace with your Twilio Account SID
+    const AUTH_TOKEN = process.env.AUTH_TOKEN!; // Replace with your Twilio Auth Token
+    const TWILIO_WHATSAPP_NUMBER = process.env.TWILIO_WHATSAPP_NUMBER!; // Your Twilio WhatsApp number
+    const YOUR_WHATSAPP_NUMBER = process.env.YOUR_WHATSAPP_NUMBER!; // Replace with your actual WhatsApp number
 
     const message = `New Contact Form Submission:\n\nName: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
 
