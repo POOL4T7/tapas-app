@@ -28,5 +28,19 @@ module.exports = {
         PORT: 3001,
       },
     },
+    {
+      name: 'landing',
+      cwd: './landing',
+      script: 'npm',
+      args: 'start',
+      env: {
+        NODE_ENV: 'development',
+        PORT: 3002,
+      },
+      env_production: {
+        NODE_ENV: 'production',
+        PORT: 3002,
+      },
+    },
   ],
 };
