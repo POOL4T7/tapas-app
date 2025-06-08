@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Axios instance with base URL
 export const api = axios.create({
-  baseURL: '/altmariendorf',
+  baseURL: '/checkpointcharlie',
 });
 
 // Add a request interceptor

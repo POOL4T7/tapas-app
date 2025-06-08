@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/altmariendorf/api/:path*', // requests to /api/* will be proxied
+        source: '/checkpointcharlie/api/:path*', // requests to /api/* will be proxied
         destination:
-          'https://alt-mariendorf-backend.tapas-mundo.eu/altmariendorf/api/:path*', // Proxy to Backend
+          'https://checkpoint-charlie-backend.tapas-mundo.eu/checkpointcharlie/api/:path*', // Proxy to Backend
       },
     ];
   },
