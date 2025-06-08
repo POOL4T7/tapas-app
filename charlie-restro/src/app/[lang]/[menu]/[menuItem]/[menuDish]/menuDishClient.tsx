@@ -1,6 +1,6 @@
 'use client';
 
-import { getMenuItem } from '@/service/apiService';
+// import { getMenuItem } from '@/service/apiService';
 import React, { useEffect, useState } from 'react';
 import DetailsAlbum from '@/component/detailsAlbum';
 import { LoadingSkeleton } from '@/layouts/Loader';
@@ -50,8 +50,8 @@ const MenuDishClient = ({ menuDish }: { menuDish: string }) => {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const result = await getMenuItem(menuDish);
-        setDish(result.data);
+        // const result = await getMenuItem(menuDish);
+        // setDish(result.data);
       } catch (error) {
         console.error(error);
       }

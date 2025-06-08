@@ -82,7 +82,7 @@ const ClientMenuCards: React.FC = () => {
       <div className={`${style.bg} flex flex-col md:flex-row`}>
         <div className="flex flex-col w-full">
           <div className="md:w-full">
-            <MenuCardAll dish={category} details={details} />
+            {/* <MenuCardAll dish={category} details={details} /> */}
           </div>
         </div>
       </div>
