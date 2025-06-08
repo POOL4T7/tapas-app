@@ -1,0 +1,115 @@
+.modalContent {
+    width: 80%; /* Default width */
+    max-width: 1250px; /* Maximum width */
+    margin: auto; /* Center align */
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        width: 95%; /* Adjust for mobile devices */
+    }
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.bodyModel {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.bodyLeft,
+.bodyRight {
+    flex: 1;
+}
+
+.bodyLeft img {
+    width: 100%;
+    height: auto;
+}
+
+.cardTitle {
+    font-size: 1.25rem; /* Default font size */
+    font-weight: 600;
+    display: flex;
+
+    @media (max-width: 768px) {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.875rem; /* Adjust for mobile devices */
+    }
+}
+
+.cardMeta {
+    font-size: 1rem; /* Default font size */
+    color: #6b7280; /* Default gray color */
+
+    @media (max-width: 768px) {
+        font-size: 0.875rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.75rem; /* Adjust for mobile devices */
+    }
+}
+
+.cardPrice {
+    font-size: 1.125rem; /* Default font size */
+    font-weight: 500;
+    color: #db9423; /* Custom color */
+
+    @media (max-width: 768px) {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.875rem; /* Adjust for mobile devices */
+    }
+}
+
+.modalTitle {
+    font-size: 1.5rem; /* Default font size */
+
+    @media (max-width: 768px) {
+        font-size: 1.25rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem; /* Adjust for mobile devices */
+    }
+}
+
+.modalMeta {
+    font-size: 1.125rem; /* Default font size */
+
+    @media (max-width: 768px) {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.875rem; /* Adjust for mobile devices */
+    }
+}
+
+.modalPrice {
+    font-size: 1.25rem; /* Default font size */
+    font-weight: bold;
+    color: #db9423; /* Custom color */
+
+    @media (max-width: 768px) {
+        font-size: 1.125rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem; /* Adjust for mobile devices */
+    }
+}

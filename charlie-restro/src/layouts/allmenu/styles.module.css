@@ -1,0 +1,105 @@
+.agCoursesItem {
+  margin: 20px 0px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-image: url('/image/a2.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 260px;
+  width: 260px;
+}
+
+.agCoursesItemLink {
+  text-align: center;
+  height: 100%;
+  display: block;
+  padding: 30px 20px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  word-break: keep-all;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 22px 40px;
+
+
+}
+
+.agCoursesItemLink:hover,
+.agCoursesItemLink:hover .agCoursesItemDate {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.agCoursesItemLink:hover .agCoursesItemBg {
+  transform: scale(15);
+}
+
+.agCoursesItemTitle {
+  overflow: hidden;
+  font-family:'Fredericka the Great', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  z-index: 2;
+  position: relative;
+}
+
+.agCoursesItemDateBox {
+  font-size: 18px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+
+.agCoursesItemDate {
+  font-weight: bold;
+  color: #f9b234;
+  transition: color .5s ease;
+}
+
+.agCoursesItemBg {
+  height: 128px;
+  width: 128px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+@media only screen and (max-width: 979px) {
+  .agCoursesItem {
+    flex-basis: calc(50% - 30px);
+  }
+  .agCoursesItemTitle {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .agCoursesItem {
+    flex-basis: 100%;
+  }
+  .agCoursesItemTitle {
+    line-height: 1;
+    font-size: 24px;
+  }
+  .agCoursesItemLink {
+    padding: 22px 40px;
+  }
+  .agCoursesItemDateBox {
+    font-size: 16px;
+  }
+}

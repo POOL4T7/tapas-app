@@ -42,5 +42,33 @@ module.exports = {
         PORT: 3002,
       },
     },
+    {
+      name: 'charlie-admin',
+      cwd: './charlie-admin',
+      script: 'npm',
+      args: 'start',
+      env: {
+        NODE_ENV: 'development',
+        PORT: 3003,
+      },
+      env_production: {
+        NODE_ENV: 'production',
+        PORT: 3003,
+      },
+    },
+    {
+      name: 'charlie-restro',
+      cwd: './charlie-restro',
+      script: 'npm',
+      args: 'start',
+      env: {
+        NODE_ENV: 'development',
+        PORT: 3004,
+      },
+      env_production: {
+        NODE_ENV: 'production',
+        PORT: 3004,
+      },
+    },
   ],
 };

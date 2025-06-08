@@ -1,0 +1,22 @@
+.background{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    background-clip: padding-box;
+}
+.bgBack{
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0,0.7);
+}
+
+.content {
+  background-color: #000720;
+  color: black;
+  font-family: 'Zilla Slab', serif;
+  height: 100%;
+  width: 100%;
+}
+

@@ -1,0 +1,19 @@
+.loader {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%; 
+    width: 100%; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #db9423;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}

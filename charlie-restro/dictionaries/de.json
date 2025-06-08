@@ -1,0 +1,941 @@
+{
+  "langAll": ["Englisch", "Deutsch", "Spanisch"],
+  "bottom": ["Jetzt buchen", "Schreiben Sie uns"],
+  "offerPopup": {
+    "heading": "Welcome to Mundo",
+    "rest": "Checkpoint Charlie - &quot;Das Geschmacksfest&quot;",
+    "title": "Heutiges Spezialangebot!",
+    "description": "Erhalten Sie 10 % Rabatt auf alle Bestellungen über 10 € . Verwenden Sie den Gutscheincode SEPFEST, wenn Sie Ihren Tisch reservieren!",
+    "button1": "Jetzt buchen",
+    "button2": "Schreib uns",
+    "button3": "Betreten"
+  },
+  "cruselData": [
+    {
+      "name": "Slide 1",
+      "title": "Mundo - Checkpoint Charlie!",
+      "button1": "Jetzt Reservieren",
+      "button2": "",
+      "desc": "Wir freuen uns, Sie willkommen zu heißen!",
+      "desc2": ""
+    },
+    {
+      "name": "Slide 2",
+      "title": "Tapas-Zeit im Mundo!",
+      "button1": "Jetzt Reservieren",
+      "button2": "",
+      "desc": "Genießen Sie 3 Tapas für 16,50",
+      "desc2": ""
+    },
+    {
+      "name": "Slide 3",
+      "title": "Geschäft trifft Vergnügen!",
+      "button1": "Jetzt Reservieren",
+      "button2": "Schreiben Sie uns",
+      "desc": "Firmenevents & Private Feiern ab 29,90 pro Person",
+      "desc2": "Schreiben Sie uns"
+    },
+    {
+      "name": "Slide 4",
+      "title": "Feiern Sie Feste im Mundo!",
+      "button1": "Jetzt Reservieren",
+      "button2": "Schreiben Sie uns",
+      "desc": "Weihnachten, Neujahr oder Ostern!",
+      "desc2": "Schreiben Sie uns"
+    },
+    {
+      "name": "Slide 5",
+      "title": "Genießen, Schmecken und Geselligkeit!",
+      "button1": "Jetzt Reservieren",
+      "button2": "",
+      "desc": "Die besten Cocktails – Weine – Biere!",
+      "desc2": ""
+    }
+  ],
+  "allMenuItems": {
+    "title": "Alle Menüeinträge",
+    "desc": "Entdecken Sie alle verfügbaren Menüoptionen."
+  },
+  "allMenu": {
+    "title": "Alle Menüs",
+    "desc": "Entdecken Sie alle verfügbaren Menüoptionen."
+  },
+  "comingSoon": {
+    "title": "Kommt bald",
+    "desc": "Bleiben Sie dran! Etwas Großartiges ist unterwegs."
+  },
+  "header": [
+    "STARTSEITE",
+    "GESAMTMENÜ",
+    "GRUPPENANGEBOT",
+    "RESERVIERUNG",
+    "AUSSTATTUNG",
+    "GALERIE",
+    "BLOG",
+    "KONTAKT"
+  ],
+  "crousel": [
+    {
+      "title": "Willkommen",
+      "desc": "Entdecken Sie das Restaurant",
+      "LinkTag": "Entdecken"
+    },
+    {
+      "title": "Gerichte",
+      "desc": "Erlebe die Magie",
+      "LinkTag": "Jetzt Besuchen"
+    },
+    {
+      "title": "Angebot",
+      "desc": "10% zusätzlicher Rabatt",
+      "LinkTag": "Jetzt Besuchen"
+    }
+  ],
+  "special": [
+    {
+      "title": "Hygienisch",
+      "description": "Hygienisch",
+      "linkTag": "Überprüfen"
+    },
+    {
+      "title": "SPEZIELLE ANFRAGEN",
+      "description": "Eventos privados",
+      "linkTag": "Überprüfen"
+    },
+    {
+      "title": "UNVERTRÄGLICHKEIT",
+      "description": "So viel Sie essen/trinken können",
+      "linkTag": "Gruppenangebote"
+    }
+  ],
+  "facilities": [
+    "Speisebereich & Außenterrasse",
+    "Voll ausgestattete Bar",
+    "Veranstaltungen",
+    "Private Feiern & Gruppenevents",
+    "Warum das Mundo Tapas Bar wählen?",
+    "Erleben Sie das Beste unserer Einrichtungen",
+    "Einrichtungen"
+  ],
+  "reserve": {
+    "heading": "Wählen Sie unten Ihre bevorzugte Restaurantstandorte aus!",
+    "heading2": "Tisch reservieren!",
+    "book": "Jetzt buchen",
+    "textUs": "Texten Sie uns",
+    "selectRestaurant": "Restaurant auswählen",
+    "pleaseSelectRestaurant": "Bitte wählen Sie ein Restaurant aus"
+  },
+  "dish": {
+    "first": "500+ Gerichte",
+    "second": "200+ Getränke",
+    "third": "20+ Länderküchen"
+  },
+  "allDishes": [
+    {
+      "name": "Spezialitäten des Hauses"
+    },
+    {
+      "name": "Tapas"
+    },
+    {
+      "name": "Paellas"
+    },
+    {
+      "name": "Fajitas"
+    },
+    {
+      "name": "Burger"
+    },
+    {
+      "name": "Spanische Weine"
+    },
+    {
+      "name": "Cocktails"
+    },
+    {
+      "name": "Biere"
+    }
+  ],
+  "footer": {
+    "heading": "Lass uns essen",
+    "heading1": "Alle lieben unser Essen",
+    "desc": "Wir bieten eine authentische spanische und lateinamerikanische Atmosphäre mit einer warmen, einladenden Umgebung und außergewöhnlichen traditionellen Gerichten. Entspannen Sie sich bei uns, genießen Sie das Erlebnis und kosten Sie die Aromen im Mundo Tapas-Bar-Restaurant.",
+    "linkTag": "Folge uns",
+    "copyWrite": "Urheberrecht © 2025 Mundo Tapas | Credits",
+    "powerdby": "Bereitgestellt von Mundo Tapas",
+    "imprint": "Impressum",
+    "Privacy": "Datenschutzerklärung"
+  },
+  "InfoContact": {
+    "img": "sparkImg",
+    "about": "Erfahren Sie mehr",
+    "title": "Über uns",
+    "desc": "Entdecken Sie das Herz und die Seele der spanischen und lateinamerikanischen Küche bei Mundo Tapas, wo Tradition auf Innovation trifft."
+  },
+  "aboutSection": {
+    "infoBtn": "Speisekarte ansehen",
+    "infoLink": "/#",
+    "title": "Entdecken Sie Unsere Geschichte",
+    "bannerTitle": "Kostenloses WLAN für alle",
+    "bannerDes": "Fragen Sie nach dem Passwort bei jedem Mitarbeiter",
+    "arcticalDes": "Seit 2003 servieren wir die besten Tapas, spanische und lateinamerikanische Küche",
+    "artical": "<strong style=\"color: #db9423; font-size: 1.4rem;\">N</strong>estled im Herzen Berlins ist Mundo mehr als nur eine Tapas-Bar und lateinamerikanisches Restaurant – es ist eine kulinarische Hommage an die reichen Traditionen der spanischen und lateinamerikanischen Küche. Bei Mundo glauben wir an die transformative Kraft von Essen, wo jedes Gericht eine Geschichte von Erbe, Liebe und Tradition erzählt.",
+    "artical2": "<strong style=\" font-size: 1.2rem;\">O</strong>ur Reise beginnt mit den Rezepten, die von Müttern und Großmüttern weitergegeben wurden – die stillen Heldinnen, die Stunden in der Küche verbrachten, um jedes Gericht mit einer Prise Liebe zu perfektionieren. Hier bei Mundo ehren wir ihr Erbe, indem wir nur die frischesten Zutaten verwenden, um authentische spanische Tapas nach ihren Originalrezepten zu kreieren.",
+    "artical3": "<strong style=\"color: #db9423; font-size: 1.4rem;\">A</strong>ber unser Menü reicht über Tapas hinaus. Wir bieten stolz eine ausgewählte Sammlung von Klassikern aus der spanischen und lateinamerikanischen Küche sowie unsere eigenen einzigartigen Kreationen, die traditionelle Aromen mit moderner Inspiration verbinden.",
+    "artical4": "<strong style=\"font-size: 1.2rem;\">U</strong>m Ihr kulinarisches Erlebnis zu ergänzen, bieten wir eine Auswahl hervorragender spanischer Weine an, von denen viele persönlich importiert werden, um Authentizität und Qualität sicherzustellen. Ob Sie einen gemütlichen Abend mit Freunden verbringen oder einen besonderen Anlass feiern, unsere Weine sind sorgfältig ausgewählt, um die Aromen unserer Gerichte zu verstärken und Ihr kulinarisches Erlebnis zu bereichern.",
+    "artical5": "<strong style=\"color: #db9423; font-size: 1.4rem;\">W</strong>ochenenden und Feiertage bei Mundo sind an sich schon eine Feier. Wir empfehlen, einen Tisch für die Abendstunden zu reservieren, um sicherzustellen, dass Sie die lebhafte Atmosphäre und die Gelegenheit, unsere kulinarischen Köstlichkeiten zu genießen, nicht verpassen.",
+    "artical6": "<strong style=\" font-size: 1.2rem;\">A</strong>ls Mundo sind wir mehr als nur ein Restaurant – wir sind eine Familie, die leidenschaftlich gerne unsere Liebe zur spanischen und lateinamerikanischen Küche mit Ihnen teilt. Von unserer Küche zu Ihrem Tisch laden wir Sie ein, mit uns auf eine Reise der Aromen, Traditionen und unvergesslichen Momente zu gehen.",
+    "artical7": "<strong style=\"color: #db9423; font-size: 1.4rem;\">B</strong>ienvenido zu Mundo – wo jede Mahlzeit eine Feier des Erbes und des Geschmacks ist.",
+    "articalEnd": "Ihr Mundo-Team"
+  },
+  "policy": {
+    "leftTitle": "Unsere Lebensmittelpolitik",
+    "leftArticle": "Bei Mundo Tapas sind wir darauf bedacht, ein außergewöhnliches kulinarisches Erlebnis zu bieten, das auf Qualität, Tradition und Innovation basiert. Wir verwenden frische, lokal bezogene Zutaten, um höchste Qualität und Geschmack zu gewährleisten und gleichzeitig unsere Gemeinschaft zu unterstützen. Unsere Gerichte sind inspiriert von spanischen und lateinamerikanischen kulinarischen Traditionen und werden mit authentischen Gewürzen und Techniken zubereitet. Wir legen großen Wert auf Ihre Gesundheit und halten strenge Hygienestandards und die neuesten Lebensmittel-Sicherheitsprotokolle ein.",
+    "leftArticle1": "Unser Engagement für Nachhaltigkeit umfasst die Minimierung von Lebensmittelabfällen und die Verwendung umweltfreundlicher Verpackungen. Während wir traditionelle Aromen ehren, nutzen unsere Köche neue Techniken und Zutaten, um einzigartige, köstliche Gerichte zu kreieren. Ihre Zufriedenheit hat für uns oberste Priorität, und wir bemühen uns, jeden Besuch mit unserem aufmerksamen Service unvergesslich zu machen. Unsere Lebensmittelpolitik ist unser Versprechen für Qualität, Authentizität und ein lebendiges kulinarisches Erlebnis. ¡Bienvenidos a Mundo Tapas!",
+    "rightArticle": "Bei Mundo Tapas basiert unsere Kernpolitik darauf, ein außergewöhnliches kulinarisches Erlebnis zu bieten, indem wir die höchsten Standards für Qualität, Authentizität und Innovation wahren. Wir verpflichten uns, frische, lokal bezogene Zutaten zu verwenden, um sicherzustellen, dass jedes Gericht vor Geschmack strotzt und gleichzeitig nachhaltige Praktiken unterstützt werden.",
+    "rightArticle1": "Wir legen großen Wert auf die Gesundheit und Sicherheit unserer Gäste durch strenge Hygienemaßnahmen und Lebensmittel-Sicherheitsprotokolle. Darüber hinaus streben wir kontinuierlich nach Innovation, indem wir traditionelle Aromen mit modernen kulinarischen Techniken kombinieren, um einzigartige, unvergessliche Gerichte zu schaffen. Die Zufriedenheit unserer Kunden steht im Mittelpunkt all dessen, was wir tun, und wir bemühen uns, Ihre Erwartungen bei jedem Besuch zu übertreffen. ¡Bienvenidos a Mundo Tapas!",
+    "rightTitle": "Unsere Kernpolitik"
+  },
+  "serviceList": {
+    "facilitiesH": [
+      "I",
+      "N",
+      "S",
+      "T",
+      "A",
+      "L",
+      "A",
+      "C",
+      "I",
+      "O",
+      "N",
+      "E",
+      "S"
+    ],
+    "heading": "Warum Mundo?",
+    "title": "Willkommen im Mundo – Checkpoint Charlie, Berlin",
+    "introduction": "Entdecken Sie das ultimative kulinarische Erlebnis im Mundo Tapas Bar in Berlin, wo erstklassige Aromen auf modernen Komfort treffen. Ob Sie ein intimes Abendessen oder einen lebhaften Veranstaltungsraum suchen, wir haben alles für Sie.",
+    "services": [
+      {
+        "path": "diningArea",
+        "title": "Speisebereich & Außenterrasse",
+        "description": "Unser gemütlicher Innenbereich und die großzügige Außenterrasse bieten das perfekte Ambiente für jede Gelegenheit. Genießen Sie köstliche Tapas in entspannter Atmosphäre, egal ob Sie mit Freunden speisen oder einen besonderen Moment unter freiem Himmel feiern.",
+        "metaTitle": "Dining Area & Outdoor Patio – Enjoy Tapas Indoors & Outdoors in Berlin ",
+        "metaDescription": " Enjoy a comfortable dining experience at Mundo Tapas Bar in Berlin. Choose between our stylish indoor seating or the refreshing outdoor patio for your perfect meal",
+        "id": "essbereich"
+      },
+      {
+        "path": "fullServiceBar",
+        "title": "Voll ausgestattete Bar",
+        "description": "In der Mundo Tapas Bar bietet unsere voll ausgestattete Bar eine Auswahl an erstklassigen Spirituosen, sorgfältig zusammengestellten Cocktails und einer Weinkarte. Ob Sie Lust auf einen erfrischenden Cocktail oder ein edles Glas Wein haben, unsere erfahrenen Barkeeper sorgen dafür, dass Ihr Erlebnis unvergesslich wird.",
+        "metaTitle": "Full-Service Bar – Cocktails, Wines & More at Mundo Tapas Bar Berlin",
+        "metaDescription": "Unwind at Mundo Tapas Bar’s full-service bar in Berlin. From handcrafted cocktails to fine wines, enjoy expertly mixed drinks in a lively and welcoming setting!",
+        "id": "bar-mit-vollem-service"
+      },
+      {
+        "path": "eventSpace",
+        "title": "Veranstaltungen",
+        "description": "Suchen Sie eine Location für Ihre nächste Veranstaltung? Feiern Sie Ihren Geburtstag, Ihr Jubiläum, den Junggesellenabschied oder Ihre Hochzeitsfeier bei uns. Von Babypartys über Abschlussfeiern bis hin zu Firmenessen – wir sind bereit, jede Veranstaltung zu betreuen. Unsere flexiblen Veranstaltungsräume bieten Platz für Gruppen jeder Größe, sodass jeder Gast eine großartige Zeit hat.",
+        "metaTitle": "Events - Celebrate at Mundo Tapas Bar with Flexible Spaces",
+        "metaDescription": "Planning a special event? From birthdays and weddings to baby showers and corporate dinners, Mundo Tapas Bar offers versatile spaces for any celebration. Get an unforgettable experience for guests of all sizes.",
+        "id": "veranstaltungsraume"
+      },
+      {
+        "path": "privateGroup",
+        "title": "Private Feiern & Gruppenevents",
+        "description": "Planen Sie eine private Feier oder ein Gruppenevent in Berlin? Unser Veranstaltungsort bietet kostenloses WLAN, saubere Waschräume und anpassbare Eventpakete. Lassen Sie uns alle Details übernehmen, damit Sie Ihren besonderen Tag in vollen Zügen genießen können. Ob Firmenessen, private Feier oder Gruppenevent – wir bieten den besten Service in Berlin.",
+        "metaTitle": "Reserve your Private Parties & Group Events at mundo tapas",
+        "metaDescription": "Celebrate private parties and group events at Mundo Tapas Bar. Perfect for birthdays, weddings, corporate gatherings, and more with flexible spaces and tailored menus.",
+        "id": "private-gruppe"
+      },
+      {
+        "path": "chooseUs",
+        "title": "Warum das Mundo Tapas Bar wählen?",
+        "description": "** Geräumiger Speisebereich und Außenterrasse ** Voll ausgestattete Bar mit Premium-Getränken ** Möglichkeit für private Veranstaltungsräume ** Kostenloses WLAN und saubere Waschräume ** Perfekte Location für Geburtstage, Hochzeiten, Jubiläen und mehr ** Optionen für Gruppenevents und Firmenessen",
+        "metaTitle": "Know Why Choose Mundo Tapas Bar - Unique Flavors & special events",
+        "metaDescription": "Discover why Mundo Tapas Bar is the perfect choice! Enjoy authentic cuisine, personalized menus, and flexible spaces ideal for private parties, events, and celebrations.",
+        "id": "wahle-uns"
+      }
+    ],
+    "contact": {
+      "message1": "Machen Sie die Mundo Tapas Bar zu Ihrem bevorzugten Veranstaltungsort in Berlin für ein unvergessliches kulinarisches Erlebnis oder eine unvergessliche Veranstaltung.",
+      "message": "Kontaktieren Sie uns noch heute, um Ihren Tisch zu reservieren oder sich über die Ausrichtung Ihrer nächsten Veranstaltung zu informieren!"
+    }
+  },
+  "meetUs": {
+    "about": "Treffen Sie uns",
+    "title": "Tisch Reservieren",
+    "desc": "Wir würden uns freuen, von Ihnen zu hören! Kontaktieren Sie uns für Reservierungen, Anfragen oder Feedback – Ihre Zufriedenheit hat bei Mundo Tapas oberste Priorität."
+  },
+  "address": {
+    "title": "Besuchen Sie uns persönlich an einem unserer charmanten Standorte:",
+    "introduction": "",
+    "AddressList": [
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Alt-Mariendorf 32, 12107 Berlin"
+      },
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Zimmerstraße 19, 10969 Berlin"
+      },
+      {
+        "title": "MUNDO Tapas - Bar - Restaurant",
+        "description": "Potsdamer Platz, 10785 Berlin"
+      }
+    ],
+    "contact": {
+      "message": "Wir laden Sie herzlich ein, uns zu besuchen und das köstliche Erlebnis in unserem Restaurant zu genießen."
+    }
+  },
+  "privacyNew": {
+    "heading": "Datenschutz-Bestimmungen",
+
+    "policy": [
+      {
+        "section": "1. Datenschutz auf einen Blick",
+        "content": [
+          {
+            "title": "Allgemeine Informationen",
+            "details": "Die folgenden Informationen bieten einen Überblick darüber, was mit Ihren personenbezogenen Daten geschieht, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, die verwendet werden können, um Sie persönlich zu identifizieren. Detaillierte Informationen zum Datenschutz finden Sie in der nachstehenden Datenschutzerklärung."
+          },
+          {
+            "title": "Datenerfassung auf dieser Website",
+            "details": "Die Datenverarbeitung auf dieser Website erfolgt durch den Betreiber der Website. Die Kontaktdaten sind im Impressum der Website verfügbar."
+          },
+          {
+            "title": "Nutzung von Drittanbieterdiensten für Reservierungen",
+            "details": "Mundo verwendet Quandoo.de für Tischreservierungen. Personenbezogene Daten werden von Quandoo.de erfasst, und <a href=\"https://tapas-mundo.com\">Mundo</a> hat keine Kontrolle oder Zugriff auf diese Daten. Bitte beachten Sie die Datenschutzerklärung von Quandoo.de."
+          },
+          {
+            "title": "Wie erfassen wir Ihre Daten?",
+            "details": "Ihre Daten werden entweder erfasst, wenn Sie sie bereitstellen (z. B. über Kontaktformulare), oder automatisch durch die IT-Systeme der Website (z. B. Browsertyp, Betriebssystem, Zugriffszeit)."
+          },
+          {
+            "title": "Wofür verwenden wir Ihre Daten?",
+            "details": "Einige Daten stellen die Funktionalität der Website sicher, während andere Daten verwendet werden können, um das Benutzerverhalten zu analysieren."
+          },
+          {
+            "title": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+            "details": "Sie haben das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu korrigieren oder zu löschen. Sie können auch die Einschränkung ihrer Verarbeitung verlangen und Beschwerden bei Aufsichtsbehörden einreichen."
+          }
+        ]
+      },
+
+      {
+        "section": "2. Hosting und Content Delivery Networks (CDN)",
+        "content": [
+          {
+            "title": "Externe Hosting",
+            "details": "Diese Website wird von einem externen Dienstanbieter gehostet. Die auf dieser Website gesammelten personenbezogenen Daten werden auf den Servern des Hosts gespeichert. Dazu können unter anderem IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Webseitenzugriffe und andere über eine Website generierte Daten gehören."
+          },
+          {
+            "title": "Nutzung des Hosts",
+            "details": "Der Host wird verwendet, um den Vertrag mit unseren potenziellen und bestehenden Kunden zu erfüllen (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO)."
+          },
+          {
+            "title": "Datenverarbeitung durch den Anbieter",
+            "details": "Unser Host wird Ihre Daten nur in dem Umfang verarbeiten, der erforderlich ist, um seine Dienstleistungsverpflichtungen zu erfüllen und unseren Anweisungen bezüglich dieser Daten zu folgen."
+          },
+          {
+            "title": "Verwendeter Anbieter",
+            "details": "Wir verwenden den folgenden Anbieter: MilesWeb Internet Services Pvt Ltd (www.milesweb.com)."
+          },
+          {
+            "title": "Abschluss eines Vertrages zur Auftragsverarbeitung",
+            "details": "Um eine datenschutzkonforme Verarbeitung sicherzustellen, haben wir einen Vertrag zur Auftragsverarbeitung mit unserem Host abgeschlossen."
+          }
+        ]
+      },
+      {
+        "section": "3. Allgemeine Informationen und Pflichtinformationen",
+        "content": [
+          {
+            "title": "Datenschutzerklärung",
+            "details": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Wenn Sie diese Website nutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, die dazu verwendet werden können, Sie persönlich zu identifizieren. Diese Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck dies geschieht. Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
+          },
+          {
+            "title": "Hinweis zur verantwortlichen Stelle",
+            "details": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Mundo AKS II GmbH, Zimmerstraße 19, 10969 Berlin. Die verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen usw.) entscheidet."
+          },
+          {
+            "title": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+            "details": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können jede Einwilligung, die Sie bereits erteilt haben, jederzeit widerrufen. Sie müssen uns dafür nur eine informelle E-Mail senden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+          },
+          {
+            "title": "Recht auf Widerspruch gegen die Datenerhebung in besonderen Fällen und gegen Direktwerbung (Art. 21 DSGVO)",
+            "details": "Wenn die Datenverarbeitung auf Art. 6 Abs. 1 lit. e oder f DSGVO basiert, haben Sie das Recht, jederzeit aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen; dies gilt auch für das Profiling, das auf diesen Bestimmungen beruht. Die geltende Rechtsgrundlage, auf der die Verarbeitung beruht, ist in dieser Datenschutzerklärung zu finden. Wenn Sie Widerspruch einlegen, werden wir Ihre betroffenen personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen (Widerspruch gemäß Artikel 21 Abs. 1 DSGVO). Wenn Ihre personenbezogenen Daten für Direktwerbung verarbeitet werden, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit dieser Direktwerbung verbunden ist. Wenn Sie Widerspruch einlegen, werden Ihre personenbezogenen Daten nicht mehr für die Zwecke der Direktwerbung verwendet (Widerspruch gemäß Artikel 21 Abs. 2 DSGVO)."
+          },
+          {
+            "title": "Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde",
+            "details": "Im Falle von Verstößen gegen die DSGVO haben die Betroffenen das Recht, bei einer Aufsichtsbehörde Beschwerde einzulegen, insbesondere in dem Mitgliedstaat, in dem sie ihren Wohnsitz, ihren Arbeitsplatz oder den Ort des angeblichen Verstoßes haben. Das Recht auf Beschwerde besteht unbeschadet anderer verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe."
+          },
+          {
+            "title": "Recht auf Datenübertragbarkeit",
+            "details": "Sie haben das Recht, die Daten, die wir automatisiert auf Grundlage Ihrer Einwilligung oder zur Erfüllung eines Vertrags verarbeiten, an Sie oder an einen Dritten in einem gängigen, maschinenlesbaren Format zu übergeben. Wenn Sie die Daten direkt an einen anderen Verantwortlichen anfordern, erfolgt dies nur, wenn es technisch machbar ist."
+          },
+          {
+            "title": "SSL- oder TLS-Verschlüsselung",
+            "details": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie z. B. Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, SSL- oder TLS-Verschlüsselung. Sie erkennen eine verschlüsselte Verbindung daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Ist die SSL- oder TLS-Verschlüsselung aktiviert, können die Daten, die Sie an uns übermitteln, nicht von Dritten gelesen werden."
+          },
+          {
+            "title": "Information, Löschung und Berichtigung",
+            "details": "Im Rahmen der geltenden gesetzlichen Bestimmungen haben Sie jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung und, wenn erforderlich, ein Recht auf Berichtigung oder Löschung dieser Daten. Für diesen Zweck sowie für weitere Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an die im Impressum angegebene Adresse wenden."
+          },
+          {
+            "title": "Recht auf Einschränkung der Verarbeitung",
+            "details": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Sie können sich jederzeit an die im Impressum angegebene Adresse wenden. Das Recht auf Einschränkung der Verarbeitung besteht in den folgenden Fällen: • Wenn Sie die Richtigkeit der über Sie gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Überprüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. • Wenn die Verarbeitung Ihrer personenbezogenen Daten rechtswidrig war/ist, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen. • Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten anstelle der Löschung zu verlangen. • Wenn Sie Widerspruch gemäß Artikel 21 Absatz 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren Interessen und unseren erfolgen. Solange noch nicht klar ist, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verwendet werden."
+          },
+          {
+            "title": "Widerspruch gegen Werbe-E-Mails",
+            "details": "Der Nutzung von Kontaktdaten, die im Rahmen der Impressumspflicht veröffentlicht wurden, zur Übersendung von nicht ausdrücklich angeforderten Werbe- und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+          }
+        ]
+      },
+
+      {
+        "section": "4. Datenerfassung auf dieser Website",
+        "content": [
+          {
+            "title": "Cookies",
+            "details": "Unsere Websites verwenden sogenannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies verbleiben auf Ihrem Endgerät, bis Sie diese selbst löschen oder Ihr Webbrowser diese automatisch auflöst. In einigen Fällen können auch Cookies von Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Drittanbieter-Dienste (z. B. Cookies zur Abwicklung von Zahlungsdiensten). Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Website-Funktionen ohne diese nicht funktionieren würden (z. B. die Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies werden verwendet, um das Nutzerverhalten auszuwerten oder Werbung anzuzeigen. Technisch notwendige Cookies (z. B. Warenkorb-Cookies) werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Andere Cookies werden nur mit Ihrer Einwilligung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO gespeichert. Die Einwilligung kann jederzeit für die Zukunft widerrufen werden. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein. Sofern Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung gesondert informieren und ggf. Ihre Einwilligung einholen."
+          },
+          {
+            "title": "Server-Log-Dateien",
+            "details": "Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage, IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und Optimierung seiner Website – hierzu müssen die Server-Log-Dateien erfasst werden."
+          },
+          {
+            "title": "Kontaktformular",
+            "details": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+          },
+          {
+            "title": "Anfragen per E-Mail, Telefon oder Fax",
+            "details": "Wenn Sie uns per E-Mail, Telefon oder Fax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und/oder auf unseren berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO), da wir ein berechtigtes Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen haben. Die von Ihnen an uns per Kontaktanfrage übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt."
+          },
+          {
+            "title": "Auftragsverarbeitung",
+            "details": "Wir haben mit dem oben genannten Anbieter einen Auftragsverarbeitungsvertrag (AVV) abgeschlossen. Dies ist ein nach den Datenschutzvorschriften erforderlicher Vertrag, der sicherstellt, dass wir die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und in Übereinstimmung mit der DSGVO verarbeiten."
+          }
+        ]
+      },
+      {
+        "section": "5. Analyse Tools und Werbung",
+        "content": [
+          {
+            "title": "Google Tag Manager",
+            "details": "Wir verwenden Google Tag Manager. Der Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Tag Manager ist ein Tool, das es uns ermöglicht, Tracking- oder Statistiktools und andere Technologien in unsere Website zu integrieren. Google Tag Manager erstellt keine Benutzerprofile, speichert keine Cookies und führt keine unabhängigen Analysen durch. Es wird nur verwendet, um die Informationen über die integrierten Tools zu verwalten und anzuzeigen. Allerdings erfasst Google Tag Manager Ihre IP-Adresse, die ebenfalls an die Muttergesellschaft von Google in den Vereinigten Staaten übertragen werden kann. Die Nutzung von Google Tag Manager basiert auf Art. 6 Abs. 1 lit. f DSGVO. Der Betreiber der Website hat ein berechtigtes Interesse daran, verschiedene Tools schnell in seiner Website zu integrieren und zu verwalten. Wenn das entsprechende Einverständnis eingeholt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; das Einverständnis kann jederzeit widerrufen werden."
+          },
+          {
+            "title": "Google Analytics",
+            "details": "Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Der Anbieter ist Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics verwendet 'Cookies'. Dies sind Textdateien, die auf Ihrem Computer gespeichert werden und eine Analyse Ihrer Nutzung der Website ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Nutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Die Speicherung von Cookies von Google Analytics und die Nutzung dieses Analysetools basieren auf Art. 6 Abs. 1 lit. f DSGVO. Der Betreiber der Website hat ein berechtigtes Interesse daran, das Nutzerverhalten zu analysieren, um sowohl seine Website als auch seine Werbung zu optimieren. Wenn das entsprechende Einverständnis eingeholt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; das Einverständnis kann jederzeit widerrufen werden."
+          },
+          {
+            "title": "IP-Anonymisierung",
+            "details": "Wir haben die Funktion zur Anonymisierung der IP auf dieser Website aktiviert. Dies bedeutet, dass Ihre IP-Adresse von Google innerhalb der Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übertragung in die USA gekürzt wird. Nur in Ausnahmefällen wird die vollständige IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen verwenden, um Ihre Nutzung der Website auszuwerten, Berichte über die Aktivitäten der Website zusammenzustellen und weitere mit der Aktivität der Website und der Nutzung des Internets verbundene einrichtungen gegenüber dem Betreiber der Website zu erbringen. Die IP-Adresse, die Ihr Browser im Rahmen von Google Analytics übermittelt, wird nicht mit anderen Daten von Google zusammengeführt."
+          },
+          {
+            "title": "Browser-Plugin",
+            "details": "Sie können die Speicherung von Cookies verhindern, indem Sie die entsprechende Einstellung in Ihrer Browser-Software vornehmen; wir weisen jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können. Sie können zudem verhindern, dass Google die durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (einschließlich Ihrer IP-Adresse) erfasst und diese Daten verarbeitet, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: https://tools.google.com/dlpage/gaoptout?hl=de."
+          },
+          {
+            "title": "Widerspruch gegen die Datenerfassung",
+            "details": "Sie können verhindern, dass Google Analytics Ihre Daten erfasst, indem Sie auf den folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, das verhindert, dass Ihre Daten bei zukünftigen Besuchen dieser Website erfasst werden: Google Analytics deaktivieren. Weitere Informationen darüber, wie Google Analytics mit Nutzerdaten umgeht, finden Sie in der Datenschutzerklärung von Google: https://support.google.com/analytics/answer/6004245?hl=de."
+          },
+          {
+            "title": "Auftragsverarbeitung",
+            "details": "Wir haben einen Auftragsverarbeitungsvertrag mit Google abgeschlossen und erfüllen vollständig die strengen Anforderungen der deutschen Datenschutzbehörden bei der Nutzung von Google Analytics."
+          },
+          {
+            "title": "Demografische Merkmale in Google Analytics",
+            "details": "Diese Website verwendet die Funktion \"demografische Merkmale\" von Google Analytics. Dadurch können Berichte erstellt werden, die Informationen über das Alter, das Geschlecht und die Interessen der Besucher der Website enthalten. Diese Daten stammen aus der interessenbasierten Werbung von Google und aus Drittanbieterbesucherdaten. Diese Daten können keiner bestimmten Person zugeordnet werden. Sie können diese Funktion jederzeit über die Anzeigeneinstellungen in Ihrem Google-Konto deaktivieren oder die Erfassung Ihrer Daten durch Google Analytics, wie in dem Abschnitt \"Widerspruch gegen die Datenerfassung\" beschrieben, allgemein untersagen."
+          },
+          {
+            "title": "Speicherdauer",
+            "details": "Die von Google gespeicherten Nutzer- und Ereignisdaten, die mit Cookies, Nutzer-IDs (z. B. Nutzer-ID) oder Werbe-IDs (z. B. DoubleClick-Cookies, Werbe-ID von Android) verknüpft sind, werden anonymisiert oder gelöscht, nachdem sie 14 Monate alt sind. Details dazu finden Sie unter dem folgenden Link: https://support.google.com/analytics/answer/7667196?hl=de."
+          },
+          {
+            "title": "Google Analytics Remarketing",
+            "details": "Diese Website nutzt die Remarketing-Funktionen von Google Analytics in Kombination mit den Funktionen zur geräteübergreifenden Werbung von Google Ads und Google DoubleClick. Der Anbieter ist Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublin 4, Irland. Diese Funktion ermöglicht es, die mit Google Analytics Remarketing erstellten Zielgruppen mit den geräteübergreifenden Funktionen von Google Ads und Google DoubleClick zu verknüpfen. So können Ihnen personalisierte Werbebotschaften, die auf Ihren vorherigen Nutzungsverhalten basieren, auch auf einem anderen Ihrer Geräte (z. B. Tablet oder PC) angezeigt werden."
+          },
+          {
+            "title": "Google Ads und Google Conversion-Tracking",
+            "details": "Diese Website nutzt Google Ads. Google Ads ist ein Online-Werbeprogramm von Google Ireland Limited (\"Google\"), Gordon House, Barrow Street, Dublin 4, Irland. Im Rahmen von Google Ads verwenden wir das sogenannte Conversion-Tracking. Wenn Sie auf eine von Google geschaltete Anzeige klicken, wird ein Cookie für das Conversion-Tracking gesetzt. Cookies sind kleine Textdateien, die im Internetbrowser auf dem Computer des Nutzers gespeichert werden. Diese Cookies verfallen nach 30 Tagen und werden nicht zur persönlichen Identifizierung von Nutzern verwendet. Wenn der Nutzer bestimmte Seiten dieser Website besucht und das Cookie noch nicht abgelaufen ist, können Google und wir erkennen, dass der Nutzer auf die Anzeige geklickt hat und auf diese Seite weitergeleitet wurde."
+          }
+        ]
+      },
+      {
+        "section": "6. Newsletter",
+        "content": [
+          {
+            "title": "Newsletter-Daten",
+            "details": "Wenn Sie den auf der Website angebotenen Newsletter erhalten möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, die es uns ermöglichen, zu überprüfen, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und dass Sie dem Erhalt des Newsletters zustimmen. Es werden keine weiteren Daten erfasst oder nur auf freiwilliger Basis. Wir verwenden diese Daten ausschließlich, um die angeforderten Informationen zu senden, und geben sie nicht an Dritte weiter. Die in das Anmeldeformular für den Newsletter eingegebenen Daten werden ausschließlich auf Grundlage Ihrer Einwilligung verarbeitet (Art. 6 Abs. 1 lit. a DSGVO). Sie können Ihre Einwilligung zur Speicherung der Daten, der E-Mail-Adresse und deren Verwendung zum Versand des Newsletters jederzeit widerrufen, beispielsweise über den Link „abmelden“ im Newsletter. Die Rechtmäßigkeit der bereits durchgeführten Datenverarbeitungsmaßnahmen bleibt vom Widerruf unberührt. Die Daten, die Sie uns zur Verfügung stellen, um sich für den Newsletter anzumelden, werden von uns oder dem Newsletter-Dienstleister gespeichert, bis Sie sich vom Newsletter abmelden, und nach Ihrer Abmeldung aus der Verteilerliste gelöscht. Daten, die wir aus anderen Gründen gespeichert haben, bleiben unberührt. Nachdem Sie sich von der Verteilerliste des Newsletters abgemeldet haben, kann Ihre E-Mail-Adresse von uns oder dem Newsletter-Dienstleister in einer Blacklist gespeichert werden, um zukünftige Mailings zu verhindern. Die Daten aus der Blacklist werden nur zu diesem Zweck verwendet und nicht mit anderen Daten zusammengeführt. Dies dient sowohl Ihrem Interesse als auch unserem Interesse, den gesetzlichen Anforderungen beim Versand von Newslettern nachzukommen (berechtigtes Interesse im Sinne des Art. 6 Abs. 1 lit. f DSGVO). Die Speicherung in der Blacklist ist zeitlich nicht begrenzt. Sie können der Speicherung widersprechen, wenn Ihre Interessen unsere berechtigten Interessen überwiegen."
+          }
+        ]
+      },
+      {
+        "section": "7. Plugins und Tools",
+        "content": [
+          {
+            "title": "Google Web Fonts",
+            "details": "Diese Website verwendet sogenannte Webfonts, die von Google bereitgestellt werden, für die einheitliche Darstellung von Schriftarten. Wenn Sie eine Seite aufrufen, lädt Ihr Browser die benötigten Webfonts in den Cache Ihres Browsers, um Texte und Schriftarten korrekt darzustellen. Zu diesem Zweck muss der von Ihnen verwendete Browser eine Verbindung zu den Servern von Google herstellen. Dadurch erfährt Google, dass diese Website über Ihre IP-Adresse aufgerufen wurde. Die Verwendung von Google WebFonts basiert auf Art. 6 Abs. 1 lit. f DSGVO. Der Betreiber der Website hat ein berechtigtes Interesse an der einheitlichen Präsentation der Schriftart auf seiner Website. Sofern eine entsprechende Einwilligung eingeholt wurde (z. B. Einwilligung zur Speicherung von Cookies), erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung kann jederzeit widerrufen werden. Unterstützt Ihr Browser keine Webfonts, wird eine Standardschriftart verwendet. Weitere Informationen zu Google Web Fonts finden Sie unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de."
+          },
+          {
+            "title": "Google Maps",
+            "details": "Diese Website nutzt den Kartenservice Google Maps über eine API. Der Anbieter ist Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland. Um die Funktionen von Google Maps nutzen zu können, ist es erforderlich, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Google-Server in den USA übertragen und dort gespeichert. Der Anbieter dieser Website hat keinen Einfluss auf diese Datenübertragung. Die Nutzung von Google Maps liegt im Interesse einer ansprechenden Präsentation unserer Online-Angebote und der einfachen Auffindbarkeit der auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne des Art. 6 Abs. 1 lit. f DSGVO dar. Weitere Informationen zur Verarbeitung von Nutzerdaten finden Sie in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de."
+          }
+        ]
+      },
+      {
+        "section": "8. E-Commerce und Zahlungsanbieter",
+        "content": [
+          {
+            "title": "Verarbeitung von Daten (Kunden- und Vertragsdaten)",
+            "details": "Wir erheben, verarbeiten und nutzen personenbezogene Daten nur insoweit, als dies für die Begründung, den Inhalt oder die Änderung des rechtlichen Verhältnisses erforderlich ist (Bestandsdaten). Dies erfolgt auf Grundlage von Artikel 6 Absatz 1 Buchstabe b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erlaubt. Wir erheben, verarbeiten und nutzen personenbezogene Daten über die Nutzung dieser Website (Nutzungsdaten) nur insoweit, als dies erforderlich ist, um dem Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder um ihn abzurechnen. Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder nach Beendigung der Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben unberührt."
+          }
+        ]
+      },
+      {
+        "section": "9. Eigene einrichtungen",
+        "content": [
+          {
+            "title": "Umgang mit Bewerberdaten",
+            "details": "Wir bieten Ihnen die Möglichkeit, sich bei uns zu bewerben (z. B. per E-Mail, Post oder über das Online-Bewerbungsformular). Im Folgenden informieren wir Sie über den Umfang, den Zweck und die Verwendung Ihrer im Rahmen des Bewerbungsprozesses erhobenen personenbezogenen Daten. Wir versichern, dass die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Einklang mit den geltenden Datenschutzgesetzen und allen anderen gesetzlichen Bestimmungen erfolgt und dass Ihre Daten streng vertraulich behandelt werden."
+          },
+          {
+            "title": "Umfang und Zweck der Datenerhebung",
+            "details": "Wenn Sie uns eine Bewerbung zusenden, verarbeiten wir Ihre damit verbundenen personenbezogenen Daten (z. B. Kontakt- und Kommunikationsdaten, Bewerbungsunterlagen, Notizen aus Vorstellungsgesprächen usw.), soweit dies zur Entscheidung über die Begründung eines Arbeitsverhältnisses erforderlich ist. Die Rechtsgrundlage hierfür ist § 26 BDSG-neu nach deutschem Recht (Initiierung eines Arbeitsverhältnisses), Artikel 6 Absatz 1 Buchstabe b DSGVO (allgemeine Vertragseröffnung) und – sofern Sie Ihre Einwilligung gegeben haben – Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit widerrufen werden. Ihre personenbezogenen Daten werden innerhalb unseres Unternehmens nur an Personen weitergegeben, die an der Verarbeitung Ihrer Bewerbung beteiligt sind."
+          },
+          {
+            "title": "Aufbewahrungsdauer der Daten",
+            "details": "Wenn wir Ihnen kein Stellenangebot unterbreiten können, Sie ein Stellenangebot ablehnen oder Ihre Bewerbung zurückziehen, behalten wir uns das Recht vor, die von Ihnen übermittelten Daten bis zu 6 Monate nach Abschluss des Bewerbungsprozesses (Ablehnung oder Rücknahme der Bewerbung) auf Grundlage unserer berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO) aufzubewahren. Die Daten werden dann gelöscht und die physischen Bewerbungsunterlagen vernichtet. Die Speicherung dient insbesondere dem Nachweis im Falle von Rechtsstreitigkeiten. Sollte sich herausstellen, dass die Daten nach Ablauf der 6-Monatsfrist benötigt werden (z. B. aufgrund eines drohenden oder anhängigen Rechtsstreits), erfolgt die Löschung erst, wenn der Zweck für die weitere Speicherung nicht mehr besteht. Eine längere Speicherung kann auch erfolgen, wenn Sie Ihre Einwilligung gegeben haben (Art. 6 Abs. 1 lit. a DSGVO) oder wenn gesetzliche Aufbewahrungspflichten der Löschung entgegenstehen."
+          },
+          {
+            "title": "Einschluss in den Bewerberpool",
+            "details": "Wenn wir Ihnen kein Stellenangebot unterbreiten, kann es möglich sein, Sie in unseren Bewerberpool aufzunehmen. Wenn Sie angenommen werden, werden alle Dokumente und Informationen aus der Bewerbung in den Bewerberpool übertragen, um Sie bei geeigneten Stellenangeboten zu kontaktieren. Die Aufnahme in den Bewerberpool erfolgt ausschließlich auf Grundlage Ihrer ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die Einwilligung ist freiwillig und steht in keinem Zusammenhang mit dem laufenden Bewerbungsprozess. Die betroffene Person kann ihre Einwilligung jederzeit widerrufen. In diesem Fall werden die Daten unwiderruflich aus dem Bewerberpool gelöscht, es sei denn, es bestehen gesetzliche Gründe für die Aufbewahrung. Die Daten aus dem Bewerberpool werden spätestens zwei Jahre nach der erteilten Einwilligung unwiderruflich gelöscht."
+          }
+        ]
+      }
+    ]
+  },
+  "mainH": {
+    "title": "Willkommen im Tapas Mundo – Bestes Restaurant am Checkpoint Charlie in Berlin",
+    "paragraphs": [
+      "Entdecken Sie die Seele Spaniens mitten im Herzen Berlins. Im Tapas Mundo Checkpoint Charlie bringen wir Menschen bei gemeinsamen Gerichten, lebendigen Aromen und unvergesslichen Erinnerungen zusammen. Ob Sie ein Berliner, ein Expat, ein neugieriger Tourist sind, der Berlins reiche Geschichte erkundet, oder einfach nur die beste Tapas-Bar in der Nähe des Checkpoint Charlie suchen – hier sind Sie richtig.",
+      "Mehr als eine Mahlzeit – ein gemeinsames Erlebnis. Wir bei Mundo Tapas glauben, dass Essen gemeinsam am besten schmeckt. Inspiriert von der spanischen Tradition, sich mit Freunden und Familie bei kleinen Gerichten, Lachen und Geschichten zu treffen, haben wir einen gemütlichen, einladenden Raum geschaffen, in dem sich jede Mahlzeit wie ein Fest anfühlt.",
+      "Verwöhnen Sie sich mit unseren authentischen spanischen Tapas, täglich frisch zubereitet aus hochwertigen Zutaten. Von klassischen Patatas Bravas und Jamón Ibérico bis hin zu kreativen Chef-Spezialitäten – unsere vielfältige Tapas-Karte in Berlin bietet für jeden Geschmack etwas.",
+      "Genießen Sie Ihre Gerichte mit einem Glas Sangria, einem spritzigen spanischen Wein oder einem unserer einzigartigen Cocktails für das perfekte Erlebnis."
+    ],
+    "highlight": "Warum Einheimische und Besucher uns lieben:",
+    "features": [
+      "Über 50 Tapas zur Auswahl – traditionell & modern",
+      "Beste Cocktails und Weine in der Nähe des Checkpoint Charlie",
+      "Live-Musik und Events – Flamenco-Abende, Latin-Beats & mehr",
+      "Perfekt für Verabredungen, After-Work-Treffen und gemeinsame Abendessen",
+      "Ein beliebtes Instagram-Restaurant in Berlin Mitte",
+      "Beliebt bei Einheimischen, Erasmus-Studenten, Expats und Reisenden gleichermaßen"
+    ],
+    "closing": "Besuchen Sie auch unsere anderen Standorte in Berlin: Tapas Mundo – Alt-Mariendorf, Tapas Mundo – Potsdamer Platz."
+  },
+  "imprintData": {
+    "imprint": {
+      "branchTiltl": "Alternative Mundo Tapas-Filialen:",
+      "title": "Impressum",
+      "tmg": "§ 5 TMG:",
+      "company": "Mundo AKS II GmbH",
+      "address": "Zimmerstraße 19, 10969 Berlin",
+      "email": "Info@mundo.berlin",
+      "website":"https://tapas-mundo.com",
+      "alternativeBranches": [
+        {
+          "title": "Mundo AKS II GmbH",
+          "details": "Zimmerstraße 19, 10969 Berlin"
+        },
+        {
+          "title": "Mundo AKS GmbH",
+          "details": "Alt Mariendorf 32, 12107 Berlin"
+        },
+        {
+          "title": "Delhi 6 GmbH",
+          "details": "Voxstraße 3, 10785 Berlin"
+        }
+      ],
+      "liabilityInsurance": {
+        "title": "Haftpflichtversicherung:",
+        "details": "BGN Berufsverband für Lebensmittel- und Gastgewerbe (Bezirksverwaltung Berlin)"
+      },
+      "supervisoryAuthority": {
+        "title": "Aufsichtsbehörde:",
+        "details": "Stadt Berlin – Bezirksamt Mitte / Tempelhof – Ordnungsamt"
+      },
+      "disputeResolution": {
+        "title": "Streitbeilegung:",
+        "details": [
+          {
+            "platform": "Die Europäische Kommission stellt eine Plattform für die Online-Streitbeilegung (OS) bereit:",
+            "link": "https://ec.europa.eu/consumers/odr"
+          },
+          {
+            "note": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+          }
+        ]
+      },
+      "liabilityForContent": {
+        "title": "Haftung für Inhalte:",
+        "details": [
+          "Als Dienstanbieter sind wir gemäß § 7 Abs. 1 des Telemediengesetzes für eigene Inhalte auf diesen Seiten verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Dienstanbieter nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf rechtswidrige Tätigkeiten hinweisen.",
+          "Die Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach allgemeinen Gesetzen bleiben unberührt. Eine Haftung in diesem Zusammenhang ist jedoch erst ab dem Zeitpunkt möglich, an dem wir von einer konkreten Rechtsverletzung Kenntnis erlangen. Sobald wir von solchen Verletzungen Kenntnis erlangen, werden wir diese Inhalte umgehend entfernen."
+        ]
+      },
+      "liabilityForLinks": {
+        "title": "Haftung für Links:",
+        "details": [
+          "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Aus diesem Grund können wir für diese externen Inhalte keine Haftung übernehmen. Der jeweilige Anbieter oder Betreiber ist stets für die Inhalte der verlinkten Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Linksetzung auf mögliche Rechtsverstöße überprüft. Zu diesem Zeitpunkt waren keine illegalen Inhalte erkennbar.",
+          "Eine permanente Kontrolle der Inhalte der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Sobald wir von Rechtsverletzungen Kenntnis erlangen, werden wir solche Links umgehend entfernen."
+        ]
+      },
+      "copyright": {
+        "title": "Urheberrecht:",
+        "details": [
+          "Die Inhalte und Werke auf diesen Seiten, die vom Betreiber der Seite erstellt wurden, unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Verarbeitung, Verbreitung und jede Art der Nutzung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors oder Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+          "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie dennoch von einem Urheberrechtsverletzung erfahren, bitten wir um einen entsprechenden Hinweis. Sobald wir von Rechtsverletzungen Kenntnis erlangen, werden wir solche Inhalte umgehend entfernen."
+        ]
+      }
+    }
+  },
+
+  "inservice":[
+
+    {
+      "title": "Speisebereich & Außenpatio – Tapas Mundo",
+      "description": "Bei Tapas Mundo bieten wir ein vielseitiges kulinarisches Erlebnis für jeden Anlass. Ob ein gemütliches Ambiente im Innenbereich oder eine lebendige Atmosphäre im Freien – unsere sorgfältig gestalteten Räume bieten den perfekten Rahmen für authentische spanische Küche.",
+      "indoorDining": {
+        "title": "Innenbereich",
+        "points": [
+          "Warme und Einladende Atmosphäre: Genieße unsere stilvolle Einrichtung mit warmen Farben und rustikalen Details, die das spanische Flair widerspiegeln.",
+          "Geräumig und Komfortabel: Perfekt für intime Abendessen oder größere Gruppen – unser Innenbereich garantiert ein entspanntes Erlebnis.",
+          "Ideal für Jeden Anlass: Ob romantisches Date, Familienfeier oder Geschäftsessen – unser Speisebereich passt sich deinen Bedürfnissen an.",
+          "Authentische Spanische Vibes: Tauche mit unserer kuratierten Dekoration, sanfter Beleuchtung und spanischer Musik in die Kultur Spaniens ein."
+        ]
+      },
+      "outdoorPatio": {
+        "title": "Außenpatio",
+        "points": [
+          "Essen im Freien: Genieße die frische Luft und das einladende Ambiente auf unserer wunderschönen Terrasse.",
+          "Jederzeit Komfortabel: Mit Heizstrahlern für kühle Abende und Sonnenschirmen für heiße Tage ausgestattet.",
+          "Entspannte Atmosphäre: Ideal für Brunch, lockere Mittagessen oder Abenddrinks.",
+          "Haustierfreundlich: Bringe deine vierbeinigen Freunde mit und genieße die gemeinsame Zeit."
+        ]
+      },
+      "highlights": {
+        "title": "Highlights Unserer Speisebereiche",
+        "points": [
+          "Flexible Gestaltung: Ob intime Sitzgelegenheiten oder private Veranstaltungen – wir passen die Raumaufteilung an deine Wünsche an.",
+          "Exzellenter Service: Unser aufmerksames Team kümmert sich um jedes Detail, von Sitzplänen bis zu besonderen Wünschen.",
+          "Barrierefreiheit: Sowohl unser Innenbereich als auch der Außenpatio sind leicht zugänglich und komfortabel gestaltet."
+        ]
+      },
+      "specialExperiences": {
+        "title": "Besondere Kulinarische Erlebnisse",
+        "points": [
+          "Themenabende: Erlebe Flamenco-Freitags oder Wein- & Tapas-Abende in der Atmosphäre deiner Wahl.",
+          "Exklusive Outdoor-Events: Feiere private Veranstaltungen auf unserer Terrasse mit individuell angepassten Menüs und Dekorationen.",
+          "Saisonale Spezialitäten: Genieße saisonale Gerichte und Getränke – drinnen oder draußen."
+        ]
+      },
+      "visitUs": {
+        "title": "Plane Deinen Besuch",
+        "description": "Ob du die gemütliche Atmosphäre unseres Innenbereichs oder das lebhafte Flair unseres Patios bevorzugst – Tapas Mundo bietet den perfekten Ort, um authentische spanische Küche zu genießen. Reserviere noch heute deinen Tisch!",
+        "contact": {
+          "locations": ["Alt-Mariendorf", "Checkpoint Charlie", "Potsdamer Platz"],
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        }
+      }
+    },
+    {
+      "title": "Full-Service-Bar im Spanischen Tapas Mundo",
+      "description": "Erleben Sie die perfekte Mischung aus exquisiten Getränken und spanischer Lebendigkeit in unserer Full-Service-Bar. Ob zum Entspannen nach einem langen Tag oder zum Feiern eines besonderen Anlasses – unsere Bar bietet eine einladende Atmosphäre und eine herausragende Getränkeauswahl.",
+      "whyChooseUs": {
+        "title": "Warum unsere Full-Service-Bar?",
+        "points": [
+          "Lebendige Atmosphäre: Ein dynamischer Raum zum Entspannen, Feiern und Genießen.",
+          "Erfahrene Barkeeper: Unser Team kreiert innovative Drinks mit Präzision.",
+          "Perfekte Kombinationen: Unsere Getränke harmonieren ideal mit unseren Tapas und anderen Gerichten.",
+          "Umfangreiche Getränkekarte: Wählen Sie aus handgefertigten Cocktails, Premium-Weinen, Craft-Bieren und alkoholfreien Optionen."
+        ]
+      },
+      "cocktails": {
+        "title": "Handgemachte Cocktails – Eine Geschmacksexplosion",
+        "points": [
+          "Perfekte Sangria: Klassische rote und weiße Sangrias mit frischen Früchten und intensiven Aromen.",
+          "Signature Drinks: Exklusive Cocktails, inspiriert von spanischen Zutaten und Traditionen.",
+          "Saisonale Spezialitäten: Eine wechselnde Auswahl an saisonalen Getränken für neue Geschmackserlebnisse."
+        ]
+      },
+      "winesAndSpirits": {
+        "title": "Edle Weine & Premium-Spirituosen",
+        "points": [
+          "Spanische Weine: Genießen Sie Rioja, Tempranillo und weitere regionale Highlights.",
+          "Internationale Auswahl: Eine vielfältige Weinkarte für jeden Geschmack.",
+          "Premium-Spirituosen: Von gereiften Whiskeys bis zu handwerklichen Gins – nur beste Qualität."
+        ]
+      },
+      "beers": {
+        "title": "Biere – Regional & Importiert",
+        "points": [
+          "Lokale Aromen: Entdecken Sie Berlins lebendige Craft-Bier-Szene.",
+          "Spanische Klassiker: Genießen Sie authentische Cervezas von Spaniens besten Brauereien."
+        ]
+      },
+      "nonAlcoholic": {
+        "title": "Erfrischende alkoholfreie Optionen",
+        "points": [
+          "Hausgemachte Limonaden",
+          "Eistees",
+          "Mocktails"
+        ]
+      },
+      "barEvents": {
+        "title": "Full-Service-Bar-Events",
+        "description": "Machen Sie Ihre Feier zu etwas Besonderem mit exklusiven Bar-Events im Tapas Mundo. Ob private Partys oder Firmenevents – unsere Bar bietet die perfekte Kulisse mit einer umfangreichen Getränkekarte und erstklassigem Service.",
+        "whyChooseEvents": {
+          "title": "Warum unsere Bar für Ihr Event?",
+          "points": [
+            "Vielfältige Getränkeauswahl: Handgemachte Cocktails, Premium-Weine, Craft-Biere und alkoholfreie Spezialitäten.",
+            "Erfahrene Barkeeper: Unsere Mixologen kreieren individuelle Drinks für Ihr Event.",
+            "Anpassbare Pakete: Flexible Getränkepakete für jedes Budget und Thema.",
+            "Lebendige Atmosphäre: Perfekt zum Netzwerken, Feiern und Genießen."
+          ]
+        },
+        "signatureExperiences": {
+          "title": "Einzigartige Bar-Erlebnisse",
+          "points": [
+            "Cocktail-Workshops: Ihre Gäste lernen, eigene Cocktails zu mixen.",
+            "Themenabende: Veranstalten Sie besondere Events wie Sangria Night oder Gin & Tapas Pairings.",
+            "Exklusive Getränkekarten: Individuelle Drinks, abgestimmt auf Ihr Event.",
+            "Live-Entertainment: Von DJs bis Flamenco – wir sorgen für unvergessliche Abende."
+          ]
+        },
+        "perfectFor": {
+          "title": "Perfekt für jeden Anlass",
+          "points": [
+            "Firmenfeiern: Beeindrucken Sie Kollegen und Kunden mit einer stilvollen Abendveranstaltung.",
+            "Geburtstagsfeiern: Feiern Sie Ihren besonderen Tag mit Freunden und Familie.",
+            "Verlobungsfeiern: Stoßen Sie auf Ihre Liebe an – mit individuellen Cocktails.",
+            "Treffen & Wiedersehen: Genießen Sie Tapas und Drinks in einer einladenden Atmosphäre."
+          ]
+        },
+        "planning": {
+          "title": "So planen Sie Ihr Bar-Event",
+          "steps": [
+            "Beratung: Teilen Sie uns Ihre Vorstellungen mit – unser Team hilft Ihnen bei der Planung.",
+            "Individuelles Erlebnis: Passen Sie die Getränkekarte, das Entertainment und das Ambiente an.",
+            "Genießen Sie Ihr Event: Unser Team kümmert sich um alles, während Sie mit Ihren Gästen feiern."
+          ]
+        },
+        "bookNow": {
+          "title": "Jetzt Ihr Event buchen",
+          "description": "Lassen Sie das Tapas Mundo Ihr nächstes Bar-Event ausrichten und erleben Sie unvergessliche Momente.",
+          "contact": {
+            "phone": "+49 30 25294284",
+            "website": "https://tapas-mundo.com"
+          }
+        }
+      }
+    },
+    {
+      "title": "Veranstaltungsräume bei Spanish Tapas Mundo",
+      "description": "Suchen Sie nach der perfekten Location für Ihr nächstes Event? Bei Spanish Tapas Mundo bieten wir vielseitige Veranstaltungsräume, die jede Feier unvergesslich machen. Ob geschäftliches Meeting, Geburtstagsfeier oder ein intimes Treffen – unsere Standorte bieten das ideale Ambiente mit erstklassigem Service und authentischem spanischem Flair.",
+      "whyChooseUs": {
+        "title": "Warum Spanish Tapas Mundo für Ihre Veranstaltung?",
+        "points": [
+          "Stilvolle Locations: Begeistern Sie Ihre Gäste mit einer warmen, einladenden Atmosphäre und rustikaler Dekoration im spanischen Stil.",
+          "Flexible Raumgestaltung: Unsere Räume passen sich Ihren Bedürfnissen an – von kleinen Treffen bis zu großen Gruppenveranstaltungen.",
+          "Zentrale Standorte: Ideal gelegen in Alt-Mariendorf, Checkpoint Charlie und Potsdamer Platz, bequem erreichbar für alle Gäste."
+        ]
+      },
+      "features": {
+        "title": "Besonderheiten unserer Veranstaltungsräume",
+        "points": [
+          "Private und halbprivate Bereiche: Exklusive Räume für private oder halbprivate Veranstaltungen.",
+          "Innen- und Außenbereiche: Wählen Sie zwischen stilvollen Innenräumen oder lebhaften Außenterrassen.",
+          "Moderne Ausstattung: Inklusive AV-Technik, WLAN und anpassbaren Sitzordnungen für jede Event-Art.",
+          "Flexible Kapazitäten: Perfekt für kleine Gruppen bis hin zu großen Feiern."
+        ]
+      },
+      "perfectFor": {
+        "title": "Perfekt für jeden Anlass",
+        "points": [
+          "Geschäftliche Veranstaltungen: Beeindrucken Sie Kunden oder veranstalten Sie produktive Teamevents in entspannter Atmosphäre.",
+          "Geburtstagsfeiern: Feiern Sie besondere Momente mit köstlichen Tapas, kreativen Cocktails und unterhaltsamen Aktivitäten.",
+          "Jubiläen: Erleben Sie unvergessliche Momente in einem romantischen Ambiente.",
+          "Wiedersehen: Genießen Sie gemeinsame Momente mit Familie und Freunden bei exzellentem Essen und Service.",
+          "Hochzeitsfeiern: Verleihen Sie Ihrem besonderen Tag einen Hauch von spanischer Eleganz mit maßgeschneiderten Menüs und Dekoration."
+        ]
+      },
+      "packages": {
+        "title": "Individuell abgestimmte Event-Pakete",
+        "points": [
+          "Exklusive Menüs: Wählen Sie aus vorgefertigten Paketen oder kreieren Sie mit unseren Küchenchefs Ihr eigenes Menü.",
+          "Voll ausgestattete Bar: Genießen Sie Signature-Cocktails, erlesene Weine und Craft-Biere.",
+          "Themenveranstaltungen: Flamenco-Shows, Live-Musik oder spanisch inspirierte Dekoration für das gewisse Extra.",
+          "Persönlicher Event-Koordinator: Unser Team sorgt für eine reibungslose Planung und Durchführung."
+        ]
+      },
+      "bookingProcess": {
+        "title": "Einfache Buchung",
+        "steps": [
+          "Beratung: Besprechen Sie Ihre Ideen mit unseren Event-Experten.",
+          "Personalisierung: Passen Sie Menü, Sitzordnung und Dekoration an Ihre Vorstellungen an.",
+          "Genießen Sie das Event: Wir kümmern uns um alle Details, damit Sie entspannt feiern können."
+        ]
+      },
+      "contact": {
+        "title": "Buchen Sie Ihre Veranstaltung noch heute",
+        "description": "Schaffen Sie unvergessliche Erinnerungen bei Tapas Mundo. Kontaktieren Sie uns jetzt, um Ihre Veranstaltung zu buchen und mit der Planung zu beginnen.",
+        "details": {
+          "locations": ["Alt-Mariendorf", "Checkpoint Charlie", "Potsdamer Platz"],
+          "phone": "+49-30 25294284",
+          "website": "https://tapas-mundo.com"
+        },
+        "socialMedia": {
+          "instagram": "https://instagram.com/tapas-mundo",
+          "facebook": "https://facebook.com/tapas-mundo"
+        }
+      }
+    },
+    {
+      "title": "Private Feiern & Gruppenevents bei Spanish Tapas Mundo",
+      "description": "Feiern Sie stilvoll bei Spanish Tapas Mundo, wo die lebendigen Aromen Spaniens und unsere warme, einladende Atmosphäre den perfekten Rahmen für unvergessliche private Feiern und Gruppenevents bieten.",
+      "whyChooseUs": {
+        "title": "Warum Ihr Event bei Tapas Mundo veranstalten?",
+        "points": [
+          "Flexible Veranstaltungsräume: Wählen Sie zwischen gemütlichen Innenräumen oder lebhaften Außenbereichen.",
+          "Authentische spanische Küche: Genießen Sie ein speziell zusammengestelltes Menü mit Tapas, Paella und Desserts.",
+          "Erfahrene Event-Spezialisten: Unser Team sorgt für eine reibungslose Planung und Durchführung.",
+          "Zentrale Standorte: Unsere Restaurants in Alt-Mariendorf, Checkpoint Charlie und Potsdamer Platz sind bequem erreichbar."
+        ]
+      },
+      "eventOfferings": {
+        "title": "Unser Event-Angebot",
+        "points": [
+          "Flexible Menüs: Wählen Sie aus vorgefertigten Menüs oder gestalten Sie Ihr eigenes.",
+          "Getränkepakete: Genießen Sie eine offene Bar, Getränkegutscheine oder Signature-Cocktails.",
+          "Themen-Dekoration: Passen Sie Ihr Event mit spanisch inspiriertem Dekor an.",
+          "Unterhaltungsoptionen: Erleben Sie Live-Musik, Flamenco-Tänzer oder DJs."
+        ]
+      },
+      "perfectFor": {
+        "title": "Ideal für jeden Anlass",
+        "points": [
+          "Geburtstage: Feiern Sie mit Freunden und Familie bei Tapas und Drinks.",
+          "Firmenveranstaltungen: Halten Sie Meetings oder Teambuilding-Events in entspannter Atmosphäre ab.",
+          "Jubiläen: Begehen Sie besondere Meilensteine mit einem festlichen Dinner.",
+          "Wiedersehen: Treffen Sie sich mit Ihren Liebsten bei köstlichen Speisen und Getränken.",
+          "Weihnachtsfeiern: Verleihen Sie Ihrer Feier eine spanische Note."
+        ]
+      },
+      "contact": {
+        "title": "Reservieren Sie Ihr privates Event jetzt",
+        "locations": ["Alt-Mariendorf", "Checkpoint Charlie", "Potsdamer Platz"],
+        "phone": "+49 30 25294284",
+        "website": "https://tapas-mundo.com"
+      }
+    },
+    {
+      "title": "Warum Mundo Tapas Bar wählen?",
+      "description": "Bei Spanish Tapas Mundo bringen wir die reichen Aromen und die lebendige Kultur Spaniens ins Herz von Berlin. Ob für eine zwanglose Mahlzeit, zur Feier eines besonderen Anlasses oder für eine Veranstaltung – unser Engagement für Qualität und Authentizität sorgt für ein unvergessliches kulinarisches Erlebnis.",
+      "cuisine": {
+        "title": "Authentische spanische Küche",
+        "points": [
+          "Traditionelle Tapas: Genießen Sie eine Vielzahl von kleinen Gerichten, die mit authentischen spanischen Rezepten und frischesten Zutaten zubereitet werden.",
+          "Signature-Gerichte: Von klassischen Paellas bis hin zu köstlichen Desserts zeigt unsere Speisekarte das Beste der spanischen Kulinarik.",
+          "Saisonale Spezialitäten: Genießen Sie Gerichte, die von saisonalen Zutaten und spanischen Festen inspiriert sind."
+        ]
+      },
+      "ambiance": {
+        "title": "Außergewöhnliche Atmosphäre",
+        "points": [
+          "Stilvolles Interieur: Tauchen Sie ein in den Charme Spaniens mit unserer rustikalen Dekoration, warmem Licht und einladender Atmosphäre.",
+          "Vielseitige Essbereiche: Wählen Sie zwischen gemütlichen Innenbereichen, lebhaften Außenterrassen oder privaten Essbereichen, die auf Ihre Bedürfnisse abgestimmt sind.",
+          "Lebendige Energie: Erleben Sie die lebendige Stimmung einer traditionellen spanischen Tapas-Bar – ideal für jeden Anlass."
+        ]
+      },
+      "locations": {
+        "title": "Zentrale Standorte",
+        "points": [
+          "Alt-Mariendorf: Ein gemütliches und entspanntes Viertel-Juwel.",
+          "Checkpoint Charlie: Ein idealer Ort für Geschichtsinteressierte und Touristen.",
+          "Potsdamer Platz: Perfekt für lebendige Zusammenkünfte und Feiern."
+        ]
+      },
+      "fullServiceBar": {
+        "title": "Vollständige Bar",
+        "points": [
+          "Signature-Cocktails: Genießen Sie handgefertigte Drinks, die von spanischen Aromen inspiriert sind.",
+          "Umfangreiche Getränkekarte: Wählen Sie aus Premium-Weinen, Craft-Bieren und alkoholfreien Optionen.",
+          "Themenabende an der Bar: Genießen Sie Live-Entertainment, besondere Veranstaltungen und einzigartige Getränkemenüs."
+        ]
+      },
+      "events": {
+        "title": "Für alle Anlässe",
+        "points": [
+          "Private Feiern: Feiern Sie unvergessliche Anlässe mit anpassbaren Menüs und Event-Paketen.",
+          "Gruppen-Events: Ob Firmentreffen oder Familienfeiern – wir bieten die perfekte Kulisse.",
+          "Kochworkshops: Erlernen Sie die Kunst der spanischen Küche mit praktischen Erfahrungen."
+        ]
+      },
+      "service": {
+        "title": "Freundlicher und professioneller Service",
+        "points": [
+          "Engagiertes Team: Unser Team ist leidenschaftlich daran interessiert, herzliche Gastfreundschaft und außergewöhnlichen Service zu bieten.",
+          "Aufmerksamkeit für Details: Von persönlichen Empfehlungen bis hin zu perfekter Event-Organisation gehen wir die Extrameile, um Ihre Erwartungen zu übertreffen."
+        ]
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit und Qualität",
+        "points": [
+          "Frische Zutaten: Wir setzen auf lokal bezogene Produkte und Zutaten von höchster Qualität.",
+          "Umweltfreundliche Praktiken: Wir setzen uns für Nachhaltigkeit ein, reduzieren Abfall und unterstützen grüne Initiativen."
+        ]
+      },
+      "uniqueExperiences": {
+        "title": "Einzigartige Erlebnisse",
+        "points": [
+          "Live-Entertainment: Von Flamenco-Abenden bis zu Akustikauftritten – unsere Events bringen die spanische Kultur zum Leben.",
+          "Exklusive Angebote: Genießen Sie saisonale Aktionen, besondere Verkostungen und Treuebelohnungen.",
+          "Interaktive Gastronomie: Nehmen Sie an Verkostungs-Events und von Köchen kuratierten Erlebnissen teil für einen unvergesslichen Besuch."
+        ]
+      },
+      "visitUs": {
+        "title": "Besuchen Sie uns noch heute",
+        "description": "Mit einer perfekten Mischung aus authentischen Aromen, einladender Atmosphäre und außergewöhnlichem Service ist Mundo Tapas Bar mehr als nur ein Restaurant – es ist ein Ziel für Essen, Kultur und Gemeinschaft. Kommen Sie vorbei und sehen Sie, warum wir die erste Wahl für spanische Küche in Berlin sind.",
+        "contact": {
+          "phone": "+49 30 25294284",
+          "website": "https://tapas-mundo.com"
+        },
+        "socialMedia": {
+          "instagram": "https://instagram.com/tapas-mundo",
+          "facebook": "https://facebook.com/tapas-mundo"
+        }
+      }
+    }
+    
+    
+    
+    
+    
+
+
+  ],
+  "cookie": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und den Verkehr auf unserer Website zu analysieren. Durch Klicken auf ",
+    "message2":"stimmen Sie der Verwendung von Cookies zu.",
+    "acceptButton": "Akzeptieren",
+    "privacyPolicy": "Für weitere Informationen über unsere Cookie-Richtlinie und wie wir Ihre Privatsphäre schützen, lesen Sie bitte unsere ",
+    "pbtn":"Datenschutzerklärung "
+  }
+
+
+
+}

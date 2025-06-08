@@ -1,0 +1,4 @@
+mq05zmkwy6@ibolinva.com
+
+delete option in catgeory in menu.
+increase the width of pop up and fix the sub category width.

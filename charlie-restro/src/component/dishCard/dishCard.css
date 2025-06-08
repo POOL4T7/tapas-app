@@ -1,0 +1,79 @@
+.content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Zilla Slab', serif;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .page-section h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  
+  .section-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .section-tab {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  .section-tab.selected {
+    color: #db9423;
+    border-bottom: 2px solid #db9423;
+  }
+  
+  .menu-section {
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .page-section h1 {
+      font-size: 2rem;
+    }
+  
+    .section-tab {
+      font-size: 1.25rem;
+      margin: 0 0.5rem;
+    }
+  
+    .menu-section {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-section h1 {
+      font-size: 1.75rem;
+    }
+  
+    .section-tab {
+      font-size: 1rem;
+      margin: 0 0.25rem;
+    }
+  
+    .menu-section {
+      padding: 0 0.5rem;
+    }
+  }
+  
