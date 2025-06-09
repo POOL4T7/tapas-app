@@ -13,8 +13,13 @@ import Script from 'next/script';
 import dynamic from 'next/dynamic';
 const Footer = dynamic(() => import('@/component/footer'), { ssr: false });
 const Header = dynamic(() => import('@/component/header'), { ssr: false });
-const BottomBar = dynamic(() => import('@/component/bottomBar'), { ssr: false });
-const CookieConsent = dynamic(() => import('@/component/cookie/cokkieConstant'), { ssr: false });
+const BottomBar = dynamic(() => import('@/component/bottomBar'), {
+  ssr: false,
+});
+const CookieConsent = dynamic(
+  () => import('@/component/cookie/cokkieConstant'),
+  { ssr: false }
+);
 const Template = dynamic(() => import('./template'), { ssr: false });
 
 const inter = Inter({ subsets: ['latin'] });
@@ -31,12 +36,12 @@ const resName = ['Alt-Mariendorf', 'Checkpoint Charlie', 'Potsdamer Platz'];
 //   "@context": "https://schema.org",
 //   "@type": "Restaurant",
 //   "name": "Mundo Tapas - Checkpoint Charlie",
-//   "image": "https://checkpoint-charlie.tapas-mundo.com/_next/image?url=%2Fimage%2Fcrousel%2Fslide1.webp&w=1920&q=100",
+//   "image": "https://checkpoint-charlie.tapas-mundo.eu/_next/image?url=%2Fimage%2Fcrousel%2Fslide1.webp&w=1920&q=100",
 //   "@id": "",
-//   "url": "https://checkpoint-charlie.tapas-mundo.com/",
+//   "url": "https://checkpoint-charlie.tapas-mundo.eu/",
 //   "telephone": "+49-3025294284",
 //   "priceRange": "€€",
-//   "menu": "https://checkpoint-charlie.tapas-mundo.com/menü-karte-menu-card/speisekarte-a-la-carte",
+//   "menu": "https://checkpoint-charlie.tapas-mundo.eu/menü-karte-menu-card/speisekarte-a-la-carte",
 //   "servesCuisine": "Spanish and Latin American cuisine",
 //   "acceptsReservations": "true",
 //   "address": {
@@ -82,22 +87,28 @@ export default async function RootLayout({ children, params }: any) {
     <html lang={params.lang}>
       {/* SEO Meta Tags */}
       <title>Tapas Mundo restaurant in Checkpoint Charlie, Berlin</title>
-      <meta name="description" content="Experience authentic Spanish tapas at Tapas Mundo, located near Checkpoint Charlie in Berlin. Savor a delightful fusion of flavors in a vibrant atmosphere!" />
+      <meta
+        name='description'
+        content='Experience authentic Spanish tapas at Tapas Mundo, located near Checkpoint Charlie in Berlin. Savor a delightful fusion of flavors in a vibrant atmosphere!'
+      />
 
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="robots" content="index, follow" />
-      <meta name="google-site-verification" content="dCfEWwIeSKjORIHeIRjOEg_MIKkAoUoytzoHCuj3VgI" />
-      
-      <link rel="icon" href="/favicon.ico" />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='robots' content='index, follow' />
+      <meta
+        name='google-site-verification'
+        content='dCfEWwIeSKjORIHeIRjOEg_MIKkAoUoytzoHCuj3VgI'
+      />
+
+      <link rel='icon' href='/favicon.ico' />
 
       <head>
         <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-NN83VEW081"
+          strategy='afterInteractive'
+          src='https://www.googletagmanager.com/gtag/js?id=G-NN83VEW081'
         />
         <Script
-          id="gtag-init"
-          strategy="afterInteractive"
+          id='gtag-init'
+          strategy='afterInteractive'
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -112,7 +123,6 @@ export default async function RootLayout({ children, params }: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema) }}
         /> */}
-
       </head>
 
       <body className={inter.className}>

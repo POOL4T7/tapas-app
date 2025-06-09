@@ -3,11 +3,11 @@ import { getDictionary } from '@/getDictionary';
 import { LoadingSkeleton } from '@/layouts/Loader';
 import { Metadata } from 'next';
 
-const OurServicesID = dynamic(() => import("@/component/facilitesID"), {
+const OurServicesID = dynamic(() => import('@/component/facilitesID'), {
   loading: () => <LoadingSkeleton />,
   ssr: false,
 });
-const ReserveTable = dynamic(() => import("@/component/reserveTable"), {
+const ReserveTable = dynamic(() => import('@/component/reserveTable'), {
   ssr: false,
 });
 
@@ -17,17 +17,19 @@ type Params = {
 };
 
 const headContent: Record<string, { title: string; description: string }> = {
-  'essbereich': {
-    title: 'Dining Area & Outdoor Patio – Enjoy Tapas Indoors & Outdoors in Berlin',
+  essbereich: {
+    title:
+      'Dining Area & Outdoor Patio – Enjoy Tapas Indoors & Outdoors in Berlin',
     description:
       'Enjoy a comfortable dining experience at Mundo Tapas Bar in Berlin. Choose between our stylish indoor seating or the refreshing outdoor patio for your perfect meal.',
   },
   'bar-mit-vollem-service': {
-    title: 'Full-Service Bar – Cocktails, Wines & More at Mundo Tapas Bar Berlin',
+    title:
+      'Full-Service Bar – Cocktails, Wines & More at Mundo Tapas Bar Berlin',
     description:
       'Unwind at Mundo Tapas Bar’s full-service bar in Berlin. From handcrafted cocktails to fine wines, enjoy expertly mixed drinks in a lively and welcoming setting!',
   },
-  'veranstaltungsraume': {
+  veranstaltungsraume: {
     title: 'Events - Celebrate at Mundo Tapas Bar with Flexible Spaces',
     description:
       'Planning a special event? From birthdays and weddings to baby showers and corporate dinners, Mundo Tapas Bar offers versatile spaces for any celebration. Get an unforgettable experience for guests of all sizes.',
@@ -44,14 +46,20 @@ const headContent: Record<string, { title: string; description: string }> = {
   },
 };
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
   const selectedHead = headContent[params.ourFacilities];
 
   return {
     title: selectedHead?.title || 'Mundo Tapas Bar | Berlin',
-    description: selectedHead?.description || 'Discover the world of Mundo Tapas in Berlin with delicious Spanish cuisine, perfect spaces, and excellent service.',
+    description:
+      selectedHead?.description ||
+      'Discover the world of Mundo Tapas in Berlin with delicious Spanish cuisine, perfect spaces, and excellent service.',
     alternates: {
-      canonical: `https://checkpoint-charlie.tapas-mundo.com/${params.lang}/einrichtungen/${params.ourFacilities}`,
+      canonical: `https://checkpoint-charlie.tapas-mundo.eu/${params.lang}/einrichtungen/${params.ourFacilities}`,
     },
   };
 }
@@ -61,7 +69,10 @@ export default async function ServicePage(props: { params: Params }) {
 
   return (
     <>
-      <OurServicesID inservice={langData.inservice} langData={langData.serviceList} />
+      <OurServicesID
+        inservice={langData.inservice}
+        langData={langData.serviceList}
+      />
       <ReserveTable langData={langData.reserve} />
     </>
   );

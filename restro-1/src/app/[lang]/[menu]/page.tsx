@@ -55,7 +55,7 @@ const AllMenu = () => {
         />
         <link
           rel='canonical'
-          href='https://alt-mariendorf.tapas-mundo.com/en/menükarte-menu-card/speisekarte-a-la-carte'
+          href='https://alt-mariendorf.tapas-mundo.euen/menükarte-menu-card/speisekarte-a-la-carte'
         />
       </Head> */}
       <ClientMenuCards />

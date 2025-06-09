@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://checkpoint-charlie.tapas-mundo.com/en/sitemap.xml
+Sitemap: https://checkpoint-charlie.tapas-mundo.eu/en/sitemap.xml

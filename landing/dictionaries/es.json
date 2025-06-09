@@ -110,7 +110,7 @@
   ],
   "mainH": {
     "title": "Mundo Tapas Bar & Restaurante en Berlín | español essen",
-    "paragraphs":  [
+    "paragraphs": [
       "En Mundo Tapas, creemos que la comida se disfruta mejor en compañía. En nuestro país, compartir tapas, charlar y divertirse con un plato de bravas y aceitunas—especialmente con una cerveza bien fría—es una forma de vida. Por eso creamos el bar y restaurante Mundo Tapas: para reunir a las personas en un espacio cálido y acogedor donde cada comida se convierte en un momento memorable. Desde hace más de 10 años, servimos auténtica cocina de tapas con nuestro toque especial. Nuestro menú ha evolucionado hasta incluir más de 50 tapas, para todos los gustos y ocasiones. Pero hay algo que nunca ha cambiado: nuestro compromiso con la calidad y la frescura.",
       "Cada día, nuestros chefs seleccionan cuidadosamente los ingredientes más frescos y preparan cada plato frente a ti, garantizando una experiencia verdaderamente sabrosa y fresca. ¿Buscas las mejores tapas en Berlín? Visítanos en Mundo Tapas Alt-Mariendorf, Mundo - Checkpoint Charlie o Mundo - Potsdamer Platz. Ya seas local o estés de visita, nuestros restaurantes españoles son el lugar perfecto para relajarte, compartir una comida y disfrutar los vibrantes sabores de España."
     ],
@@ -135,7 +135,7 @@
   },
   "aboutSection": {
     "infoBtn": "Ver Menú",
-    "infoLink": "https://alt-mariendorf.tapas-mundo.com/",
+    "infoLink": "https://alt-mariendorf.tapas-mundo.eu",
     "title": "Explora Nuestra Historia",
     "bannerTitle": "WiFi Gratis Para Todos",
     "bannerDes": "Pide la contraseña a cualquier miembro del personal",
@@ -159,17 +159,7 @@
   },
   "serviceList": {
     "OurServices": "Nuestros\u00A0servicios",
-    "facilitiesH": [
-      "S",
-      "E",
-      "R",
-      "V",
-      "I",
-      "C",
-      "I",
-      "O",
-      "S"
-    ],
+    "facilitiesH": ["S", "E", "R", "V", "I", "C", "I", "O", "S"],
     "title": "Mundo Tapas Bar en Alt Mariendorf, Checkpoint Charlie y Potsdamer Platz",
     "introduction": "Descubre una vibrante experiencia culinaria en Mundo Tapas Bar en nuestras tres ubicaciones icónicas de Berlín: Alt Mariendorf, Checkpoint Charlie y Potsdamer Platz. Ya sea que estés buscando una experiencia casual para comer, servicios de catering o un lugar inolvidable para eventos privados, Mundo Tapas Bar lo tiene todo para ti.",
     "services": [
@@ -467,7 +457,7 @@
       "company": "Mundo AKS II GmbH",
       "address": "Zimmerstraße 19, 10969 Berlín",
       "email": "Info@mundo.berlin",
-      "website":"https://tapas-mundo.com",
+      "website": "https://tapas-mundo.com",
       "branchTiltl": "Sucursales Alternativas de Mundo Tapas:",
       "alternativeBranches": [
         {
@@ -632,10 +622,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -695,10 +682,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -749,10 +733,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -803,10 +784,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     }
   ],

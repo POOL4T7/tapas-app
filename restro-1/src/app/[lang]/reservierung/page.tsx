@@ -4,16 +4,17 @@ import { LoadingSkeleton } from '@/layouts/Loader';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { Metadata } from 'next';
-const ReserveTable = dynamic(() => import("@/component/reserveTable"), {
-  loading: () => <LoadingSkeleton />
+const ReserveTable = dynamic(() => import('@/component/reserveTable'), {
+  loading: () => <LoadingSkeleton />,
 });
-export const metadata:Metadata = {
-  title: "Reservierung – Buchen Sie Ihren Tisch in der Mundo Tapas Bar in Berlin",
+export const metadata: Metadata = {
+  title:
+    'Reservierung – Buchen Sie Ihren Tisch in der Mundo Tapas Bar in Berlin',
   alternates: {
-    canonical: 'https://alt-mariendorf.tapas-mundo.com/en/reservierung',
+    canonical: 'https://alt-mariendorf.tapas-mundo.euen/reservierung',
   },
   description:
-    "Reservieren Sie Ihren Tisch in der Mundo Tapas Bar in Berlin für ein unvergessliches spanisches kulinarisches Erlebnis. Genießen Sie authentische Tapas-Gerichte an Ihrem bevorzugten Restaurantstandort.",
+    'Reservieren Sie Ihren Tisch in der Mundo Tapas Bar in Berlin für ein unvergessliches spanisches kulinarisches Erlebnis. Genießen Sie authentische Tapas-Gerichte an Ihrem bevorzugten Restaurantstandort.',
 };
 
 const Reservation = async (props: any) => {
@@ -21,7 +22,6 @@ const Reservation = async (props: any) => {
 
   return (
     <>
-
       <div className={style.background}>
         <div className={style.bgBack}>
           <div className='bg-dark pt-20 pb-20'>

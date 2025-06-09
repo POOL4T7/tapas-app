@@ -12,7 +12,8 @@ const headContent: Record<string, { title: string; description: string }> = {
       'Entdecken Sie die Getränkekarte in der Mundo Tapas Bar nahe Checkpoint Charlie. Genießen Sie erfrischende Cocktails, erlesene Weine und spanisch inspirierte Getränke in lebendiger Atmosphäre!',
   },
   'speisekarte-a-la-carte': {
-    title: 'À-la-Carte-Menü – Spanische Küche in der Mundo Tapas Bar Checkpoint Charlie',
+    title:
+      'À-la-Carte-Menü – Spanische Küche in der Mundo Tapas Bar Checkpoint Charlie',
     description:
       'Entdecken Sie das authentische À-la-Carte-Menü der Mundo Tapas Bar in Berlin. Genießen Sie eine Vielfalt an frischen & geschmackvollen spanischen Gerichten für ein echtes mediterranes Erlebnis!',
   },
@@ -33,7 +34,7 @@ export async function generateMetadata({
   const lastSegment = decodeURIComponent(menuItem) ?? '';
   const selectedHead = headContent[lastSegment] || defaultHead;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/menü-karte-menu-card/${lastSegment}`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/menü-karte-menu-card/${lastSegment}`;
 
   return {
     title: selectedHead.title,
@@ -47,6 +48,10 @@ export async function generateMetadata({
   };
 }
 
-export default function MenuPage({ params }: { params: { menuItem: string[] } }) {
+export default function MenuPage({
+  params,
+}: {
+  params: { menuItem: string[] };
+}) {
   return <ClientMenuCards />;
 }

@@ -1,15 +1,16 @@
-
 import { getDictionary } from '@/getDictionary';
 import { Metadata } from 'next';
 import { i18n } from '@/i18n-config';
 import dynamic from 'next/dynamic';
 import { LoadingSkeleton } from '@/layouts/Loader';
 
-
 // Lazy load BlogMain component
-const ReserveTable = dynamic(() => import("@/component/reserveTable"), { ssr: false });
-const OurServices = dynamic(() => import("@/component/facilites"), {
-  loading: () => <LoadingSkeleton />, ssr: false
+const ReserveTable = dynamic(() => import('@/component/reserveTable'), {
+  ssr: false,
+});
+const OurServices = dynamic(() => import('@/component/facilites'), {
+  loading: () => <LoadingSkeleton />,
+  ssr: false,
 });
 
 type Params = {
@@ -24,7 +25,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/einrichtungen`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/einrichtungen`;
 
   return {
     title:
@@ -39,7 +40,6 @@ export async function generateMetadata({
     },
   };
 }
-
 
 export default async function ServicePage(props: any) {
   const langData = await getDictionary(props.params.lang);

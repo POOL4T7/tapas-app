@@ -132,7 +132,7 @@
   },
   "aboutSection": {
     "infoBtn": "Speisekarte ansehen",
-    "infoLink": "https://alt-mariendorf.tapas-mundo.com/",
+    "infoLink": "https://alt-mariendorf.tapas-mundo.eu",
     "title": "Entdecken Sie Unsere Geschichte",
     "bannerTitle": "Kostenloses WLAN für alle",
     "bannerDes": "Fragen Sie nach dem Passwort bei jedem Mitarbeiter",
@@ -156,15 +156,7 @@
   },
   "serviceList": {
     "OurServices": "Unsere\u00A0Dienstleistungen",
-    "facilitiesH": [
-      "D",
-      "I",
-      "E",
-      "N",
-      "S",
-      "T",
-      "E"
-    ],
+    "facilitiesH": ["D", "I", "E", "N", "S", "T", "E"],
     "title": "Mundo Tapas Bar in Alt Mariendorf, Checkpoint Charlie und Potsdamer Platz",
     "introduction": "Entdecken Sie ein lebendiges kulinarisches Erlebnis im Mundo Tapas Bar an unseren drei ikonischen Standorten in Berlin: Alt Mariendorf, Checkpoint Charlie und Potsdamer Platz. Ob Sie ein zwangloses Dine-In-Erlebnis suchen, Catering-Dienste benötigen oder eine unvergessliche Location für private Events suchen – Mundo Tapas Bar hat für jeden etwas zu bieten.",
     "services": [
@@ -463,7 +455,7 @@
       "company": "Mundo AKS II GmbH",
       "address": "Zimmerstraße 19, 10969 Berlin",
       "email": "Info@mundo.berlin",
-      "website":"https://tapas-mundo.com",
+      "website": "https://tapas-mundo.com",
       "alternativeBranches": [
         {
           "title": "Mundo AKS II GmbH",
@@ -627,10 +619,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -690,10 +679,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -744,10 +730,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     },
     {
@@ -798,10 +781,7 @@
           }
         ],
         "website": "https://tapas-mundo.com",
-        "socials": [
-          "Instagram",
-          "Facebook"
-        ]
+        "socials": ["Instagram", "Facebook"]
       }
     }
   ],

@@ -12,8 +12,13 @@ import Script from 'next/script';
 // Lazy loading components for better performance
 const Footer = dynamic(() => import('@/component/footer'), { ssr: false });
 const Header = dynamic(() => import('@/component/header'), { ssr: false });
-const BottomBar = dynamic(() => import('@/component/bottomBar'), { ssr: false });
-const CookieConsent = dynamic(() => import('../../component/cookie/cokkieConstant'), { ssr: false });
+const BottomBar = dynamic(() => import('@/component/bottomBar'), {
+  ssr: false,
+});
+const CookieConsent = dynamic(
+  () => import('../../component/cookie/cokkieConstant'),
+  { ssr: false }
+);
 const Template = dynamic(() => import('./template'), { ssr: false });
 
 const inter = Inter({ subsets: ['latin'] });
@@ -24,10 +29,10 @@ const inter = Inter({ subsets: ['latin'] });
 //   "name": "Mundo Tapas - Alt Mariendorf",
 //   "image": "/image/alt/banner/slide1.jpg",
 //   "@id": "",
-//   "url": "https://alt-mariendorf.tapas-mundo.com/",
+//   "url": "https://alt-mariendorf.tapas-mundo.eu",
 //   "telephone": "+49-3025294284",
 //   "priceRange": "€€",
-//   "menu": "https://alt-mariendorf.tapas-mundo.com/men%C3%BCkarte-menu-card/speisekarte-a-la-carte",
+//   "menu": "https://alt-mariendorf.tapas-mundo.eumen%C3%BCkarte-menu-card/speisekarte-a-la-carte",
 //   "servesCuisine": "Spanish and Latin American cuisine",
 //   "acceptsReservations": "true",
 //   "address": {
@@ -61,29 +66,46 @@ const inter = Inter({ subsets: ['latin'] });
 //   ]
 // };
 
-
 const resName = ['Alt-Mariendorf', 'Checkpoint Charlie', 'Potsdamer Platz'];
 
-export default async function RootLayout({ children, params }: { children: React.ReactNode, params: { lang: string } }) {
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: string };
+}) {
   const langData = await getDictionary(params.lang);
 
   return (
     <html lang={params.lang}>
       <head>
         {/* SEO Meta Tags */}
-        <title>Tapas Mundo Restaurant in Alt-Mariendorf, Berlin | Authentische Spanische Küche</title>
-        <meta name="description" content="Besuchen Sie Tapas Mundo in Alt-Mariendorf, Berlin, für authentische spanische Aromen. Genießen Sie köstliches Essen, feine Weine und eine unvergessliche authentische spanische Küche." />
+        <title>
+          Tapas Mundo Restaurant in Alt-Mariendorf, Berlin | Authentische
+          Spanische Küche
+        </title>
+        <meta
+          name='description'
+          content='Besuchen Sie Tapas Mundo in Alt-Mariendorf, Berlin, für authentische spanische Aromen. Genießen Sie köstliches Essen, feine Weine und eine unvergessliche authentische spanische Küche.'
+        />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <meta name="google-site-verification" content="dCfEWwIeSKjORIHeIRjOEg_MIKkAoUoytzoHCuj3VgI" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='robots' content='index, follow' />
+        <meta
+          name='google-site-verification'
+          content='dCfEWwIeSKjORIHeIRjOEg_MIKkAoUoytzoHCuj3VgI'
+        />
+        <link rel='icon' href='/favicon.ico' />
 
         {/* Google Analytics */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-XZCL6LSBRR" />
         <Script
-          id="gtag-init"
-          strategy="afterInteractive"
+          strategy='afterInteractive'
+          src='https://www.googletagmanager.com/gtag/js?id=G-XZCL6LSBRR'
+        />
+        <Script
+          id='gtag-init'
+          strategy='afterInteractive'
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -105,7 +127,13 @@ export default async function RootLayout({ children, params }: { children: React
       <body className={inter.className}>
         <Providers>
           <Suspense fallback={<Loading />}>
-            <Header lang={params.lang} langData={langData.header} LandingUrl={LandingUrl} logo={'/image/logo.svg'} resName={resName} />
+            <Header
+              lang={params.lang}
+              langData={langData.header}
+              LandingUrl={LandingUrl}
+              logo={'/image/logo.svg'}
+              resName={resName}
+            />
             <Template>{children}</Template>
             <BottomBar langData={langData.bottom} />
             <Footer langData={langData.footer} />

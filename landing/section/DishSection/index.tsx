@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import DishCard from '@/components/newCardResturant/CardNewResturant';
@@ -7,21 +7,21 @@ const DishSection = (props: any) => {
   const lang = props.lang;
   const [isMobile, setIsMobile] = useState(false);
   const [isimg, setIsImg] = useState({
-    mob:'/image/opt/b2.webp',
-    lap:'/image/finalPic/extraBG/rs1.webp'
+    mob: '/image/opt/b2.webp',
+    lap: '/image/finalPic/extraBG/rs1.webp',
   });
   useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
-      };
-  
-      window.addEventListener('resize', handleResize);
-      handleResize();
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const imagesU = [
     '/image/global/cF/cir1.jpg',
@@ -31,7 +31,7 @@ const DishSection = (props: any) => {
   const data = [
     {
       name: 'Brunch Buffet',
-      link: 'https://alt-mariendorf.tapas-mundo.com/en/men%C3%BCkarte-menu-card/brunch-buffet',
+      link: 'https://alt-mariendorf.tapas-mundo.euen/men%C3%BCkarte-menu-card/brunch-buffet',
       img: imagesU[0],
       name1: 'All You Can eat in Alt Mariendorf',
     },
@@ -50,7 +50,12 @@ const DishSection = (props: any) => {
   ];
 
   return (
-    <div style={{ backgroundImage: isMobile?`url(${isimg.mob})`:`url(${isimg.lap})` }} className={styles.bg}>
+    <div
+      style={{
+        backgroundImage: isMobile ? `url(${isimg.mob})` : `url(${isimg.lap})`,
+      }}
+      className={styles.bg}
+    >
       <div className={styles.main_container}>
         <div className={styles.main}>
           <div className={styles.line}></div>
@@ -95,4 +100,4 @@ const DishSection = (props: any) => {
     </div>
   );
 };
-export default DishSection
+export default DishSection;

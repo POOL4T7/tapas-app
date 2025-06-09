@@ -4,8 +4,9 @@ import dynamic from 'next/dynamic';
 import { LoadingSkeleton } from '@/layouts/Loader';
 
 // Lazy load BlogMain component
-const GroupOffer = dynamic(() => import("./GroupOffer"), {
-  loading: () => <LoadingSkeleton />, ssr: false 
+const GroupOffer = dynamic(() => import('./GroupOffer'), {
+  loading: () => <LoadingSkeleton />,
+  ssr: false,
 });
 
 export async function generateMetadata({
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/gruppenangebot`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/gruppenangebot`;
 
   return {
     title:

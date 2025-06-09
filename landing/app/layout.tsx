@@ -7,7 +7,6 @@ import { fontSans } from '@/config/fonts';
 import Script from 'next/script';
 import logo from '@/public/image/logoN.webp';
 
-
 export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
@@ -16,59 +15,95 @@ export const viewport: Viewport = {
 };
 
 const webPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Tapas Mundo",
-  "url": "https://tapas-mundo.com",
-  "about": "Tapas Mundo is an authentic Spanish Tapas restaurant offering a variety of delicious small plates and drinks in Berlin.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Tapas Mundo",
-    "url": "https://tapas-mundo.com"
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Tapas Mundo',
+  url: 'https://tapas-mundo.com',
+  about:
+    'Tapas Mundo is an authentic Spanish Tapas restaurant offering a variety of delicious small plates and drinks in Berlin.',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Tapas Mundo',
+    url: 'https://tapas-mundo.com',
   },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Tapas Mundo", "item": "https://tapas-mundo.com" },
-      { "@type": "ListItem", "position": 2, "name": "Tapas Mundo - Alt Mariendorf", "item": "https://alt-mariendorf.tapas-mundo.com/" },
-      { "@type": "ListItem", "position": 3, "name": "Tapas Mundo - Checkpoint Charlie", "item": "https://checkpoint-charlie.tapas-mundo.com/" },
-      { "@type": "ListItem", "position": 4, "name": "Tapas Mundo - Potsdamer Platz", "item": "https://potsdamer-platz.tapas-mundo.com/" },
-      { "@type": "ListItem", "position": 5, "name": "Our Specialties", "item": "https://tapas-mundo.com/#specialItem" },
-      { "@type": "ListItem", "position": 6, "name": "dienstleistungen", "item": "https://tapas-mundo.com/en/dienstleistungen" },
-      { "@type": "ListItem", "position": 7, "name": "kontakt", "item": "https://tapas-mundo.com/en/kontakt" }
-    ]
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Tapas Mundo',
+        item: 'https://tapas-mundo.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Tapas Mundo - Alt Mariendorf',
+        item: 'https://alt-mariendorf.tapas-mundo.eu',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Tapas Mundo - Checkpoint Charlie',
+        item: 'https://checkpoint-charlie.tapas-mundo.eu/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: 'Tapas Mundo - Potsdamer Platz',
+        item: 'https://potsdamer-platz.tapas-mundo.com/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        name: 'Our Specialties',
+        item: 'https://tapas-mundo.com/#specialItem',
+      },
+      {
+        '@type': 'ListItem',
+        position: 6,
+        name: 'dienstleistungen',
+        item: 'https://tapas-mundo.com/en/dienstleistungen',
+      },
+      {
+        '@type': 'ListItem',
+        position: 7,
+        name: 'kontakt',
+        item: 'https://tapas-mundo.com/en/kontakt',
+      },
+    ],
   },
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "Tapas Mundo",
-    "url": "https://tapas-mundo.com",
-    "logo": typeof logo === "string" ? logo : logo.src,
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+49-3025294284",
-      "contactType": "customer service",
-      "areaServed": "DE",
-      "availableLanguage": ["English", "German", "Spanish"]
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Tapas Mundo',
+    url: 'https://tapas-mundo.com',
+    logo: typeof logo === 'string' ? logo : logo.src,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+49-3025294284',
+      contactType: 'customer service',
+      areaServed: 'DE',
+      availableLanguage: ['English', 'German', 'Spanish'],
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Alt-Mariendorf 32",
-      "addressLocality": "Berlin",
-      "postalCode": "12107",
-      "addressCountry": "DE"
-    }
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Alt-Mariendorf 32',
+      addressLocality: 'Berlin',
+      postalCode: '12107',
+      addressCountry: 'DE',
+    },
   },
-  "relatedLink": [
-    "https://alt-mariendorf.tapas-mundo.com/men%C3%BCkarte-menu-card/speisekarte-a-la-carte",
-    "https://alt-mariendorf.tapas-mundo.com/en/reservierung",
-    "https://alt-mariendorf.tapas-mundo.com/en/gruppenangebot"
+  relatedLink: [
+    'https://alt-mariendorf.tapas-mundo.eumen%C3%BCkarte-menu-card/speisekarte-a-la-carte',
+    'https://alt-mariendorf.tapas-mundo.euen/reservierung',
+    'https://alt-mariendorf.tapas-mundo.euen/gruppenangebot',
   ],
-  "datePublished": "2025-03-19",
-  "dateModified": "2025-03-19",
-  "author": {
-    "@type": "Organization",
-    "name": "Tapas Mundo"
-  }
+  datePublished: '2025-03-19',
+  dateModified: '2025-03-19',
+  author: {
+    '@type': 'Organization',
+    name: 'Tapas Mundo',
+  },
 };
 
 export default async function RootLayout({ children, params }: any) {
@@ -79,8 +114,16 @@ export default async function RootLayout({ children, params }: any) {
           name='robots'
           content='index, follow, max-image-preview:large, max-snippet:-150'
         />
-        <link rel='alternate' href='https://tapas-mundo.com/es' hrefLang='es-ES' />
-        <link rel='alternate' href='https://tapas-mundo.com/en' hrefLang='en-US' />
+        <link
+          rel='alternate'
+          href='https://tapas-mundo.com/es'
+          hrefLang='es-ES'
+        />
+        <link
+          rel='alternate'
+          href='https://tapas-mundo.com/en'
+          hrefLang='en-US'
+        />
         <link rel='alternate' href='https://tapas-mundo.com/de' hrefLang='nl' />
         <meta property='og:locale' content='en_US' />
         <meta property='og:locale:alternate' content='en_US' />
@@ -130,10 +173,13 @@ export default async function RootLayout({ children, params }: any) {
         />
       </head>
 
-      <body className={clsx('bg-background font-sans antialiased', fontSans.variable)}>
-        <div className='bg-black'>
-          {children}
-        </div>
+      <body
+        className={clsx(
+          'bg-background font-sans antialiased',
+          fontSans.variable
+        )}
+      >
+        <div className='bg-black'>{children}</div>
       </body>
     </html>
   );

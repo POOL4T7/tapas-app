@@ -3,8 +3,8 @@ import style from './style.module.css';
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import { LoadingSkeleton } from '@/layouts/Loader';
-const ReserveTable = dynamic(() => import("@/component/reserveTable"), {
-  loading: () => <LoadingSkeleton />
+const ReserveTable = dynamic(() => import('@/component/reserveTable'), {
+  loading: () => <LoadingSkeleton />,
 });
 
 export async function generateMetadata({
@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/reservierung`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/reservierung`;
 
   return {
     title: 'Reservation - Book Your Table at Mundo Checkpoint Charlie Berlin',

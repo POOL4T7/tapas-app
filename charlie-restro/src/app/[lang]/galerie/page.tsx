@@ -1,7 +1,7 @@
-import ComingSoon from "@/component/commingSoon"
-import GalleryLayout from "@/component/galleryLayout"
-import RegwithLang from "@/component/RegwithLang"
-import { Metadata } from "next";
+import ComingSoon from '@/component/commingSoon';
+import GalleryLayout from '@/component/galleryLayout';
+import RegwithLang from '@/component/RegwithLang';
+import { Metadata } from 'next';
 
 export async function generateMetadata({
   params,
@@ -10,7 +10,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/galerie`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/galerie`;
 
   return {
     title: 'Galerie – Ein Blick in die Mundo Tapas Bar am Checkpoint Charlie',
@@ -24,8 +24,14 @@ export async function generateMetadata({
     },
   };
 }
-const Gallery = ()=>{
-    return <div className="bg-[#121f25]"> <GalleryLayout /><RegwithLang/></div>
-}
+const Gallery = () => {
+  return (
+    <div className='bg-[#121f25]'>
+      {' '}
+      <GalleryLayout />
+      <RegwithLang />
+    </div>
+  );
+};
 
-export default Gallery
+export default Gallery;

@@ -1,11 +1,12 @@
 import { LoadingSkeleton } from '@/layouts/Loader';
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
-const ContactUs = dynamic(() => import("@/component/contact/contact"), {
-  loading: () => <LoadingSkeleton />, ssr: false
+const ContactUs = dynamic(() => import('@/component/contact/contact'), {
+  loading: () => <LoadingSkeleton />,
+  ssr: false,
 });
-const RegwithLang = dynamic(() => import("@/component/RegwithLang"), {
-   ssr: false
+const RegwithLang = dynamic(() => import('@/component/RegwithLang'), {
+  ssr: false,
 });
 
 export async function generateMetadata({
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://checkpoint-charlie.tapas-mundo.com/${lang}/kontakt`;
+  const url = `https://checkpoint-charlie.tapas-mundo.eu/${lang}/kontakt`;
 
   return {
     title: `Reservierung – Buchen Sie Ihren Tisch in der Mundo Tapas Bar Checkpoint Charlie`,
@@ -33,7 +34,7 @@ export async function generateMetadata({
 const Contact = () => {
   return (
     <div>
-      <ContactUs/>
+      <ContactUs />
       <RegwithLang />
     </div>
   );

@@ -10,7 +10,9 @@ const OurServicesID = dynamic(() => import('@/component/facilitesID'), {
 const ReserveTable = dynamic(() => import('@/component/reserveTable'), {
   ssr: false,
 });
-const FacilityHead = dynamic(() => import('@/component/facilityHead'), { ssr: false });
+const FacilityHead = dynamic(() => import('@/component/facilityHead'), {
+  ssr: false,
+});
 
 const headContent: Record<string, { title: string; description: string }> = {
   essbereich: {
@@ -19,22 +21,26 @@ const headContent: Record<string, { title: string; description: string }> = {
       'Genießen Sie den besten Essbereich & die Außenterrasse in der Mundo Tapas Bar in Berlin. Erleben Sie authentische spanische Tapas in einem einladenden Innenbereich oder einem charmanten Außenbereich!',
   },
   'bar-mit-vollem-service': {
-    title: 'Voll ausgestattete Bar – Cocktails, Weine & mehr in der Mundo Tapas Bar',
+    title:
+      'Voll ausgestattete Bar – Cocktails, Weine & mehr in der Mundo Tapas Bar',
     description:
       'Genießen Sie eine erstklassige, voll ausgestattete Bar in der Mundo Tapas Bar in Berlin. Erleben Sie handgemachte Cocktails, erlesene Weine und eine große Auswahl an Getränken in lebendiger Atmosphäre!',
   },
   veranstaltungsraume: {
-    title: 'Veranstaltungen in Berlin – Feiern Sie Ihre besondere Gelegenheit in der Mundo Tapas Bar',
+    title:
+      'Veranstaltungen in Berlin – Feiern Sie Ihre besondere Gelegenheit in der Mundo Tapas Bar',
     description:
       'Planen Sie Ihre Veranstaltung in der Mundo Tapas Bar in Berlin! Ob private Feiern oder Firmenveranstaltungen – genießen Sie authentische spanische Tapas, eine großartige Atmosphäre und individuelle Menüs.',
   },
   'private-gruppe': {
-    title: 'Private Feiern & Gruppenveranstaltungen – Feiern in der Mundo Tapas Bar Berlin',
+    title:
+      'Private Feiern & Gruppenveranstaltungen – Feiern in der Mundo Tapas Bar Berlin',
     description:
       'Feiern Sie Ihr privates Event oder Ihre Gruppenveranstaltung in der Mundo Tapas Bar in Berlin. Genießen Sie authentische spanische Gerichte mit individuell abgestimmten Menüs in lebendiger Atmosphäre!',
   },
   'wahle-uns': {
-    title: 'Warum die Mundo Tapas Bar? | Authentische spanische Küche & einzigartiges Esserlebnis',
+    title:
+      'Warum die Mundo Tapas Bar? | Authentische spanische Küche & einzigartiges Esserlebnis',
     description:
       'Erfahren Sie, warum die Mundo Tapas Bar die perfekte Wahl für Liebhaber der spanischen Küche ist. Genießen Sie authentische Aromen, maßgeschneiderte Menüs und ein unvergessliches kulinarisches Erlebnis!',
   },
@@ -64,22 +70,30 @@ export async function generateMetadata({
         title: selectedHead.title,
         description: selectedHead.description,
         alternates: {
-          canonical: `https://alt-mariendorf.tapas-mundo.com/${lang}/einrichtungen/${ourFacilities}`,
+          canonical: `https://alt-mariendorf.tapas-mundo.eu${lang}/einrichtungen/${ourFacilities}`,
         },
       }
     : {
         title: 'Einrichtungen | Mundo Tapas Bar',
-        description: 'Entdecken Sie unsere Einrichtungen und Services bei Mundo Tapas Bar in Berlin.',
+        description:
+          'Entdecken Sie unsere Einrichtungen und Services bei Mundo Tapas Bar in Berlin.',
       };
 }
 
 // ✅ Page component
-export default async function ServicePage({ params }: { params: { ourFacilities: string; lang: string } }) {
+export default async function ServicePage({
+  params,
+}: {
+  params: { ourFacilities: string; lang: string };
+}) {
   const langData = await getDictionary(params.lang);
 
   return (
     <>
-      <OurServicesID inservice={langData.inservice} langData={langData.serviceList} />
+      <OurServicesID
+        inservice={langData.inservice}
+        langData={langData.serviceList}
+      />
       <ReserveTable langData={langData.reserve} />
     </>
   );

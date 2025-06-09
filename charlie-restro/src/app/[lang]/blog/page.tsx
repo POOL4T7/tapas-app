@@ -1,10 +1,11 @@
-import { LoadingSkeleton } from "@/layouts/Loader";
-import { Metadata } from "next";
-import dynamic from "next/dynamic";
+import { LoadingSkeleton } from '@/layouts/Loader';
+import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 
 // Lazy load BlogMain component
-const BlogMain = dynamic(() => import("@/component/blogResponsive"), {
-  loading: () => <LoadingSkeleton />,ssr:false
+const BlogMain = dynamic(() => import('@/component/blogResponsive'), {
+  loading: () => <LoadingSkeleton />,
+  ssr: false,
 });
 
 export async function generateMetadata({
@@ -14,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = params.lang;
 
-  const url = `https://alt-mariendorf.tapas-mundo.com/${lang}/blog`;
+  const url = `https://alt-mariendorf.tapas-mundo.eu${lang}/blog`;
 
   return {
     title: 'Blog - Tapas Mundo',
@@ -30,8 +31,8 @@ export async function generateMetadata({
 
 export default function Blog() {
   return (
-    <div className="mt-[8rem]">
-      <BlogMain />  
+    <div className='mt-[8rem]'>
+      <BlogMain />
     </div>
   );
 }
