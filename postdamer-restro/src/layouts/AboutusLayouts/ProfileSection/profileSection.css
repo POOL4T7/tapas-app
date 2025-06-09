@@ -1,0 +1,74 @@
+
+  .cardsCon {
+    display: flex;
+    width: 100%;
+    overflow-x:scroll ;
+    max-width: 1450px;
+    
+
+  }
+
+  .cardsCon::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.cardsCon::-webkit-scrollbar
+{
+	height: 4px;
+	background-color: #F5F5F5;
+}
+.cardsCon::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #db9423;
+}
+  .cardProfile {
+    background: transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+    transition: 0.2s;
+    position: relative;
+   
+  }
+.detailsSEC_{
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.logo_sec{
+    margin: auto;
+    padding: 2rem;
+}
+.detailsSEC_Header{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    color: #db9423;
+    padding: 2rem ;
+}
+.detailsSEC_Des{
+
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.25em;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.detailsSEC_Details{
+   text-align: center;
+    padding: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    line-height: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}

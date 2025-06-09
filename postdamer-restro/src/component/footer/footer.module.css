@@ -1,0 +1,160 @@
+.footer{
+    width: 100%;
+    padding: 6rem 0;
+    /* background-color: rgba(0, 0, 0, .8); */
+    display: flex;
+}
+.footerN{
+    width: 100%;
+    padding: 6rem 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer{
+    max-width: 1450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    border: 1px solid white;
+}
+.footer .left{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 4px;
+/*  */
+
+}
+.footer  h4{
+    color: #fff;
+font-size: 1.4rem;
+text-align: center;
+
+}
+.footer p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+
+
+}
+
+.footer .location{
+    text-align: center;
+    padding-bottom: .8rem;
+    margin: auto;
+}
+.detailP_E{
+    padding-bottom: .6rem;
+
+    margin: auto;
+}
+.detailP{
+    margin: auto;
+    color: #fff;
+    padding:  0;
+    padding-bottom: 1.2rem;
+}
+.footer .right{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 4px;
+
+
+}
+.right .social{
+    margin: auto;
+    display: flex;
+}
+
+
+@media screen and (max-width:640px) {
+    .footerContainer{
+        grid-template-columns: 1fr;
+
+    }
+    .right .social{
+        margin: auto;
+    }
+    .copyWriteMsg{
+        font-size: 0.6rem !important;
+    }
+    .powerdbyMsg{
+        font-size: 0.6rem !important;
+    }
+}
+.logo {
+    display: flex;
+    margin: auto;
+    padding: 2rem 0;
+  }
+.footerN{
+    width: 100%;
+    padding: 6rem 0;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+}
+.footerContainerN{
+    max-width: 1140px;
+    margin: auto;
+display: flex;
+flex-direction: column;
+}
+.heading{
+text-align: center;
+margin: auto;
+color: #fff;
+font-size: 3rem;
+  font-weight: 700;
+    font-family: 'Abril Fatface', display;
+
+}
+.description{
+    padding: 1.2rem;
+    color: #fff;
+font-size: 1rem;
+text-align: center;
+margin: auto;
+
+
+}
+.contactus{
+    margin: auto;
+}
+.socialMedia{
+    padding: 1.6rem;
+    margin: auto;
+    display: flex;
+}
+
+.copyWrite{
+    max-width: 1450px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.copyWriteMsg{
+    padding: 0px 2rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+.powerdbyMsg{
+    padding: 0px 2rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.9em;
+    color: white;
+}

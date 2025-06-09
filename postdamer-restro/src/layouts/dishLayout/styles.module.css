@@ -1,0 +1,102 @@
+.bodyModel {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.bodyLeft {
+  flex: 1; /* Increased from flex: 1 to flex: 2 to allocate more space to the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyRight {
+  flex: 1; /* Decreased from flex: 2 to flex: 1 to allocate less space to the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modalDesc, .modalMeta, .modalIF, .modalPrice {
+  margin: 5px 0;
+}
+
+.modalDesc {
+  font-size: 1rem;
+  color: #333;
+}
+
+.modalMeta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.modalIF {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.modalPrice {
+  font-size: 1.2rem;
+  color: #db9423;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .bodyModel {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .bodyLeft, .bodyRight {
+      width: 100%;
+  }
+
+  .bodyRight {
+      padding-left: 0;
+  }
+
+  .modalTitle {
+      text-align: center;
+  }
+
+  .modalDesc, .modalMeta, .modalIF, .modalPrice {
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalTitle {
+      font-size: 1.2rem;
+  }
+
+  .modalDesc {
+      font-size: 0.9rem;
+  }
+
+  .modalMeta {
+      font-size: 0.8rem;
+  }
+
+  .modalIF {
+      font-size: 0.75rem;
+  }
+
+  .modalPrice {
+      font-size: 1rem;
+  }
+}

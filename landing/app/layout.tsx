@@ -51,7 +51,7 @@ const webPageSchema = {
         '@type': 'ListItem',
         position: 4,
         name: 'Tapas Mundo - Potsdamer Platz',
-        item: 'https://potsdamer-platz.tapas-mundo.com/',
+        item: 'https://potsdamer-platz.tapas-mundo.eu/',
       },
       {
         '@type': 'ListItem',

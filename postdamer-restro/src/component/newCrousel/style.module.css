@@ -1,0 +1,190 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #E7E1D9;
+  height: 100vh;
+  display: flex;
+}
+.imageLeft img{
+    height: 100%;
+    width: 100%;
+}
+.imageRight img{
+    height: 100%;
+    width: 100%;
+}
+.imageContainer {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%;
+}
+
+.imageLeft.activeImage {
+  animation: slideDown 1s ease-in-out forwards;
+  opacity: 1;
+}
+.imageRight.activeImage {
+  animation: slideDown 1s ease-in-out forwards;
+  opacity: 1;
+}
+.imageLeft {
+  position: absolute;
+  width: 33.33%;
+  height: 100%; 
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.imageRight {
+  position: absolute;
+    width: 33.33%;
+    height: 100%;
+    top: 0;
+    left: 66.66%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  
+  .textContainer {
+    position: absolute;
+    width: 33.33%;
+    height: 100%; 
+    top: 0;
+    left: 33.33%; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; 
+  flex-direction: column;
+  color: #fff;
+  opacity: 0;
+ transition: opacity 1s ease-in-out;
+}
+
+.textContainer.activeText {
+  animation: slideUp 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+.textContainer h2 {
+  font-size: 4rem;
+}
+
+.textContainer p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.buttonContainer {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton {
+  background: #E7E1D9;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.restContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.navButton:hover,
+.navButton.activeButton {
+  background-color: #fff;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .imageLeft, .imageRight, .textContainer  {
+    width: 100%;
+    height: 33.33%;
+    left: 0;
+}
+.imageLeft.activeImage {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+  opacity: 1;
+}
+.imageRight.activeImage {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+  opacity: 1;
+}
+.textContainer.activeText {
+  animation: slideInFromRight 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+.imageLeft:nth-child(1) {
+    top: 0;
+}
+
+.textContainer:nth-child(2) {
+    top: 33.33%;
+}
+
+.imageRight:nth-child(3) {
+    top: 66.66%;
+}
+.textContainer h2 {
+  font-size: 2rem;
+}
+
+.textContainer p {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+}

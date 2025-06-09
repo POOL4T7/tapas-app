@@ -37,7 +37,7 @@ const restaurantSchema = {
     {
       '@type': 'WebSite',
       '@id': 'https://alt-mariendorf.tapas-mundo.eu#website',
-      url: 'https://alt-mariendorf.tapas-mundo.com',
+      url: 'https://alt-mariendorf.tapas-mundo.eu',
       name: 'Mundo Tapas - Alt Mariendorf',
       potentialAction: {
         '@type': 'SearchAction',
@@ -48,7 +48,7 @@ const restaurantSchema = {
     {
       '@type': 'SiteNavigationElement',
       name: 'Home',
-      url: 'https://alt-mariendorf.tapas-mundo.com',
+      url: 'https://alt-mariendorf.tapas-mundo.eu',
     },
     {
       '@type': 'SiteNavigationElement',

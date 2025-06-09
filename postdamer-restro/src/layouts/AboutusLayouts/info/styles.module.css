@@ -1,0 +1,68 @@
+.background{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-image: url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-clip: padding-box;
+  }
+  
+  
+  .main_container{
+      /* width: 100vw; */
+      height: 70vh;
+      padding: 6rem 0;
+      /* background-color: rgba(0, 0, 0, .8); */
+      display: flex;
+      flex-direction: column;
+      font-family: "Poppins";
+      background-color: rgba(0, 0, 0, .7);
+  }
+  .main{
+      margin: auto;
+      max-width: 1450px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+  
+  
+  }
+  .line{
+      border: 1px solid white;
+      width: 20vw;
+      height: 0px;
+      border-radius: 20px;
+  }
+  .logo{
+      height: 100px;
+  }
+  .offer{
+     
+      font-weight: 400;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      padding: 1.2rem 0rem;
+      padding-bottom: 0px;
+  }
+  .title{
+      color: #db9423;
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: 'Abril Fatface', display;
+      line-height: 1.3em;
+      text-align: center;
+  }
+  .time{
+      font-size: 1rem;
+      color: white;
+      padding: 1.2rem;
+      text-align: center;
+  }
+
+  
+  

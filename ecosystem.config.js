@@ -70,5 +70,19 @@ module.exports = {
         PORT: 3004,
       },
     },
+    {
+      name: 'postdamer-restro',
+      cwd: './postdamer-restro',
+      script: 'npm',
+      args: 'start',
+      env: {
+        NODE_ENV: 'development',
+        PORT: 3005,
+      },
+      env_production: {
+        NODE_ENV: 'production',
+        PORT: 3005,
+      },
+    },
   ],
 };

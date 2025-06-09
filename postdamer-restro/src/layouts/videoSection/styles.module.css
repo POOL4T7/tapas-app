@@ -1,0 +1,214 @@
+.home {
+    height: 100vh;
+    position: relative;
+}
+.home video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.homeContent {
+    position: absolute;
+    top: 45%;
+    width:100vw;
+    color: #fff;
+    text-align: center;
+}
+.h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.p {
+    font-size: clamp(25px, 4vw, 40px);
+    margin-top: 10px;
+}
+
+.homeContent button {
+    display: block;
+    font-size: clamp(14px, 1.5vw, 18px);
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+@media screen and (max-width:640px) {
+    .content h1{
+font-size: 3rem;
+    }
+    
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .container span {
+    text-transform: uppercase;
+    display: block; 
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Abril Fatface', display;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: transparent;
+    position: relative;
+    /* shorthand animation property: name | duration | iteration count */
+  /*   animation: text 4s 1; */
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .text2 {
+    font-size: 25px;
+    color: white;
+    display: none !important;
+
+    animation-name: text2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes text {
+    0% {
+      color: black;
+      margin-bottom: -40px;
+    }
+    30% {
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+    85% {
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+    100% {
+      margin-bottom: 20px;
+    }
+  }
+
+  @keyframes text2 {
+    0% {
+        display: none;
+      }
+
+      100% {
+       display: block;
+      }
+    
+  }
+  @media screen and (max-width:640px) {
+    .text1{
+        font-size: 30px;
+    }
+}
+
+/*  */
+
+/* .textA , .textB {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Abril Fatface', display;
+  }
+  
+  .textA {
+    animation: showup 7s infinite;
+  }
+  
+  .textB {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  .textB span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-30vw; }
+      20% { margin-left:-30vw; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:35vw;}
+      80% {opacity:1;}
+      100% {opacity:0;width:35vw;}
+  } */
