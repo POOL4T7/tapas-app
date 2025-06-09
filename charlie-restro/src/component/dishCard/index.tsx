@@ -339,7 +339,7 @@ const MenuCardAll: React.FC<Props> = (props) => {
                           <Image
                             src={
                               process.env.NEXT_PUBLIC_SERVER_URL +
-                                section.image || '/image/logo.png'
+                                section.imagePath || '/image/logo.png'
                             }
                             alt={section.name}
                             width={100}
