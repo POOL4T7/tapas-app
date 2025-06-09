@@ -34,39 +34,41 @@ const MenuCardAll: React.FC<Props> = (props) => {
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   useEffect(() => {
-    getItemsByMenuId(details.id)
-      .then((res) => {
-        const temp: any = [];
-        const stru = res.data?.map((cat: any) => {
-          const sub = cat.subCategories.map((subcat: any) => {
-            return {
-              id: subcat.id,
-              name: subcat.name,
-              items: subcat.items,
-            };
+    if (details.id) {
+      getItemsByMenuId(details.id)
+        .then((res) => {
+          const temp: any = [];
+          const stru = res.data?.map((cat: any) => {
+            const sub = cat.subCategories.map((subcat: any) => {
+              return {
+                id: subcat.id,
+                name: subcat.name,
+                items: subcat.items,
+              };
+            });
+            temp.push({
+              id: cat.id,
+              name: cat.name,
+              image: cat.imagePath,
+              description: cat.description,
+              subCategories: sub,
+            });
+            return sub;
           });
-          temp.push({
-            id: cat.id,
-            name: cat.name,
-            image: cat.imagePath,
-            description: cat.description,
-            subCategories: sub,
+          // console.log('stru', stru.flat(2));
+          setItems(temp);
+          setDrawerStructure(temp);
+          // Create a mapping from section name to index
+          const mapping: { [key: string]: number } = {};
+          stru.flat(2).forEach((item: any, index: number) => {
+            mapping[generateSlug(item.name)] = index;
           });
-          return sub;
+          setSectionNameToIndexMap(mapping);
+        })
+        .catch((err) => {
+          console.log(err);
         });
-        // console.log('stru', stru.flat(2));
-        setItems(temp);
-        setDrawerStructure(temp);
-        // Create a mapping from section name to index
-        const mapping: { [key: string]: number } = {};
-        stru.flat(2).forEach((item: any, index: number) => {
-          mapping[generateSlug(item.name)] = index;
-        });
-        setSectionNameToIndexMap(mapping);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    }
   }, [details.id]);
 
   useEffect(() => {
