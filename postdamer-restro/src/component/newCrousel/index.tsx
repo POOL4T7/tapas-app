@@ -79,7 +79,7 @@ const CarouselNew = () => {
             <p>{heading[index].desc}</p>
             <Link
               className='border-1 rounded-sm p-2'
-              href={'https://tapas-mundo.com/'}
+              href={'https://tapas-mundo.eu'}
             >
               Tapas Mundo
             </Link>
