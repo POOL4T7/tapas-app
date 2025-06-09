@@ -113,17 +113,17 @@ const DishLayouts: React.FC<DishDetailProps> = ({
       </div>
 
       {/* Modal popup for allergens and additives */}
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      {/* <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <ModalContent className='bg-black text-white'>
           <ModalHeader>
             <h2 className='text-xl font-semibold'>{title}</h2>
           </ModalHeader>
-          {/* <ModalBody>{renderAllergensAndAdditives(product_tag)}</ModalBody> */}
+          <ModalBody>{renderAllergensAndAdditives(product_tag)}</ModalBody>
           <ModalFooter>
-            {/* <Button onClick={handleCloseModal}>Close</Button> */}
+            <Button onClick={handleCloseModal}>Close</Button>
           </ModalFooter>
         </ModalContent>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };

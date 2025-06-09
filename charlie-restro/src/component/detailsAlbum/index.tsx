@@ -1,47 +1,79 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from "react";
-import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-
-// import optional lightbox plugins
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import React from "react";
+import React from 'react';
 import styles from './styles.module.css';
-import Image from "next/image";
+import Image from 'next/image';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,
+  nextArrow: <SampleNextArrow />, // Your custom next arrow component
+  prevArrow: <SamplePrevArrow />, // Your custom prev arrow component
+};
 
 export default function DetailsAlbum({ images }: { images: string[] }) {
-    const [index, setIndex] = useState(-1);
+  if (!images || images.length === 0) return null;
 
-    return (
-        <>
-            <div className={styles.albumContainer}>
-                <div className={styles.mainImage} onClick={() => setIndex(0)}>
-                <Image className={styles.img}   src={images[0]}   alt="Main Dish" height={200}  width={200}/>
-
-                    {/* <img src={images[0]} alt="Main Dish" className={styles.img} /> */}
-                </div>
-                <div className={styles.sideImages}>
-                    {images.slice(1, 3).map((image, i) => (
-                        <div key={i} className={styles.sideImage} onClick={() => setIndex(i + 1)}>
-                            <Image className={styles.img}   src={image}   alt={`Side Dish ${i + 1}`}  height={200}  width={200}/>
-                            {/* <img src={image} alt={`Side Dish ${i + 1}`} className={styles.img} /> */}
-                        </div>
-                    ))}
-                </div>
-                <Lightbox
-                    slides={images.map(src => ({ src }))}
-                    open={index >= 0}
-                    index={index}
-                    close={() => setIndex(-1)}
-                    plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-                />
+  return (
+    <div className={styles.albumContainer}>
+      {images.length == 1 ? (
+        <div style={{ width: '400px', height: '400px', position: 'relative' }}>
+          <Image
+            src={images[0]}
+            alt='Dish'
+            width={520}
+            height={520}
+            className='w-full h-full object-cover'
+          />
+        </div>
+      ) : (
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div
+              key={index}
+              style={{ width: '400px', height: '400px', position: 'relative' }}
+            >
+              <Image
+                src={image}
+                alt={`Dish ${index + 1}`}
+                width={520}
+                height={520}
+                // style={{ objectFit: 'cover' }}
+              />
             </div>
-        </>
-    );
+          ))}
+        </Slider>
+      )}
+    </div>
+  );
+}
+
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', right: 10 }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', left: 10, zIndex: 1 }}
+      onClick={onClick}
+    />
+  );
 }

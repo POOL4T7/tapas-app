@@ -1,8 +1,18 @@
 import React from 'react';
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from '@nextui-org/react';
 import styles from './style.module.css';
+import DishLayouts from '@/layouts/dishLayout';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { formatPrice } from '@/lib/utils';
 
 export interface DishDetail {
   created_at: string;
@@ -27,52 +37,71 @@ export interface DishDetail {
   thumbnail: string;
   updated_at: string;
 }
-const DishCard: React.FC<DishDetail> = ({ name, ingredients,product_tag, price, thumbnail, image_urls, metadata, description, product_id }) => {
-  const pathname = usePathname()
 
-
+const DishCard: React.FC<DishDetail> = ({
+  product_tag,
+  name,
+  ingredients,
+  price,
+  thumbnail,
+  image_urls,
+  metadata,
+  description,
+}) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Link href={`${pathname}/${product_id}`}>
-      <div className={`${styles.bg} mb-4 p-4 border border-gray-200 rounded-lg cursor-pointer`}>
-        <div className="flex items-center">
-          <div className="w-16 h-16">
-          <Image
+    <Link href={`#${name}`}>
+      <div
+        className={`${styles.bg} mb-4 p-4 border border-gray-200 rounded-lg cursor-pointer`}
+        onClick={onOpen}
+      >
+        <div className='flex items-center'>
+          <div className='w-16 h-16'>
+            <Image
               width={520}
               height={520}
-              src={thumbnail ? thumbnail : image_urls.filter(image => image !== null)[0]}
-              alt={name ||'img'}
-              className="rounded-full w-full h-full object-cover"
+              src={
+                process.env.NEXT_PUBLIC_SERVER_URL +
+                image_urls?.filter((image) => image !== null)?.[0]
+              }
+              alt={name || 'img'}
+              className='rounded-full w-full h-full object-cover'
             />
           </div>
-          <div className="ml-4 flex-1">
-            <div className="flex justify-between items-center">
-              <h5 className={styles.cardTitle}>
-                {name} <sup style={{color:'white',borderRadius:'2px' ,lineHeight:'normal', height:'fit-content',padding:'0px 2px', margin:'0px 2px' ,fontWeight:'200'}}>{product_tag}</sup>
-              </h5>
-              <p className={styles.cardPrice}>
-                	&#8364;{price}
-              </p>
+          <div className='ml-4 flex-1'>
+            <div className='flex justify-between items-center'>
+              <h5 className={styles.cardTitle}>{name}</h5>
+              {/* <p className={styles.cardPrice}>&#8364;{price}</p> */}
+              <p className={styles.cardPrice}>{formatPrice(price)}</p>
             </div>
-            {/* <span className={styles.cardMeta}>{ingredients}</span> */}
+            <span className={styles.cardMeta}>{product_tag}</span>
           </div>
         </div>
       </div>
 
-      {/* Uncomment the following section if you want to use the modal */}
-      {/* <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose}>
         <ModalContent className={styles.modalContent}>
           <ModalHeader>
-            <h2 className={styles.modalTitle}>{name}</h2>
+            {/* <h2 className={styles.modalTitle}>{title}</h2> */}
           </ModalHeader>
           <ModalBody>
-            <DishLayouts description={description} metadata={metadata} images={image_urls} title={name} ingredients={ingredients} price={price} dishId="breakfast" />
+            <DishLayouts
+              description={description}
+              metadata={metadata}
+              images={image_urls}
+              title={name}
+              ingredients={ingredients}
+              price={price}
+              product_tag={product_tag || ''}
+              dishId='breakfast'
+            />
           </ModalBody>
           <ModalFooter>
-            <Button onClick={onClose}>Close</Button>
+            {/* <Button onClick={onClose}>Close</Button> */}
           </ModalFooter>
         </ModalContent>
-      </Modal> */}
+      </Modal>
     </Link>
   );
 };

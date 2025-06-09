@@ -334,7 +334,22 @@ const MenuCardAll: React.FC<Props> = (props) => {
                           el;
                       }}
                     >
-                      <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
+                      {/* <h2 className='section-title text-2xl text-center p-2 bg-[white] text-black my-5'>
+                        {section.name}
+                      </h2> */}
+                      <h2 className='section-title flex items-center justify-center text-2xl p-1 bg-[white] text-black my-5'>
+                        <div className='w-10 h-10 mr-4'>
+                          <Image
+                            src={
+                              process.env.NEXT_PUBLIC_SERVER_URL +
+                                section.image || '/image/logo.png'
+                            }
+                            alt={section.name}
+                            width={100}
+                            height={100}
+                            className='w-full h-full object-cover rounded-full'
+                          />{' '}
+                        </div>
                         {section.name}
                       </h2>
                       {section.items.length === 0 ? (

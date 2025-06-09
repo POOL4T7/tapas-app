@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -8,7 +8,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { FiAlignJustify } from 'react-icons/fi';
-import { IoClose } from "react-icons/io5";
+import { IoClose } from 'react-icons/io5';
 
 import Link from 'next/link';
 import { styled } from '@mui/material/styles';
@@ -16,11 +16,10 @@ import './styleDrawer.css';
 
 import menuDataDummy from '../../AllData/menuList';
 import { useEffect, useRef, useState } from 'react';
-import {  getAllMenuPath } from '@/service/apiService';
+import { getAllMenuPath } from '@/service/apiService';
 import { useDispatch, useSelector } from 'react-redux';
 import { MenuData } from '@/Redux/menu/slice';
 import { RootState } from '@/Redux/store';
-import { any } from 'zod';
 import { getDictionary } from '@/getDictionary';
 import { useParams } from 'next/navigation';
 
@@ -101,7 +100,7 @@ const MenuItemTypography = styled(Typography)(({ theme }) => ({
   '& a': {
     textDecoration: 'none',
     color: '#ffffff',
-    transition: 'color 0.7s ease'
+    transition: 'color 0.7s ease',
   },
   '&:hover': {
     borderBottom: '1px solid gold',
@@ -117,7 +116,7 @@ const NoBorderMenuItemTypography = styled(Typography)(({ theme }) => ({
   '& a': {
     textDecoration: 'none',
     color: '#ffffff',
-    transition: 'color 0.7s ease'
+    transition: 'color 0.7s ease',
   },
   '&:hover': {
     '& a': {
@@ -126,50 +125,71 @@ const NoBorderMenuItemTypography = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export const RightSideDrawer = () => {
+export const RightSideDrawer = (params: any) => {
+  const langData = params.langData;
+  const lang = params.lang;
 
-const [menuData, setMenuData]:any = useState(menuDataDummy)
+  const [menuData, setMenuData]: any = useState(menuDataDummy);
   const dispatch = useDispatch();
-  const selector:any = useSelector((state: RootState) => state.menu);
+  const selector: any = useSelector((state: RootState) => state.menu);
   const isLoading = useRef(false);
-  const pathName:any=useParams()
+  const pathName: any = useParams();
 
   useEffect(() => {
     const fechAllMenu = async () => {
-
       if (isLoading.current) return;
 
       isLoading.current = true;
-      
+
       try {
         const result = await getAllMenuPath();
-        
-        const filterFirstLevelCategories = (menuData:any) => {
-          return menuData.map((element:any) => {
-            const filteredItems = element.items.map((item:any) => {
-              return { ...item, items: null };
-            });
-    
-            return { ...element, items: filteredItems };
+
+        const filterFirstLevelCategories = (menuData: any) => {
+          const menuList = menuData.map((element: any) => {
+            // const filteredItems = element.menuEntries.map((item: any) => {
+            //   return {
+            //     id: item.category.id,
+            //     name: item.category.name,
+            //     tagName: item.category.name,
+            //     path: `/${pathName.lang}/${element.id}/${item.category.id}`,
+            //     items: null,
+            //   };
+            // });
+
+            return {
+              id: element.id,
+              name: element.name,
+              tagName: element.name,
+              path: `/${pathName.lang}/${element.name
+                .toLowerCase()
+                .split(' ')
+                .join('-')}`,
+              items: null,
+            };
           });
+          return {
+            name: 'Menu Card',
+            path: '/menu-card',
+            items: menuList,
+          };
         };
-    
+
         const filteredMenuData = filterFirstLevelCategories(result.data);
-        const data=await getDictionary(pathName.lang)
-        
+        const data = await getDictionary(pathName.lang);
+        console.log(filteredMenuData);
 
         const fullMenuData = [
-          { name:data.header[0], path: `/${pathName.lang}` },
+          { name: data.header[0], path: `/${pathName.lang}` },
           // { name: data.header[1], path: `/${pathName.lang}/menu` },
-          ...filteredMenuData,
+          filteredMenuData,
           { name: data.header[2], path: `/${pathName.lang}/gruppenangebot` },
           { name: data.header[3], path: `/${pathName.lang}/reservierung` },
           { name: data.header[4], path: `/${pathName.lang}/einrichtungen` },
           { name: data.header[5], path: `/${pathName.lang}/galerie` },
           { name: data.header[6], path: `/${pathName.lang}/blog` },
-          { name: data.header[7], path: `/${pathName.lang}/kontakt` }
+          { name: data.header[7], path: `/${pathName.lang}/kontakt` },
         ];
-    
+
         setMenuData(fullMenuData);
         dispatch(MenuData(filteredMenuData));
       } catch (error) {
@@ -180,22 +200,27 @@ const [menuData, setMenuData]:any = useState(menuDataDummy)
     };
 
     fechAllMenu();
-  }, [dispatch,pathName.lang]);
-
-  
+  }, [dispatch, pathName.lang]);
 
   const [state, setState] = useState({
     right: false,
   });
 
-  const [expandedAccordions, setExpandedAccordions] = useState<{ [key: string]: boolean }>({});
+  const [expandedAccordions, setExpandedAccordions] = useState<{
+    [key: string]: boolean;
+  }>({});
 
-  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-    if (event.type === 'keydown' && ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')) {
-      return;
-    }
-    setState({ ...state, right: open });
-  };
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+      setState({ ...state, right: open });
+    };
 
   const handleMouseEnter = (name: string) => {
     setExpandedAccordions((prev) => ({ ...prev, [name]: true }));
@@ -231,15 +256,19 @@ const [menuData, setMenuData]:any = useState(menuDataDummy)
           },
         }}
       >
-        <Typography style={{textTransform:'uppercase'}}>{item.name}</Typography>
+        <Typography style={{ textTransform: 'uppercase' }}>
+          {item.name}
+        </Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Box>
           {item.items.map((subItem: any) =>
-            subItem.items ? renderAccordion(subItem) : (
+            subItem.items ? (
+              renderAccordion(subItem)
+            ) : (
               <NoBorderMenuItemTypography key={subItem.name}>
-                <Link href={subItem.path} >
-                  <Typography component="span" onClick={handleMenuItemClick}>
+                <Link href={subItem.path}>
+                  <Typography component='span' onClick={handleMenuItemClick}>
                     {subItem.name}
                   </Typography>
                 </Link>
@@ -252,17 +281,28 @@ const [menuData, setMenuData]:any = useState(menuDataDummy)
   );
 
   const accordionContent = () => (
-    <DrawerContent role="presentation" sx={{ '& > .MuiPaper-root': { backgroundColor: 'transparent' }, padding: '40px' }}>
+    <DrawerContent
+      role='presentation'
+      sx={{
+        '& > .MuiPaper-root': { backgroundColor: 'transparent' },
+        padding: '40px',
+      }}
+    >
       <Box sx={{ display: 'flex' }}>
-        <CustomButton sx={{ marginLeft: 'auto', marginRight: '0px' }} onClick={toggleDrawer(false)}>
+        <CustomButton
+          sx={{ marginLeft: 'auto', marginRight: '0px' }}
+          onClick={toggleDrawer(false)}
+        >
           <IoClose size={30} />
         </CustomButton>
       </Box>
-      {menuData.map((item:any) =>
-        item.items ? renderAccordion(item) : (
+      {menuData.map((item: any) =>
+        item.items ? (
+          renderAccordion(item)
+        ) : (
           <MenuItemTypography key={item.name}>
-            <Link href={item.path} >
-              <Typography component="span" onClick={handleMenuItemClick}>
+            <Link href={item.path}>
+              <Typography component='span' onClick={handleMenuItemClick}>
                 {item.name}
               </Typography>
             </Link>
@@ -274,19 +314,22 @@ const [menuData, setMenuData]:any = useState(menuDataDummy)
 
   return (
     <div>
-       <div onClick={toggleDrawer(true)} className="rounded-full inline-block cursor-pointer">
-    <div className="bg-black bg-opacity-30 backdrop-blur-lg rounded-full p-2 hover:bg-opacity-80">
-        <FiAlignJustify color='white' size={30} />
-      </div>
+      <div
+        onClick={toggleDrawer(true)}
+        className='rounded-full inline-block cursor-pointer'
+      >
+        <div className='bg-black bg-opacity-30 backdrop-blur-lg rounded-full p-2 hover:bg-opacity-80'>
+          <FiAlignJustify color='white' size={30} />
+        </div>
       </div>
       <Drawer
-        anchor="right"
+        anchor='right'
         open={state.right}
         onClose={toggleDrawer(false)}
         sx={{
           '& > .MuiPaper-root': {
             backgroundColor: 'rgba(0, 0, 0, 0.3)',
-            backdropFilter: 'blur(40px) brightness(115%)'
+            backdropFilter: 'blur(40px) brightness(115%)',
           },
         }}
       >
